@@ -1,4 +1,12 @@
+---
+layout: default
+title: Methodology
+permalink: /methodology/
+---
+
 # Methodology
+
+The tracker uses a repeatable research structure so readers can distinguish documented facts from claims, analysis, and unresolved questions.
 
 ## Evidence hierarchy
 
@@ -38,15 +46,26 @@ Especially strong legal or technical conclusions should be independently reviewe
 ## Confidence labels
 
 ### High
+
 Supported directly by primary documentation with little material ambiguity.
 
 ### Medium
+
 Core facts are supported, but implementation, scope, or effect remains uncertain.
 
 ### Low
+
 The item is based on incomplete records, conflicting accounts, or preliminary information.
 
 Low-confidence material should not be framed as settled.
+
+## Status labels
+
+- **Proposed:** introduced or under consideration, but not in force
+- **Monitoring:** implemented or documented, with important current details still being tracked
+- **Active:** currently in effect or operation
+- **Blocked or Enjoined:** prevented from taking effect by a court or other authority
+- **Repealed, Expired, or Resolved:** no longer active, while retained for historical context
 
 ## Update triggers
 
