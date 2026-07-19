@@ -24,6 +24,18 @@ The tracker focuses on five areas:
 - **No claims of anonymity or safety that the project cannot guarantee.**
 - **Every entry includes a practical, lawful action section.**
 
+## Research and legal boundaries
+
+This project provides public-record research and plain-language analysis. It does **not** provide legal advice or a binding legal opinion.
+
+The project and its contributors cannot:
+
+- guarantee that a government agency has publicly disclosed every internal implementation detail;
+- independently verify nonpublic databases, security controls, retention practices, access logs, or internal data-sharing arrangements; or
+- replace review by a qualified attorney, privacy professional, security expert, healthcare professional, or other relevant specialist.
+
+When public evidence is incomplete, the tracker identifies the gap rather than guessing. Especially strong legal or technical conclusions should be independently reviewed by an appropriately qualified expert.
+
 ## What this project does not store
 
 Do not submit or publish:
