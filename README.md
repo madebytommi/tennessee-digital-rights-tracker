@@ -2,6 +2,8 @@
 
 A source-first, privacy-conscious public-interest project documenting Tennessee laws, policies, court decisions, government contracts, and technology systems that affect civil liberties and digital rights.
 
+**Live site:** https://madebytommi.github.io/tennessee-digital-rights-tracker/
+
 ## Mission
 
 Make complicated public records understandable without exaggeration.
@@ -13,6 +15,16 @@ The tracker focuses on five areas:
 3. Health-data privacy
 4. Online identity and age verification
 5. Government use of artificial intelligence and automated decision systems
+
+## Current MVP coverage
+
+The first three entries examine different parts of the same digital-rights problem:
+
+- **Health-data privacy:** what Tennessee requires healthcare entities to report and which implementation safeguards remain unknown
+- **Government surveillance:** how White House license plate readers collect and share vehicle-location records
+- **Online identity:** how Tennessee’s age-verification law connects access to online speech with identity checks and data handling
+
+Together, they ask three consistent questions: **What data are collected? Who can access them? What rights, limits, or oversight mechanisms apply?**
 
 ## Core principles
 
@@ -61,24 +73,28 @@ Every tracked item answers:
 4. What is confirmed?
 5. What remains uncertain?
 6. Who may be affected?
-7. What lawful actions are available?
-8. When was the item last reviewed?
+7. Why does it matter for privacy or civil liberties?
+8. What lawful actions are available?
+9. When was the item last reviewed?
 
-See [`_entries/ENTRY_TEMPLATE.md`](_entries/ENTRY_TEMPLATE.md).
+Use [`templates/ENTRY_TEMPLATE.md`](templates/ENTRY_TEMPLATE.md) when preparing a new entry. Files placed under `_entries/` are treated as published tracker items by Jekyll.
 
 ## Repository layout
 
 ```text
 .
-├── _entries/                 # Published tracker entries
+├── _entries/                 # Published tracker entries only
 ├── _layouts/                 # GitHub Pages/Jekyll page layouts
 ├── assets/                   # CSS and other static assets
-├── docs/                     # Methodology, taxonomy, policies, roadmap
+├── docs/                     # Methodology, taxonomy, policies, and roadmap
+├── templates/                # Authoring templates excluded from the live site
 ├── schemas/                  # Entry metadata schema
 ├── scripts/                  # Validation tools
-├── .github/                  # Issue forms, PR template, CI workflow
+├── .github/                  # Issue forms, PR template, and CI workflow
 ├── index.md                  # Tracker homepage
 ├── about.md                  # Public project overview
+├── LICENSE                   # MIT license for code
+├── LICENSE-CONTENT.md        # CC BY 4.0 notice for original writing
 └── _config.yml               # GitHub Pages configuration
 ```
 
@@ -89,32 +105,20 @@ python -m pip install -r requirements-dev.txt
 python scripts/validate_entries.py
 ```
 
-## Suggested MVP
+The same validator runs in GitHub Actions for pull requests and pushes to `main`.
 
-Publish three well-sourced entries before adding advanced features.
+## Publishing workflow
 
-Recommended first topics:
-
-- Tennessee gender-related healthcare reporting and privacy
-- Automated license plate readers and Flock Safety use
-- Online age or identity verification proposals
-
-## Publishing
-
-This scaffold is designed for GitHub Pages with Jekyll.
-
-1. Create a new GitHub repository.
-2. Copy these files into it.
-3. In **Settings → Pages**, select **Deploy from a branch**.
-4. Choose the `main` branch and `/ (root)`.
-5. Add entries under `_entries/`.
+1. Create a branch for one entry or focused maintenance change.
+2. Add or revise files.
+3. Run the validator.
+4. Open a pull request.
+5. Review sourcing, uncertainty, privacy, and sensitive-data risks.
+6. Merge only after validation passes.
+7. Confirm the GitHub Pages result.
 
 ## Licensing
 
-Suggested approach:
-
-- Code: MIT License
-- Original written content: Creative Commons Attribution 4.0
-- Government documents and third-party sources retain their original status and ownership
-
-Add the final license files before public launch.
+- Repository code, layouts, styles, templates, and validation tooling are licensed under the [MIT License](LICENSE).
+- Original tracker writing is licensed under [Creative Commons Attribution 4.0 International](LICENSE-CONTENT.md), unless otherwise noted.
+- Government documents and third-party material retain their original legal status and ownership.

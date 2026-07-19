@@ -20,6 +20,10 @@ revision_history:
     note: "Initial publication."
 ---
 
+## Research and legal limitations
+
+State the limits that apply to the entry. Do not provide legal advice, imply access to nonpublic systems, or fill missing evidence with assumptions.
+
 ## What happened?
 
 Give a concise chronological explanation.
