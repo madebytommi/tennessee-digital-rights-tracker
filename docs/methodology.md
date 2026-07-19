@@ -21,6 +21,20 @@ Every entry must separate:
 - What the tracker concludes
 - What cannot yet be determined
 
+## Research boundaries
+
+The tracker provides public-record research and plain-language analysis, not legal advice or a binding legal opinion.
+
+Researchers must not imply that they can:
+
+- verify facts that depend on nonpublic databases, source code, internal policies, security controls, access logs, retention practices, or data-sharing arrangements;
+- guarantee that an agency has disclosed all relevant implementation information; or
+- replace review by a qualified attorney, privacy professional, security expert, healthcare professional, or other relevant specialist.
+
+When evidence is unavailable, state the limitation directly. Do not treat the absence of a public document as proof that an internal policy, safeguard, system, or practice does not exist.
+
+Especially strong legal or technical conclusions should be independently reviewed by an appropriately qualified expert before publication.
+
 ## Confidence labels
 
 ### High
