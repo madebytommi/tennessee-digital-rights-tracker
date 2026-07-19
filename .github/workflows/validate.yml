@@ -1,6 +1,7 @@
 name: Validate tracker entries
 
 on:
+  workflow_dispatch:
   pull_request:
   push:
     branches:
