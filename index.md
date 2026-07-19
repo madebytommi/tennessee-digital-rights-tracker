@@ -7,7 +7,7 @@ title: Home
 
 Clear, source-linked explanations of Tennessee policies and technologies affecting privacy, civil liberties, healthcare data, LGBTQ people, and public accountability.
 
-> This project separates verified facts from interpretation and uncertainty. It does not provide legal advice.
+> This project separates verified facts from interpretation and uncertainty. It does not provide legal advice, cannot guarantee that agencies have disclosed every internal detail, and cannot independently verify nonpublic systems or security controls.
 
 ## Browse entries
 
