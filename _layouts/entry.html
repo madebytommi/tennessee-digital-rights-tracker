@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<article>
+  <header class="entry-header">
+    <p class="eyebrow">{{ page.level | default: "State" }} · {{ page.category }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="lede">{{ page.summary }}</p>
+
+    <dl class="entry-facts">
+      <div><dt>Status</dt><dd>{{ page.status }}</dd></div>
+      <div><dt>Event date</dt><dd>{{ page.event_date | default: page.date }}</dd></div>
+      <div><dt>Last reviewed</dt><dd>{{ page.last_reviewed }}</dd></div>
+      <div><dt>Confidence</dt><dd>{{ page.confidence }}</dd></div>
+    </dl>
+  </header>
+
+  {{ content }}
+
+  {% if page.tags %}
+  <footer class="entry-tags">
+    <strong>Tags:</strong> {{ page.tags | join: ", " }}
+  </footer>
+  {% endif %}
+</article>

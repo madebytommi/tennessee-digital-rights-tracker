@@ -1,0 +1,33 @@
+name: Report a correction
+description: Identify a factual, sourcing, or framing problem.
+title: "[Correction] "
+labels:
+  - correction
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include sensitive personal information. Link to public evidence.
+  - type: input
+    id: entry
+    attributes:
+      label: Entry URL or file
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is incorrect or misleading?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting source
+      description: Include the strongest available primary or official source.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_change
+    attributes:
+      label: Suggested correction

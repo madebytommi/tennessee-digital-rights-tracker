@@ -1,0 +1,38 @@
+name: Submit a source update
+description: Add an amendment, ruling, implementation document, contract, or archive link.
+title: "[Source update] "
+labels:
+  - source-update
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Related entry
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: New source URL
+    validations:
+      required: true
+  - type: dropdown
+    id: source_type
+    attributes:
+      label: Source type
+      options:
+        - Bill or amendment
+        - Enacted law
+        - Court opinion or filing
+        - Agency guidance
+        - Contract or procurement record
+        - Meeting record
+        - Official dataset
+        - Archive link
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: significance
+    attributes:
+      label: Why does this change or clarify the entry?

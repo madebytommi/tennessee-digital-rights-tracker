@@ -1,0 +1,26 @@
+title: Tennessee Digital Rights Tracker
+description: Source-first tracking of Tennessee laws, policies, surveillance systems, data practices, and automated government technology.
+url: "https://madebytommi.github.io"
+baseurl: "/tennessee-digital-rights-tracker"
+markdown: kramdown
+permalink: pretty
+
+collections:
+  entries:
+    output: true
+    permalink: /entries/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: entries
+    values:
+      layout: entry
+
+exclude:
+  - scripts
+  - schemas
+  - requirements-dev.txt
+  - README.md
+  - CONTRIBUTING.md
+  - SECURITY.md

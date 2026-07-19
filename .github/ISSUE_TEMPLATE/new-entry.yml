@@ -1,0 +1,46 @@
+name: Propose a tracker entry
+description: Suggest a Tennessee digital-rights development for review.
+title: "[Entry proposal] "
+labels:
+  - entry-proposal
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not submit personal, medical, immigration, protest, or other sensitive information.
+  - type: input
+    id: title
+    attributes:
+      label: Proposed title
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Primary category
+      options:
+        - LGBTQ and transgender policy
+        - Government surveillance
+        - Health-data privacy
+        - Online identity or age verification
+        - Government AI or automated systems
+    validations:
+      required: true
+  - type: input
+    id: primary_source
+    attributes:
+      label: Primary-source URL
+      description: Link to bill text, court opinion, policy, contract, meeting record, or official dataset.
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Separate verified facts from your interpretation.
+    validations:
+      required: true
+  - type: textarea
+    id: uncertainty
+    attributes:
+      label: What remains uncertain?

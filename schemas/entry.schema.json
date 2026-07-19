@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Tennessee Digital Rights Tracker Entry Metadata",
+  "type": "object",
+  "required": [
+    "title",
+    "date",
+    "event_date",
+    "last_reviewed",
+    "status",
+    "level",
+    "category",
+    "jurisdiction",
+    "confidence",
+    "summary",
+    "primary_source_url",
+    "primary_source_type",
+    "tags"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 8
+    },
+    "date": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "event_date": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "last_reviewed": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "status": {
+      "enum": [
+        "Proposed",
+        "Monitoring",
+        "Active",
+        "Blocked",
+        "Enjoined",
+        "Repealed",
+        "Expired",
+        "Resolved"
+      ]
+    },
+    "level": {
+      "enum": [
+        "Local",
+        "State",
+        "Federal",
+        "Multi-level"
+      ]
+    },
+    "category": {
+      "enum": [
+        "lgbtq-trans-policy",
+        "government-surveillance",
+        "health-data-privacy",
+        "online-identity-age-verification",
+        "government-ai-automation"
+      ]
+    },
+    "jurisdiction": {
+      "type": "string"
+    },
+    "confidence": {
+      "enum": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 30
+    },
+    "primary_source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "primary_source_type": {
+      "enum": [
+        "bill",
+        "law",
+        "court-opinion",
+        "executive-order",
+        "regulation",
+        "contract",
+        "procurement-record",
+        "meeting-record",
+        "dataset",
+        "policy",
+        "other"
+      ]
+    },
+    "source_archive_url": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "revision_history": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}
