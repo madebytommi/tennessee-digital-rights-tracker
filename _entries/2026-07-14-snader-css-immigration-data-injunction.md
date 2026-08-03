@@ -1,8 +1,8 @@
 ---
 title: "Tennessee court blocks Children’s Special Services identifying-data reports to immigration enforcement"
-date: 2026-08-01
+date: 2026-08-02
 event_date: 2026-07-14
-last_reviewed: 2026-08-01
+last_reviewed: 2026-08-02
 status: "Enjoined"
 level: "State"
 category: "health-data-privacy"
@@ -25,6 +25,8 @@ tags:
 revision_history:
   - date: 2026-08-01
     note: "Initial draft based on the agreed temporary injunction, Public Chapter 1106 legislative records, Tennessee Department of Health notices, official program descriptions, the state reporting portal, and public litigation materials."
+  - date: 2026-08-02
+    note: "Reconciled the enacted misdemeanor language against the inconsistent legislative summary, completed final source and framing review, and prepared the entry for pull-request review."
 ---
 
 ## Research and legal limitations
@@ -72,7 +74,7 @@ The reporting duty begins with an exception for disclosures prohibited by federa
 
 Other sections of the act address verification for applicants who are 18 or older, preservation of verification documentation, termination of recurring benefits after final verification, and state enforcement against local entities. How the age-18 language interacts with the broader wording of § 4-58-112 is one of the disputed legal questions.
 
-The adopted replacement amendment displayed by the General Assembly also contains a Class A misdemeanor provision concerning intentional failure to report. However, the General Assembly’s narrative bill summary says the House amendment removed that offense. Because those official materials conflict, the signed public chapter and current codified text should control any final description of the criminal provision. This entry does not rely on the summary alone.
+The adopted House replacement amendment, which the Senate formally concurred in before the bill became Public Chapter 1106, retains a criminal provision. Section 4-58-112(b)(1) makes it an offense for an employee or official to intentionally fail to make a required report about a person the employee or official knows is not lawfully present, and subsection (b)(2) classifies a violation as a Class A misdemeanor. The General Assembly’s narrative bill summary says the House amendment removed that offense, but that summary conflicts with the adopted amendment, the recorded concurrence, and the 2026 Index of Acts published by the University of Tennessee County Technical Assistance Service. This entry follows the enacted amendment rather than the narrative summary. The unusual cross-reference wording in subsection (b)(2) may require legal interpretation, but the presence of the misdemeanor language is not treated as uncertain.
 
 The act separately exempts the Tennessee Department of Children’s Services from providing information that would directly or indirectly identify a child or family receiving that department’s services. That exemption names the Department of Children’s Services, not the Department of Health or the CSS program.
 
@@ -148,6 +150,7 @@ Supporters of Public Chapter 1106 describe it more broadly as an eligibility-ver
 
 - Public Chapter 1106 was signed on May 22, 2026 and has effective dates of May 22 and July 1.
 - The adopted House replacement amendment directs covered entities to report certain individuals and identifying information to the Centralized Immigration Enforcement Division, subject to a federal-law limitation.
+- The adopted amendment retains an offense for intentional failure by an employee or official to make a required report and contains Class A misdemeanor language.
 - The act expands eligibility-verification duties to local governmental entities and local health departments.
 - The Department of Health applied the law to Children’s Special Services.
 - The department sent family and provider notices dated June 1.
@@ -178,7 +181,7 @@ Supporters of Public Chapter 1106 describe it more broadly as an eligibility-ver
 - Whether CSS assistance falls within the relevant state-law definition of a covered public benefit
 - Which federal benefits, health-program, funding, privacy, disability, or civil-rights rules limit reporting
 - Whether HIPAA applies to each relevant record, entity, transaction, or disclosure
-- The final controlling text of the misdemeanor provision, given the inconsistency in the General Assembly’s public materials
+- How the misdemeanor provision’s cross-reference wording should be interpreted and whether or how the provision will be enforced during the CSS injunction or in other programs
 - CIED report fields, retention periods, user roles, audit procedures, correction mechanisms, and downstream sharing
 - Whether the department completed all family and provider notices required by the injunction
 - How the department technically prevents reporting while continuing normal eligibility and payment functions
@@ -229,13 +232,13 @@ The injunction provides immediate protection for the affected CSS participants. 
 ## Lawful actions and resources
 
 - Read the July 14 Agreed Temporary Injunction and the June 1 family and provider notices rather than relying only on summaries.
-- Check the Tennessee Justice Center case page and the Department of Health’s CSS webpage for later orders or administrative decisions.
+- Check the Tennessee Justice Center litigation page and the Department of Health’s CSS webpage for later orders or administrative decisions.
 - Families affected by CSS should rely on current official notices and obtain advice from a qualified attorney or established legal-services organization for individual circumstances.
 - Request only non-patient-level public records, such as blank forms, data dictionaries, aggregate counts, workflow diagrams, retention policies, audit procedures, legal memoranda, and injunction-compliance instructions.
 - Do not request or publish names, addresses, immigration identifiers, diagnoses, provider-patient relationships, spreadsheets of affected patients, or individual benefit records.
 - Ask the Department of Health whether any reports were prepared or transmitted before June 24 and request aggregate remediation records rather than individual data.
 - Ask the Centralized Immigration Enforcement Division for its report-field list, retention schedule, access roles, audit policy, correction process, and downstream-sharing rules, allowing lawful redaction of credentials and security-sensitive details.
-- Review future General Assembly action for clarification of the age threshold, program coverage, federal-law exception, and disputed misdemeanor language.
+- Review future General Assembly action and court rulings for clarification of the age threshold, program coverage, federal-law exception, misdemeanor provision, and application to other public-benefit programs.
 - Consult a qualified Tennessee attorney for legal advice concerning Public Chapter 1106, immigration status, public-benefit eligibility, or disclosure of a particular person’s information.
 
 ## Sources
@@ -244,14 +247,16 @@ The injunction provides immediate protection for the affected CSS participants. 
 2. [Tennessee General Assembly, HB 1710 / SB 1915 bill history](https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1710&GA=114)
 3. [Tennessee General Assembly, adopted House Amendment 1, HA0929](https://capitol.tn.gov/Bills/114/Amend/HA0929.pdf)
 4. [Tennessee Secretary of State, Public Chapter 1106](https://publications.tnsosfiles.com/acts/114/pub/pc1106.pdf)
-5. [Tennessee Department of Health, CSS letter sent to families (June 1, 2026)](https://www.tnjustice.org/_files/ugd/07a490_30cd098636f44b1aa9fd8c80485b3c11.pdf)
-6. [Tennessee Department of Health, CSS letter sent to providers (June 1, 2026)](https://www.tnjustice.org/_files/ugd/07a490_b4fb9492a5884b19b23fd8a1778b049e.pdf)
-7. [Tennessee Centralized Immigration Enforcement Division, Public Chapter 1106 reporting information](https://comptroller.extglb.tn.gov/safety/cied.html)
-8. [Tennessee Department of Health, Community Health Access and Navigation and CSS program connections](https://www.tn.gov/health/chant.html)
-9. [Metropolitan Government of Nashville and Davidson County, Children’s Special Services Health Program](https://www.nashville.gov/departments/health/clinical-health-services/childrens-special-services)
-10. [Tennessee Justice Center, *Snader v. Tennessee Department of Health* case page and legal documents](https://www.tnjustice.org/snader-v-tdh)
-11. [Tennessee Lookout, “Judge issues restraining order in doctors’ challenge to TN plan to report disabled immigrant kids” (June 24, 2026)](https://tennesseelookout.com/2026/06/24/doctors-file-suit-against-tennessee-plan-to-report-sick-disabled-immigrant-kids-to-authorities-2/)
+5. [University of Tennessee County Technical Assistance Service, 2026 Index of Acts — Public Chapter 1106](https://www.ctas.tennessee.edu/2026-index-acts)
+6. [Tennessee Department of Health, CSS letter sent to families (June 1, 2026)](https://www.tnjustice.org/_files/ugd/07a490_30cd098636f44b1aa9fd8c80485b3c11.pdf)
+7. [Tennessee Department of Health, CSS letter sent to providers (June 1, 2026)](https://www.tnjustice.org/_files/ugd/07a490_b4fb9492a5884b19b23fd8a1778b049e.pdf)
+8. [Tennessee Centralized Immigration Enforcement Division, Public Chapter 1106 reporting information](https://comptroller.extglb.tn.gov/safety/cied.html)
+9. [Tennessee Department of Health, Community Health Access and Navigation](https://www.tn.gov/health/chant.html)
+10. [Metropolitan Government of Nashville and Davidson County, Children’s Special Services Health Program](https://www.nashville.gov/departments/health/clinical-health-services/childrens-special-services)
+11. [Tennessee Justice Center, litigation page for *Snader v. Tennessee Department of Health*](https://www.tnjustice.org/litigation)
+12. [Tennessee Lookout, “Judge issues restraining order in doctors’ challenge to TN plan to report disabled immigrant kids” (June 24, 2026)](https://tennesseelookout.com/2026/06/24/doctors-file-suit-against-tennessee-plan-to-report-sick-disabled-immigrant-kids-to-authorities-2/)
 
 ## Revision history
 
 - **2026-08-01:** Initial draft based on the agreed temporary injunction, enacted-law materials, Department of Health notices, official program descriptions, the CIED reporting page, and public litigation materials.
+- **2026-08-02:** Reconciled the misdemeanor language against the inconsistent General Assembly summary, confirmed that the latest public case update still reports the temporary injunction in effect with no trial scheduled, reviewed source links and framing, and prepared the entry for pull-request review.
