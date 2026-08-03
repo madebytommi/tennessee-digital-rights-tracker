@@ -1,6 +1,8 @@
 # Tennessee Digital Rights Tracker
 
-A source-first, privacy-conscious public-interest project documenting Tennessee laws, policies, court decisions, government contracts, and technology systems that affect civil liberties and digital rights.
+Clear, source-linked explanations of how Tennessee laws and government technologies affect privacy, identity, personal data, and civil rights.
+
+The project is written first for everyday Tennesseans, while maintaining sourcing and research standards useful to journalists, advocates, researchers, and public officials.
 
 **Live site:** https://madebytommi.github.io/tennessee-digital-rights-tracker/
 
@@ -8,23 +10,31 @@ A source-first, privacy-conscious public-interest project documenting Tennessee 
 
 Make complicated public records understandable without exaggeration.
 
+The tracker brings together Tennessee laws, policies, court decisions, government contracts, and technology systems; explains the available evidence in plain language; and clearly identifies what the public still does not know.
+
+## Focus areas
+
 The tracker focuses on five areas:
 
 1. LGBTQ and transgender rights
-2. Government surveillance
-3. Health-data privacy
+2. Government surveillance and tracking
+3. Health-data and personal-data privacy
 4. Online identity and age verification
 5. Government use of artificial intelligence and automated decision systems
 
-## Current MVP coverage
+An issue belongs in the tracker when it has a meaningful connection to technology, data, records, identity systems, digital access, surveillance, or automated government decision-making.
 
-The first three entries examine different parts of the same digital-rights problem:
+## Recurring questions
 
-- **Health-data privacy:** what Tennessee requires healthcare entities to report and which implementation safeguards remain unknown
-- **Government surveillance:** how White House license plate readers collect and share vehicle-location records
-- **Online identity:** how Tennessee’s age-verification law connects access to online speech with identity checks and data handling
+Across different subjects, the tracker asks:
 
-Together, they ask three consistent questions: **What data are collected? Who can access them? What rights, limits, or oversight mechanisms apply?**
+- What happened?
+- What data are collected, created, reported, or shared?
+- Who can access or use them?
+- Who may be affected?
+- What rights, safeguards, limits, or oversight mechanisms apply?
+- What is confirmed, disputed, or still unknown?
+- What lawful practical actions are available?
 
 ## Core principles
 
