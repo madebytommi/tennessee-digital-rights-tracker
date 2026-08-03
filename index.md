@@ -1,36 +1,55 @@
 ---
 layout: default
 title: Home
+summary: Clear, source-linked explanations of how Tennessee laws and government technologies affect privacy, identity, personal data, and civil rights.
 ---
 
-<p class="project-kicker">Source-first civic technology for Tennessee</p>
+<p class="project-kicker">Clear public-interest research for Tennessee</p>
 
 # Tennessee Digital Rights Tracker
 
-Clear, source-linked explanations of Tennessee policies and technologies affecting privacy, civil liberties, healthcare data, LGBTQ people, and public accountability.
+<p class="lede"><strong>Understand how Tennessee laws and government technology affect your privacy and civil rights.</strong></p>
+
+The Tennessee Digital Rights Tracker turns complicated laws, contracts, court decisions, and public records into clear explanations for everyday Tennesseans.
+
+Use the tracker to learn what the government is doing, what personal information may be collected or shared, who may be affected, what protections or oversight exist, what remains unknown, and what lawful actions are available.
+
+[**Browse the tracker**](#browse-entries) · [About the project]({{ '/about/' | relative_url }})
 
 <div class="notice">
-  <strong>How to read this tracker:</strong> verified facts, official positions, outside criticism, project analysis, and unresolved questions are kept separate. This project does not provide legal advice or claim access to nonpublic systems.
+  <strong>How this site works:</strong> Every entry keeps confirmed facts, official statements, outside criticism, project analysis, and unanswered questions separate. Sources are linked so readers can examine the evidence themselves. This project does not provide legal advice or claim access to nonpublic systems.
 </div>
 
-## What the MVP covers
+## What we track
 
 <div class="coverage-grid">
   <section class="coverage-card">
-    <h3>Health-data privacy</h3>
-    <p>What Tennessee requires healthcare entities to report, what privacy protections exist, and which implementation details remain unknown.</p>
+    <h3>Surveillance and tracking</h3>
+    <p>Police cameras, license-plate readers, facial recognition, data sharing, and other technologies used to monitor people or vehicles.</p>
   </section>
   <section class="coverage-card">
-    <h3>Government surveillance</h3>
-    <p>How local license plate readers collect and share location records, what state safeguards apply, and what oversight records are missing.</p>
+    <h3>Personal and healthcare data</h3>
+    <p>Laws and government systems that collect, report, store, or share sensitive personal and medical information.</p>
   </section>
   <section class="coverage-card">
-    <h3>Online identity</h3>
-    <p>How age-verification laws connect access to online speech with identity checks, data retention, security, and exclusion risks.</p>
+    <h3>Online identity and access</h3>
+    <p>Age verification, identity checks, online speech restrictions, and rules that may require personal information to access websites or services.</p>
+  </section>
+  <section class="coverage-card">
+    <h3>LGBTQ and transgender rights</h3>
+    <p>Policies involving identity records, healthcare systems, online access, privacy, and technology that may disproportionately affect LGBTQ people.</p>
+  </section>
+  <section class="coverage-card">
+    <h3>Government artificial intelligence</h3>
+    <p>Algorithms, automated decision systems, and artificial intelligence used by Tennessee state or local government agencies.</p>
   </section>
 </div>
 
-Together, these entries examine three connected questions: **what data are collected, who can access them, and what rights or safeguards apply.**
+## Why this matters
+
+Government technology can affect where people travel, how they access healthcare, what they can view online, and how their identity is recorded.
+
+These systems are often described through technical language, lengthy legislation, or scattered public records. This project brings the available evidence together, explains it plainly, and clearly identifies what the public still does not know.
 
 ## Browse entries
 
@@ -59,9 +78,15 @@ Together, these entries examine three connected questions: **what data are colle
 <p>No researched entries have been published yet.</p>
 {% endif %}
 
-## Coverage areas
+## What each entry includes
 
-The tracker may expand into LGBTQ and transgender policy, government surveillance, health-data privacy, online identity and age verification, and government AI or automated decision systems.
+Each researched issue provides a plain-language summary, links to primary sources, confirmed facts, unresolved questions, information about who may be affected, privacy or civil-rights concerns, a confidence level, a review date, and practical lawful next steps.
+
+## Independent, careful, and privacy-conscious
+
+This is a nonpartisan public-interest research project. It does not provide legal advice, collect dossiers about private individuals, or publish sensitive personal information.
+
+When the available evidence does not support a conclusion, the tracker says so.
 
 ## Submit information or corrections
 
