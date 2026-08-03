@@ -2,13 +2,44 @@
 layout: default
 title: About
 permalink: /about/
+summary: How the Tennessee Digital Rights Tracker explains government technology, personal-data practices, and civil-rights issues for everyday Tennesseans.
 ---
 
 # About the tracker
 
-The Tennessee Digital Rights Tracker exists to help ordinary people understand what a bill, policy, court ruling, contract, or government technology system actually does.
+The Tennessee Digital Rights Tracker helps everyday Tennesseans understand how state and local laws, policies, contracts, court decisions, and government technologies may affect their privacy, identity, personal information, and civil rights.
 
-It is not a campaign database, an intelligence-gathering operation, or a place to store stories about identifiable people.
+The project gathers publicly available evidence, explains it in plain language, separates confirmed facts from claims and analysis, and identifies important questions that public records have not yet answered.
+
+## Who this project is for
+
+The tracker is written first for Tennessee residents who want reliable information without needing legal, policy, or technical expertise.
+
+Journalists, advocates, researchers, and public officials may also use it as a source-linked starting point. The goal is research rigorous enough to support further work while remaining understandable to an ordinary reader.
+
+## What the tracker covers
+
+The project focuses on Tennessee developments involving:
+
+- LGBTQ and transgender rights
+- Government surveillance and tracking
+- Health-data and personal-data privacy
+- Online identity and age verification
+- Government artificial intelligence and automated decision systems
+
+An issue belongs in the tracker when it has a meaningful connection to technology, data, records, identity systems, digital access, surveillance, or automated government decision-making.
+
+## What readers can expect
+
+Each entry explains what happened, what the strongest available sources establish, who may be affected, why the issue matters, what remains uncertain, and what lawful practical actions may be available.
+
+Entries include source links, a confidence level, a last-reviewed date, and clear distinctions among confirmed evidence, official positions, outside criticism, project analysis, and prediction.
+
+## What this project is not
+
+It is not a campaign database, an intelligence-gathering operation, a legal-advice service, or a place to build records about identifiable private people.
+
+The tracker examines public systems, laws, contracts, agencies, and government decisions. It does not collect or publish sensitive personal stories, medical records, private communications, movement histories, home addresses, or doxxing material.
 
 ## Editorial approach
 
