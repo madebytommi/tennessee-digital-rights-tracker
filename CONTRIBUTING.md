@@ -6,8 +6,12 @@ Thank you for helping improve the tracker.
 
 - Search existing entries and issues
 - Find the strongest available primary source
+- For surveillance research, search the [Atlas of Surveillance](https://www.atlasofsurveillance.org/search), preserve relevant record links, and follow its citations to the underlying sources
+- Check whether the technology or policy is still current rather than relying only on an older discovery record
 - Remove personal and sensitive information
 - Separate what you know from what you suspect
+
+Atlas of Surveillance is an approved discovery source, not automatic proof of current deployment, configuration, policy, or data-sharing practices. Promising Atlas leads should be independently verified and opened as separate research issues before publication.
 
 ## Entry requirements
 
@@ -29,6 +33,7 @@ A publishable entry needs:
 ## Pull-request checklist
 
 - [ ] I used primary sources where available.
+- [ ] I treated discovery databases, including Atlas of Surveillance, as research leads unless independently verified.
 - [ ] I attributed interpretations.
 - [ ] I labeled uncertainty.
 - [ ] I avoided stating motive as fact.
