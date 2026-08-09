@@ -2,20 +2,20 @@
 
 ## Phase 0 — Foundation
 
-- [ ] Choose repository name and license
+- [x] Choose repository name and license
 - [ ] Enable two-factor authentication
-- [ ] Enable branch protection
-- [ ] Publish methodology, editorial, privacy, and security policies
-- [ ] Configure GitHub Pages
-- [ ] Add validation workflow
+- [x] Enable branch protection
+- [x] Publish methodology, editorial, privacy, and security policies
+- [x] Configure GitHub Pages
+- [x] Add validation workflow
 
 ## Phase 1 — Three-entry MVP
 
 Publish three entries:
 
-- [ ] Health-data privacy
-- [ ] Government surveillance
-- [ ] Online identity or age verification
+- [x] Health-data privacy
+- [x] Government surveillance
+- [x] Online identity or age verification
 
 Acceptance criteria:
 
@@ -28,11 +28,11 @@ Acceptance criteria:
 
 ## Phase 2 — Public contribution workflow
 
-- [ ] Correction issue form
-- [ ] New-entry proposal form
-- [ ] Source-update form
-- [ ] Pull-request review checklist
-- [ ] Revision history convention
+- [x] Correction issue form
+- [x] New-entry proposal form
+- [x] Source-update form
+- [x] Pull-request review checklist
+- [x] Revision history convention
 
 ## Phase 3 — Better navigation
 
