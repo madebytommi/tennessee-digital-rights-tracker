@@ -669,6 +669,8 @@ Only after the underlying research is reasonably stable should the public-facing
 
 The entry should be derived from the evidence record rather than written first and researched afterward.
 
+All public-facing Tracker prose must also follow `docs/editorial-policy.md`, including its rules for tone, motive attribution, predictions, headlines, and corrections.
+
 The entry should include, as appropriate:
 
 * concise title;
@@ -742,6 +744,8 @@ Confirm:
 Check that important claims are supported by the cited source rather than merely related to it.
 
 Look specifically for accidental overstatement.
+
+Especially strong legal or technical conclusions should be independently reviewed by an appropriately qualified expert before publication when practical.
 
 ---
 
