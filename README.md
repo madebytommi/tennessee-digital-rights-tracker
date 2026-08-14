@@ -112,7 +112,7 @@ Use [`templates/ENTRY_TEMPLATE.md`](templates/ENTRY_TEMPLATE.md) when preparing 
 
 ```bash
 python -m pip install -r requirements-dev.txt
-python scripts/validate_entries.py
+python3 scripts/validate_entries.py
 ```
 
 The same validator runs in GitHub Actions for pull requests and pushes to `main`.

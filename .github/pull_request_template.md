@@ -18,4 +18,4 @@ Explain what this changes and why.
 
 ## Validation
 
-- [ ] `python scripts/validate_entries.py` passes
+- [ ] `python3 scripts/validate_entries.py` passes
