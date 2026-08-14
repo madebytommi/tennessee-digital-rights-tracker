@@ -27,6 +27,8 @@ Read `README.md` and `CONTRIBUTING.md`.
 
 Read `docs/research-protocol.md` and `docs/methodology.md`. The research protocol is the operational authority for issue research.
 
+When a substantive investigation needs a persistent working record, use `templates/RESEARCH_NOTES_TEMPLATE.md` as the standard structure. A full research note is not required for a trivial source check or tiny factual correction where it would add unnecessary overhead.
+
 For surveillance, ALPR, or police-technology research, also follow the Atlas of Surveillance discovery-source rules in `docs/methodology.md`.
 
 ### Creating a new published Tracker entry
