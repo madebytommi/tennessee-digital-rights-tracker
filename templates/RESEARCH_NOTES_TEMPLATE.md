@@ -123,6 +123,8 @@ Limit quotations to what is necessary, transcribe them accurately, and preserve 
 
 Mark the stages supported by evidence and identify the most defensible present state.
 
+These are research-stage descriptors and are not all valid Tracker front-matter status values. For publication, use the status values defined in `schemas/entry.schema.json`.
+
 - [ ] Proposed
 - [ ] Approved
 - [ ] Contracted
