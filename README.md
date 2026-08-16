@@ -97,6 +97,7 @@ Use [`templates/ENTRY_TEMPLATE.md`](templates/ENTRY_TEMPLATE.md) when preparing 
 ├── _layouts/                 # GitHub Pages/Jekyll page layouts
 ├── assets/                   # CSS and other static assets
 ├── docs/                     # Methodology, taxonomy, policies, and roadmap
+├── research/                 # Working research notes; excluded from the public site
 ├── templates/                # Authoring templates excluded from the live site
 ├── schemas/                  # Entry metadata schema
 ├── scripts/                  # Validation tools

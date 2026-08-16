@@ -19,6 +19,7 @@ defaults:
       layout: entry
 
 exclude:
+  - research
   - scripts
   - schemas
   - templates
