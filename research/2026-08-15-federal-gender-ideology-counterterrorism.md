@@ -13,7 +13,7 @@ Research notes are not automatically publication-ready. Files under `_entries/` 
 | Date opened | 2026-08-15 |
 | Last updated | 2026-08-15 |
 | Researcher / agent | Antigravity AI Assistant |
-| Related GitHub issue | N/A (Internal Investigation) |
+| Related GitHub issue | N/A (Investigation) |
 | Related Tracker entry, if updating | None (Supporting research record; Tennessee counterterrorism nexus unresolved) |
 | Jurisdiction | Federal / United States (with state administrative touchpoints in Tennessee) |
 | Agency / government body | Executive Office of the President, Department of Justice (DOJ / FBI), Department of Health and Human Services (HHS), Department of Defense (DOD), Department of Education (ED) |
@@ -44,16 +44,16 @@ Do not begin from the assumption that the original claim is true.
 
 | Field | Record |
 |---|---|
-| URL | https://www.whitehouse.gov / National Security Council Announcements |
-| Title | U.S. Counterterrorism Strategy (May 2026) and National Security Presidential Memorandum 7 (September 2025) |
-| Publisher / source | The White House / Executive Office of the President |
-| Author, if known | Executive Office of the President / National Security Council |
-| Publication date | 2025-09-25 / 2026-05-06 |
+| URL | Exact source URL not preserved in research log |
+| Title | Social media claim regarding The Nation reporting on NSPM-7 and federal domestic-terrorism policy |
+| Publisher / source | The Nation / social-media discovery lead |
+| Author, if known | Unknown |
+| Publication date | Unknown |
 | Retrieval date | 2026-08-15 |
-| Archived URL | Not applicable |
+| Archived URL | Not archived |
 | Relevant claim | Federal counterterrorism strategy explicitly categorizes certain violent political groups as "radically pro-transgender" and directs federal intelligence and law enforcement to "map them at home" and "identify their membership." |
 | Why the lead matters | Raises critical questions regarding whether federal counterterrorism tools, intelligence fusion, and domestic surveillance frameworks are being deployed against political advocacy or if the authority is confined to violent criminal actors. |
-| Reliability notes | High reliability as official primary presidential and agency source texts, but requires rigorous separation between literal text, official statements, civil liberties interpretations, and state-level implementation. |
+| Reliability notes | Not treated as evidence; important claims independently checked against primary federal records. |
 
 Treat the original lead as a discovery source unless it is independently sufficient under `docs/methodology.md`.
 
@@ -81,7 +81,7 @@ Break broad claims into smaller, independently testable propositions.
 | CLM-10 | The May 2026 U.S. Counterterrorism Strategy identifies "Violent Left-Wing Extremists, including Anarchists and Anti-Fascists" as a threat category. | Verified | The White House, *2026 U.S. Counterterrorism Strategy* (May 6, 2026) | Primary (National Strategy Document) | One of three primary categories alongside narcoterrorists/gangs and legacy Islamist terrorists. |
 | CLM-11 | The May 2026 strategy explicitly uses the phrase "radically pro-transgender" when describing the ideology of certain violent secular political groups prioritized by the strategy. | Verified | The White House, *2026 U.S. Counterterrorism Strategy* (May 6, 2026), p. 7 | Primary (National Strategy Document) | Text explicitly references "violent secular political groups whose ideology is anti-American, radically pro-transgender, and anarchist." |
 | CLM-12 | The strategy says the government intends to "map them at home" and "identify their membership." | Verified | The White House, *2026 U.S. Counterterrorism Strategy* (May 6, 2026), p. 7 | Primary (National Strategy Document) | Direct quote: "We will use all the tools constitutionally available to us to map them at home, identify their membership... and use law enforcement tools to cripple them operationally..." |
-| CLM-13 | The reviewed policy documents do not expressly classify transgender identity, peaceful transgender advocacy, peaceful protest, lawful LGBTQ membership, or ordinary support for transgender rights as domestic terrorism. The May 2026 Counterterrorism Strategy expressly refers to violent secular political groups. Federal law at 18 U.S.C. § 2331(5) defines domestic terrorism using acts dangerous to human life that violate criminal law and meet specified intent and geographic requirements. | Verified | 18 U.S.C. § 2331(5); NSPM-7 (Sept. 25, 2025); 2026 CT Strategy (May 2026) | Primary (Statutory Code / Executive Policy) | Strategy and directives explicitly predicate counterterrorism operations on "violent secular political groups" and criminal acts dangerous to human life under 18 U.S.C. § 2331(5). |
+| CLM-13 | The reviewed policy documents do not expressly classify transgender identity, peaceful transgender advocacy, peaceful protest, lawful LGBTQ membership, or ordinary support for transgender rights as domestic terrorism. The May 2026 Counterterrorism Strategy expressly refers to violent secular political groups. Federal law at 18 U.S.C. § 2331(5) defines domestic terrorism using acts dangerous to human life that violate criminal law and meet specified intent and geographic requirements. | Verified | 18 U.S.C. § 2331(5); NSPM-7 (Sept. 25, 2025); 2026 CT Strategy (May 2026) | Primary (Statutory Code / Executive Policy) | No reviewed source expressly classifies transgender identity or peaceful advocacy as domestic terrorism. The statutory definition and the May 2026 Strategy’s scope are described separately in the claim. |
 | CLM-14 | A Tennessee-specific counterterrorism implementation nexus has not yet been established unless independently verified during this work. | Verified (Negative Finding) | Public records review of `tn.gov`, TBI, Tennessee Fusion Center, TDOSHS, and FBI Nashville (August 2026) | Official Source Review / Negative Record | No public state or local law-enforcement records located documenting Tennessee-specific adoption of NSPM-7 or the May 2026 Strategy's gender-related counterterrorism provisions. |
 
 Use: **Unverified**, **Verified**, **Partially verified**, **Contradicted**, **Unresolved**, or **Unsupported**.
@@ -92,7 +92,7 @@ Check sources relevant to the question rather than treating this as a mandatory 
 
 - [x] Government websites (Whitehouse.gov, Federal Register, HHS.gov, FBI.gov, DOJ.gov)
 - [x] Legislative records (Federal Register notices, Congressional Budget Justifications)
-- [x] Court records and dockets (U.S. District Court filings regarding PREP injunctions)
+- [x] Court records and dockets (U.S. District Court filings)
 - [x] Agency pages and official guidance (HHS OCR, Administration for Children and Families)
 - [ ] Meeting agendas, minutes, and packets (Local Tennessee public bodies)
 - [x] Procurement records and contracts (Federal grant distributions)
@@ -131,16 +131,16 @@ Record meaningful searches and important searches that produced no relevant evid
 
 | Source ID | Title / issuer | Type | Document date | URL | Retrieved | Archive URL | Local filename | Hash | Pages / sections | Supports |
 |---|---|---|---|---|---|---|---|---|---|---|
-| SRC-01 | Executive Order 14168: Defending Women From Gender Ideology Extremism and Restoring Biological Truth to the Federal Government / Executive Office of the President | Executive Order | 2025-01-20 | https://www.federalregister.gov/documents/2025/01/30/2025-02090/defending-women-from-gender-ideology-extremism-and-restoring-biological-truth-to-the-federal | 2026-08-15 | Not calculated | Not preserved locally | Not calculated | 90 FR 8615–8618; Sec. 1, 2(f), 3(e), 3(g) | CLM-01 |
-| SRC-02 | Executive Order 14183: Prioritizing Military Excellence and Readiness / Executive Office of the President | Executive Order | 2025-01-27 | https://www.federalregister.gov/documents/2025/02/03/2025-02264/prioritizing-military-excellence-and-readiness | 2026-08-15 | Not calculated | Not preserved locally | Not calculated | 90 FR 8757–8758; Sec. 1, Sec. 3 | CLM-02 |
-| SRC-03 | Executive Order 14190: Ending Radical Indoctrination in K-12 Schooling / Executive Office of the President | Executive Order | 2025-01-29 | https://www.federalregister.gov/documents/2025/02/03/2025-02302/ending-radical-indoctrination-in-k-12-schooling | 2026-08-15 | Not calculated | Not preserved locally | Not calculated | 90 FR 8853–8856; Sec. 2(a), Sec. 3 | CLM-03 |
-| SRC-04 | Guidance Expanding on Sex-Based Definitions Pursuant to Executive Order 14168 / Department of Health and Human Services | Agency Guidance | 2025-02-19 | https://www.hhs.gov/ | 2026-08-15 | Not calculated | Not preserved locally | Not calculated | Entire guidance; OCR rescissions Feb. 20, 2025 | CLM-04 |
-| SRC-05 | Notice of Grant Award Termination to State of California (PREP Grant) / HHS Administration for Children and Families (ACF) | Administrative Notice | 2025-08-21 | https://www.acf.hhs.gov/ | 2026-08-15 | Not calculated | Not preserved locally | Not calculated | Award termination under SSA § 513 | CLM-05 |
-| SRC-06 | 60-Day Notice of Compliance to 46 States and Territories Regarding PREP Materials / HHS Administration for Children and Families (ACF) | Administrative Notice | 2025-08-26 | https://www.acf.hhs.gov/ | 2026-08-15 | Not calculated | Not preserved locally | Not calculated | 60-day compliance demand naming Tennessee | CLM-06 |
-| SRC-07 | National Security Presidential Memorandum 7: Countering Domestic Terrorism and Organized Political Violence / Executive Office of the President | Presidential Directive | 2025-09-25 | https://www.whitehouse.gov/ | 2026-08-15 | Not calculated | Not preserved locally | Not calculated | Sec. 1 (Common Threads), Sec. 3 (JTTF directive) | CLM-07, CLM-08 |
-| SRC-08 | 2026 United States Counterterrorism Strategy / Executive Office of the President & National Security Council | National Strategy Document | 2026-05-06 | https://www.whitehouse.gov/ | 2026-08-15 | Not calculated | Not preserved locally | Not calculated | pp. 6–8 (Violent Left-Wing Extremists section) | CLM-10, CLM-11, CLM-12, CLM-13 |
-| SRC-09 | FBI Fiscal Year 2027 Congressional Budget Justification / Federal Bureau of Investigation | Congressional Budget Document | 2026-03-01 | https://www.justice.gov/jmd/ | 2026-08-15 | Not calculated | Not preserved locally | Not calculated | Counterterrorism Program section (NSPM-7 JMC) | CLM-09 |
-| SRC-10 | Definition of Domestic Terrorism, 18 U.S.C. § 2331(5) / United States Code | Federal Statute | Current Code | https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section2331 | 2026-08-15 | Not calculated | Not preserved locally | Not calculated | 18 U.S.C. § 2331(5) | CLM-13 |
+| SRC-01 | Executive Order 14168: Defending Women From Gender Ideology Extremism and Restoring Biological Truth to the Federal Government / Executive Office of the President | Executive Order | 2025-01-20 | https://www.federalregister.gov/documents/2025/01/30/2025-02090/defending-women-from-gender-ideology-extremism-and-restoring-biological-truth-to-the-federal | 2026-08-15 | Not archived | Not preserved locally | Not calculated | 90 FR 8615–8618; Sec. 1, 2(f), 3(e), 3(g) | CLM-01 |
+| SRC-02 | Executive Order 14183: Prioritizing Military Excellence and Readiness / Executive Office of the President | Executive Order | 2025-01-27 | https://www.federalregister.gov/documents/2025/02/03/2025-02264/prioritizing-military-excellence-and-readiness | 2026-08-15 | Not archived | Not preserved locally | Not calculated | 90 FR 8757–8758; Sec. 1, Sec. 3 | CLM-02 |
+| SRC-03 | Executive Order 14190: Ending Radical Indoctrination in K-12 Schooling / Executive Office of the President | Executive Order | 2025-01-29 | https://www.federalregister.gov/documents/2025/02/03/2025-02302/ending-radical-indoctrination-in-k-12-schooling | 2026-08-15 | Not archived | Not preserved locally | Not calculated | 90 FR 8853–8856; Sec. 2(a), Sec. 3 | CLM-03 |
+| SRC-04 | Guidance Expanding on Sex-Based Definitions Pursuant to Executive Order 14168 / Department of Health and Human Services | Agency Guidance | 2025-02-19 | Exact source URL not preserved in research log | 2026-08-15 | Not archived | Not preserved locally | Not calculated | Entire guidance; OCR rescissions Feb. 20, 2025 | CLM-04 |
+| SRC-05 | Notice of Grant Award Termination to State of California (PREP Grant) / HHS Administration for Children and Families (ACF) | Administrative Notice | 2025-08-21 | Exact source URL not preserved in research log | 2026-08-15 | Not archived | Not preserved locally | Not calculated | Award termination under SSA § 513 | CLM-05 |
+| SRC-06 | 60-Day Notice of Compliance to 46 States and Territories Regarding PREP Materials / HHS Administration for Children and Families (ACF) | Administrative Notice | 2025-08-26 | Exact source URL not preserved in research log | 2026-08-15 | Not archived | Not preserved locally | Not calculated | 60-day compliance demand naming Tennessee | CLM-06 |
+| SRC-07 | National Security Presidential Memorandum 7: Countering Domestic Terrorism and Organized Political Violence / Executive Office of the President | Presidential Directive | 2025-09-25 | Exact source URL not preserved in research log | 2026-08-15 | Not archived | Not preserved locally | Not calculated | Sec. 1 (Common Threads), Sec. 3 (JTTF directive) | CLM-07, CLM-08 |
+| SRC-08 | 2026 United States Counterterrorism Strategy / Executive Office of the President & National Security Council | National Strategy Document | 2026-05-06 | Exact source URL not preserved in research log | 2026-08-15 | Not archived | Not preserved locally | Not calculated | pp. 6–8 (Violent Left-Wing Extremists section) | CLM-10, CLM-11, CLM-12, CLM-13 |
+| SRC-09 | FBI Fiscal Year 2027 Congressional Budget Justification / Federal Bureau of Investigation | Congressional Budget Document | 2026-03-01 | Exact source URL not preserved in research log | 2026-08-15 | Not archived | Not preserved locally | Not calculated | Counterterrorism Program section (NSPM-7 JMC) | CLM-09 |
+| SRC-10 | Definition of Domestic Terrorism, 18 U.S.C. § 2331(5) / United States Code | Federal Statute | Current Code | https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section2331 | 2026-08-15 | Not archived | Not preserved locally | Not calculated | 18 U.S.C. § 2331(5) | CLM-13 |
 
 | Source ID | Necessary quotation or factual proposition | Transcription and context notes |
 |---|---|---|
@@ -177,7 +177,7 @@ Mark the stages supported by evidence and identify the most defensible present s
 
 | Field | Finding |
 |---|---|
-| Best current-status evidence | White House *2026 U.S. Counterterrorism Strategy* (May 6, 2026); FBI FY 2027 Congressional Budget Justification (March 2026); HHS PREP administrative actions (August 2025–October 2025). |
+| Best current-status evidence | White House *2026 U.S. Counterterrorism Strategy* (May 6, 2026); FBI FY 2027 Congressional Budget Justification (March 2026); HHS PREP administrative actions (August 2025). |
 | Evidence date | 2026-05-06 / 2026-08-15 |
 | Most defensible present state | Policy documents have been issued and the FBI notes the Joint Mission Center is operational. State-level law enforcement implementation in Tennessee is undocumented in public records. |
 | Remaining uncertainty | The extent to which the FBI NSPM-7 Joint Mission Center or federal JTTFs in Tennessee (Nashville, Memphis, Knoxville) have received specific operational taskings regarding gender-related political groups; whether Tennessee state agencies (TBI, Tennessee Fusion Center) are sharing data under this framework. |
@@ -191,19 +191,19 @@ Complete only the fields relevant to the investigation.
 | Vendor | Not applicable (Government interagency policy and operations) | N/A |
 | Product | NSPM-7 Joint Mission Center (JMC); FBI Joint Terrorism Task Forces (JTTF) network | SRC-07, SRC-09 |
 | Device or system count | 10 federal agencies participating in the FBI NSPM-7 Joint Mission Center | SRC-09 |
-| Locations | FBI Headquarters / National Capital Region (JMC); 56 FBI Field Offices / JTTF locations nationwide (including Nashville, Memphis, Knoxville) | SRC-08, SRC-09 |
+| Locations | Unknown / not established by sources reviewed | Uncertain |
 | Cost | FY 2027 budget request requested dedicated counterterrorism enhancements (part of broader CT/domestic violence allocations) | SRC-09 |
-| Funding source | Federal appropriations (DOJ, FBI, Treasury, HHS) | SRC-06, SRC-09 |
+| Funding source | Unknown / not established by sources reviewed | Uncertain |
 | Contract term | Not applicable | N/A |
 | Renewal provisions | Not applicable | N/A |
 | Data collected | Unknown / not established by sources reviewed | Uncertain |
 | Retention | Unknown / not established by sources reviewed | Uncertain |
-| Access controls | Interagency clearance controls across 10 participating departments | SRC-09 |
-| Authorized users | FBI Special Agents, JTTF Task Force Officers (TFOs), intelligence analysts from participating agencies | SRC-09 |
+| Access controls | Unknown / not established by sources reviewed | Uncertain |
+| Authorized users | Unknown / not established by sources reviewed | Uncertain |
 | Auditing | Unknown / not established by sources reviewed | Uncertain |
-| Alerts / watchlists | Unknown / not established by sources reviewed | Uncertain |
-| Data sharing | Interagency sharing among JMC partner agencies and federal-state task forces (JTTFs) | SRC-07, SRC-09 |
-| Network participation | JTTFs integrate federal, state, and local law enforcement officers | SRC-07, SRC-09 |
+| Alerts / systems | Unknown / not established by sources reviewed | Uncertain |
+| Data sharing | Unknown / not established by sources reviewed | Uncertain |
+| Network participation | Unknown / not established by sources reviewed | Uncertain |
 | Third-party access | Unknown / not established by sources reviewed | Uncertain |
 | Database integrations | Unknown / not established by sources reviewed | Uncertain |
 | Written policies | EO 14168, EO 14183, EO 14190, NSPM-7, 2026 U.S. CT Strategy | SRC-01, SRC-02, SRC-03, SRC-07, SRC-08 |
@@ -241,8 +241,7 @@ Unresolved contradictions must remain visible rather than being silently discard
 
 | Issue | Source A | Source B | Possible explanation | Resolution or current treatment |
 |---|---|---|---|---|
-| Target Scope: Violent groups vs. broader ideology | May 2026 CT Strategy text (SRC-08) explicitly limits its priority targeting to "violent secular political groups" and actions to prevent them from "maim[ing] or kill[ing] the innocent." | Civil liberties commentary and media reports assert that the strategy effectively designates transgender advocacy or people as "terrorists." | Strategy uses ideological descriptors to qualify violent groups, creating legitimate civil liberties ambiguity regarding where the boundary between ideology and violence is drawn in practice. | Maintain strict distinction: Document that the primary text targets *violent* groups while acknowledging documented civil liberties concerns regarding the risks of ideological labeling. |
-| Domestic Terrorism Offense vs. Framework | Public discourse frequently refers to "designating domestic terrorist organizations." | Federal statutory structure (18 U.S.C. § 2331(5), SRC-10) contains no standalone criminal offense or formal domestic organization designation mechanism equivalent to INA § 219 (8 U.S.C. § 1189). | Domestic counterterrorism operations rely on traditional criminal offenses (arson, firearms, explosives, conspiracy) rather than a standalone domestic terrorism charge. | Preserve the legal reality: NSPM-7 and the CT Strategy direct investigative focus and network mapping, but cannot create a non-statutory federal criminal offense. |
+| Target Scope: Violent groups vs. broader ideology | May 2026 CT Strategy text (SRC-08) explicitly limits its priority targeting to "violent secular political groups". | The same strategy uses the ideological descriptor "radically pro-transgender" for these groups (SRC-08). | The strategy uses an ideological descriptor to qualify the targeted violent groups. | Document that the primary text expressly limits its scope to *violent* groups, while noting its use of ideological descriptors. |
 
 ## Important Unknowns
 
@@ -261,7 +260,7 @@ Record meaningful searches where expected evidence was not located.
 |---|---|---|---|---|
 | State policy adopting NSPM-7 | Searched `tn.gov`, TDOSHS, and TBI public repositories for "NSPM-7" and "National Security Presidential Memorandum 7". | 2026-08-15 | No public record was located in the sources searched establishing formal Tennessee state-level adoption, executive order, or administrative rule referencing NSPM-7. | Monitor Tennessee General Assembly committee hearings and executive reports. |
 | Tennessee Fusion Center intelligence bulletins on gender extremism | Searched Tennessee Fusion Center public releases, annual reports, and homeland security bulletins. | 2026-08-15 | No public intelligence bulletin or advisory was located from the Tennessee Fusion Center referencing "gender ideology extremism" or "radically pro-transgender" groups. | Check future public records releases or legislative oversight inquiries. |
-| Direct state law-enforcement mapping operations | Searched Tennessee local law enforcement and state grant documents for counterterrorism grants tied to NSPM-7 gender provisions. | 2026-08-15 | No public grant record or local law-enforcement contract was located establishing Tennessee participation in domestic counterterrorism mapping under this specific ideological designation. | Re-evaluate if federal grant disclosures or litigation discovery reveal state task force activity. |
+| Direct state law-enforcement mapping operations | Searched Tennessee local law enforcement and state grant documents for counterterrorism grants tied to NSPM-7 gender provisions. | 2026-08-15 | No public grant record or local law-enforcement contract was located establishing Tennessee participation in domestic counterterrorism mapping under this specific ideological descriptor. | Re-evaluate if federal grant disclosures or litigation discovery reveal state task force activity. |
 
 Failure to locate evidence is not proof that the thing does not exist. Describe the search and its limits rather than making an unsupported categorical claim.
 
@@ -275,7 +274,7 @@ Assess relevant implications, including privacy, surveillance, location tracking
 | Domestic Intelligence Mapping and Privacy | The strategy expressly calls for domestic network and membership mapping. Depending on the investigative tools used, such network analysis could create privacy and associational risks for people connected to investigated organizations. The reviewed public sources do not establish the exact data sources or investigative thresholds used for that mapping. | Supported implication | SRC-08 (p. 7), SRC-09 |
 | State Administrative and Health Data Impact | HHS issued formal 60-day compliance demands to Tennessee regarding PREP funding and curriculum content under the threat of funding termination. Actual Tennessee response remains unknown. | Demonstrated effect | SRC-05, SRC-06 |
 | Financial and Organizational Surveillance | Directives instructing Treasury, IRS, and FBI to scrutinize funding streams, nonprofit tax status, and financial transfers expand financial intelligence tracking into political advocacy ecosystems. | Supported implication | SRC-07, SRC-09 |
-| Unsubstantiated Risk: Categorical Designation of Transgender Identity as Terrorism | Claims that transgender individuals or all LGBTQ organizations are categorized by federal law as domestic terrorists are unsupported by statutory text (18 U.S.C. § 2331(5)) and primary policy documents. | Plausible unconfirmed risk / Unsupported claim | SRC-08, SRC-10 |
+| Unsubstantiated Risk: Categorical Classification of Transgender Identity as Terrorism | Claims that transgender individuals or all LGBTQ organizations are categorized by federal law as domestic terrorists are unsupported by statutory text (18 U.S.C. § 2331(5)) and primary policy documents. | Plausible unconfirmed risk / Unsupported claim | SRC-08, SRC-10 |
 
 Keep demonstrated effects, supported implications, and plausible but unconfirmed risks distinct.
 
@@ -330,7 +329,7 @@ A failed verification is a legitimate research result.
 - [x] **Is vendor capability being mistaken for local configuration?** Not applicable.
 - [x] **Is absence of evidence being treated as evidence of absence?** No. Negative findings are explicitly framed as limitations of public records searched.
 - [x] **Are supposedly independent sources repeating one original source?** No. Primary executive orders, strategy documents, budget justifications, and administrative letters were each inspected independently.
-- [x] **Is there another reasonable interpretation?** Yes: Proponents argue the May 2026 Strategy is focused strictly on neutralizing organized violent political groups that commit dangerous criminal acts, rather than targeting peaceful political movements. This perspective is documented in the legal authority section.
+- [x] **Is there another reasonable interpretation?** Yes: Another reasonable reading of the primary text is that the cited May 2026 passage expressly limits the described counterterrorism priority to violent secular political groups.
 
 ## Research Handoff
 
@@ -341,6 +340,6 @@ A failed verification is a legitimate research result.
 | Weakest claim | State-level Tennessee counterterrorism implementation (currently supported only by negative findings). |
 | Unresolved questions | Whether Tennessee law enforcement agencies or JTTF task force officers are actively executing intelligence mapping under this strategy, and what specific investigative thresholds are applied by the FBI Joint Mission Center. |
 | Contradictory evidence | Primary text specifies *violent* groups, while secondary civil liberties analyses warn of expansive application to nonviolent advocacy; preserved in the Claim Matrix and Contradiction section. |
-| Inaccessible sources | Internal FBI JMC standard operating procedures, JTTF threat assessment memos, and classified/nonpublic intelligence directives. |
+| Inaccessible sources | FBI JMC standard operating procedures, JTTF threat assessment memos, and classified/nonpublic intelligence directives. |
 | Recommended next searches | Monitor Tennessee Fusion Center public disclosures, Tennessee General Assembly oversight hearings on homeland security grants, federal court litigation challenging NSPM-7 or the 2026 CT Strategy, and future DOJ Inspector General reports. |
 | Should entry drafting begin? | No. Keep as a persistent research note in `research/` until a verified, active Tennessee state-level counterterrorism implementation nexus is established. |
