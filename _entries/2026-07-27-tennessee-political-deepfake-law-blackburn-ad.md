@@ -22,11 +22,14 @@ tags:
   - candidate-likeness
   - first-amendment
   - platform-accountability
+  - civic-information
 revision_history:
   - date: 2026-07-30
     note: "Initial research draft prepared from Tennessee legislation, the surviving AdImpact record, the July 2026 demand-letter reporting, and contemporaneous news coverage."
   - date: 2026-07-31
     note: "Revised after a fresh search for the original advertisement, advertiser and broadcaster responses, litigation, enforcement, and agency guidance; confirmed repository metadata and validation requirements."
+  - date: 2026-08-19
+    note: "Added civic-information secondary tag following adoption of the candidate digital-civic-information research taxonomy; primary category remains government-ai-automation."
 ---
 
 ## Research and legal limitations
@@ -57,7 +60,6 @@ In late July 2026, a television advertisement titled **“Queen Pharma Mama”**
 On July 27, an attorney representing Blackburn sent a cease-and-desist and evidence-preservation letter to American Exceptionalism Institute Chairman Wayne Ducote and consultant Joel Riter. Tennessee Lookout reported that the letter denied the advertisement’s allegations, demanded that distribution stop, sought confirmation within 48 hours, requested preservation of evidence, and asked whether artificial intelligence, synthetic media, deepfake technology, digital manipulation, or similar tools had been used.
 
 Axios reported, based on information from Blackburn’s campaign, that Comcast and Viamedia removed the advertisement. This review did not locate an independent statement from either company explaining whether a removal occurred, which version was affected, or whether the decision resulted from legal concerns, advertiser action, substantiation rules, scheduling, or another reason.
-
 The AdImpact viewer page previously linked in reporting now identifies the advertisement as deleted and no longer available for viewing. A public Reddit discussion contains a comment from a user who said they recorded the advertisement from WKRN during *Wheel of Fortune* and attached a video. The project could locate that recovery lead but could not retrieve or authenticate the attached media during this review.
 
 A demand letter is not a lawsuit, criminal charge, agency complaint, or official finding. A fresh search through July 31 did not locate a public advertiser response, civil complaint, injunction request, criminal charge, agency decision, or court order resolving whether the law applied or was violated.
@@ -118,7 +120,6 @@ Those assertions remain allegations made on Blackburn’s behalf. This entry doe
 Tennessee Lookout reported that it could not reach American Exceptionalism Institute’s officers for comment. A fresh search did not locate a later public response from the organization, Ducote, Riter, a production company, or identified legal counsel.
 
 Axios reported that Comcast and Viamedia removed the advertisement according to Blackburn’s campaign. No direct company statement explaining the reported action was located.
-
 ## What advocates and critics say
 
 This review did not locate a Tennessee civil-liberties organization’s published analysis applying Public Chapter 625 to this specific advertisement.
@@ -178,7 +179,6 @@ This law and dispute may affect:
 The dispute does not establish that every use of AI in political communication is unlawful. Coverage depends on the enacted definitions, the communication’s content and context, and the evidence available.
 
 ## Privacy and civil-liberties significance
-
 Synthetic media can make a real person appear to speak or act in ways that never occurred. In an election context, that can affect identity, reputation, voter understanding, and confidence in authentic recordings.
 
 Disclosure rules may improve transparency while allowing political speech to continue. At the same time, vague or overbroad application could burden satire, illustration, parody, commentary, or ordinary editing. Effective accountability therefore depends on precise definitions, preservation of the original media, visible and accessible labels, clear responsibility rules, and transparent enforcement.
