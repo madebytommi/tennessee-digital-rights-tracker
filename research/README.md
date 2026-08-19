@@ -10,15 +10,13 @@ This directory contains persistent working evidence records, supporting research
 - **Evidence standard:** Primary sources must be opened and independently verified. AI-generated text, search-engine summaries, and unverified secondary commentary are not evidence.
 - **Publication threshold:** A research note should be converted to an `_entries/` item using [`templates/ENTRY_TEMPLATE.md`](../templates/ENTRY_TEMPLATE.md) only after satisfying the repository's publication standards and establishing a verified, current state-level nexus.
 
-## Candidate civic-information research
+## Civic-information research
 
-The Tracker is incubating a candidate research category, `digital-civic-information`, for technology and data systems that materially shape Tennessee's civic information environment. See [`docs/taxonomy.md`](../docs/taxonomy.md) for the full scope and exclusions.
+`digital-civic-information` is a validated primary Tracker category for technology, data, and information systems that materially shape Tennessee's civic information environment. See [`docs/taxonomy.md`](../docs/taxonomy.md) for the full scope and exclusions.
 
-During incubation:
+For this area:
 
-- use `civic-information` as a secondary research tag when appropriate;
-- do not use `digital-civic-information` as the primary category in a published `_entries/` file;
+- use `digital-civic-information` as the primary category when the central issue is the creation, provenance, targeting, authentication, or distribution of civic information;
+- use `civic-information` as a secondary tag when those concerns are important to an entry whose primary category belongs elsewhere;
 - keep ordinary political disagreement, partisan journalism, general misinformation, and ideology outside the Tracker unless a meaningful technology, data, automation, provenance, targeting, or infrastructure issue is present; and
 - require a concrete Tennessee nexus rather than tracking national systems merely because Tennesseans can access them.
-
-Promotion to a full primary category should occur only after several independently documented Tennessee cases show that the subject recurs and is not adequately represented by the existing taxonomy.

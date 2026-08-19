@@ -22,11 +22,9 @@ Age gates, identity verification, digital-ID mandates, biometric checks, platfor
 
 AI-assisted investigations, eligibility systems, risk scoring, fraud detection, content monitoring, automated decision systems, and algorithmic procurement.
 
-## Candidate research category: `digital-civic-information`
+## `digital-civic-information`
 
-`digital-civic-information` is an experimental research category, not yet a validated primary category for published Tracker entries.
-
-It covers digital systems, networks, technologies, and data practices that materially shape how Tennesseans encounter, evaluate, or receive information about elections, government, public policy, or civic participation.
+Digital systems, networks, technologies, and data practices that materially shape how Tennesseans encounter, evaluate, or receive information about elections, government, public policy, or civic participation.
 
 The central concern must involve the technical or infrastructural means by which civic information is created, transformed, targeted, authenticated, distributed, amplified, or obscured.
 
@@ -36,11 +34,11 @@ Ask:
 
 > Would this still be a digital-rights or civic-infrastructure issue if the political viewpoint, party, candidate, or ideology were reversed?
 
-If yes, the issue may fit this candidate category. If the concern disappears once the political viewpoint is removed, it is probably ordinary political or media criticism and should remain outside the Tracker.
+If yes, the issue may fit this category. If the concern disappears once the political viewpoint is removed, it is probably ordinary political or media criticism and should remain outside the Tracker.
 
 ### In scope
 
-A research lead may fit when it has a meaningful Tennessee nexus and involves one or more of the following:
+An issue may fit when it has a meaningful Tennessee nexus and involves one or more of the following:
 
 - automated or AI-assisted creation, rewriting, summarization, republication, or distribution of civic or political information;
 - synthetic or materially manipulated political audio, video, images, text, or personas;
@@ -93,17 +91,13 @@ Researchers must distinguish separately between:
 
 Evidence that a system amplified political content does not by itself establish payment, coordination, ideological intent, suppression, manipulation, or electoral effect.
 
-### Relationship to existing categories
+### Relationship to other categories
 
-Use an established primary category when it more directly describes the issue. For example, government facial-recognition monitoring of protesters belongs under `government-surveillance`, while AI determining government benefits eligibility belongs under `government-ai-automation`.
+Use another primary category when it more directly describes the issue. For example, government facial-recognition monitoring of protesters belongs under `government-surveillance`, while AI determining government benefits eligibility belongs under `government-ai-automation`.
 
-Use the candidate `digital-civic-information` concept when the central research issue is the creation, provenance, targeting, authentication, or distribution of civic information itself.
+Use `digital-civic-information` when the central research issue is the creation, provenance, targeting, authentication, or distribution of civic information itself.
 
-### Incubation rule
-
-For now, research notes may use the secondary tag `civic-information`. Do not use `digital-civic-information` as the primary `category` value in published `_entries/` files unless the category is formally promoted and added to the entry schema.
-
-Review the candidate category for promotion after several independently documented Tennessee cases demonstrate a recurring subject area that is not adequately represented by the existing taxonomy.
+The secondary tag `civic-information` may still be used when civic-information concerns are important to an entry whose primary category belongs elsewhere, such as a political-deepfake entry primarily categorized under `government-ai-automation`.
 
 ## Secondary tags
 

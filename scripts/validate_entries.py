@@ -43,6 +43,7 @@ ALLOWED_CATEGORIES = {
     "health-data-privacy",
     "online-identity-age-verification",
     "government-ai-automation",
+    "digital-civic-information",
 }
 
 ALLOWED_CONFIDENCE = {"High", "Medium", "Low"}
