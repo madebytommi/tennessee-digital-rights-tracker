@@ -2,12 +2,12 @@
 layout: default
 title: About
 permalink: /about/
-summary: How the Tennessee Digital Rights Tracker explains government technology, personal-data practices, and civil-rights issues for everyday Tennesseans.
+summary: How the Tennessee Digital Rights Tracker explains government technology, personal-data practices, civic-information systems, and civil-rights issues for everyday Tennesseans.
 ---
 
 # About the tracker
 
-The Tennessee Digital Rights Tracker helps everyday Tennesseans understand how state and local laws, policies, contracts, court decisions, and government technologies may affect their privacy, identity, personal information, and civil rights.
+The Tennessee Digital Rights Tracker helps everyday Tennesseans understand how state and local laws, policies, contracts, court decisions, government technologies, and civic-information systems may affect their privacy, identity, personal information, and civil rights.
 
 The project gathers publicly available evidence, explains it in plain language, separates confirmed facts from claims and analysis, and identifies important questions that public records have not yet answered.
 
@@ -26,8 +26,9 @@ The project focuses on Tennessee developments involving:
 - Health-data and personal-data privacy
 - Online identity and age verification
 - Government artificial intelligence and automated decision systems
+- Digital civic information, political media, and information provenance
 
-An issue belongs in the tracker when it has a meaningful connection to technology, data, records, identity systems, digital access, surveillance, or automated government decision-making.
+An issue belongs in the tracker when it has a meaningful connection to technology, data, records, identity systems, digital access, surveillance, automated government decision-making, or civic-information infrastructure and provenance.
 
 ## What readers can expect
 
@@ -39,7 +40,7 @@ Entries include source links, a confidence level, a last-reviewed date, and clea
 
 It is not a campaign database, an intelligence-gathering operation, a legal-advice service, or a place to build records about identifiable private people.
 
-The tracker examines public systems, laws, contracts, agencies, and government decisions. It does not collect or publish sensitive personal stories, medical records, private communications, movement histories, home addresses, or doxxing material.
+The tracker examines publicly documented systems, laws, contracts, agencies, government decisions, and civic-information infrastructure. It does not collect or publish sensitive personal stories, medical records, private communications, movement histories, home addresses, or doxxing material.
 
 ## Editorial approach
 
