@@ -22,11 +22,14 @@ tags:
   - candidate-likeness
   - first-amendment
   - platform-accountability
+  - civic-information
 revision_history:
   - date: 2026-07-30
     note: "Initial research draft prepared from Tennessee legislation, the surviving AdImpact record, the July 2026 demand-letter reporting, and contemporaneous news coverage."
   - date: 2026-07-31
     note: "Revised after a fresh search for the original advertisement, advertiser and broadcaster responses, litigation, enforcement, and agency guidance; confirmed repository metadata and validation requirements."
+  - date: 2026-08-19
+    note: "Added civic-information secondary tag following adoption of the candidate digital-civic-information research taxonomy; primary category remains government-ai-automation."
 ---
 
 ## Research and legal limitations
