@@ -1,6 +1,6 @@
 # Tennessee Digital Rights Tracker
 
-Clear, source-linked explanations of how Tennessee laws and government technologies affect privacy, identity, personal data, and civil rights.
+Clear, source-linked explanations of how Tennessee laws, government technologies, and civic-information systems affect privacy, identity, personal data, and civil rights.
 
 The project is written first for everyday Tennesseans, while maintaining sourcing and research standards useful to journalists, advocates, researchers, and public officials.
 
@@ -10,19 +10,20 @@ The project is written first for everyday Tennesseans, while maintaining sourcin
 
 Make complicated public records understandable without exaggeration.
 
-The tracker brings together Tennessee laws, policies, court decisions, government contracts, and technology systems; explains the available evidence in plain language; and clearly identifies what the public still does not know.
+The tracker brings together Tennessee laws, policies, court decisions, government contracts, technology systems, and civic-information infrastructure; explains the available evidence in plain language; and clearly identifies what the public still does not know.
 
 ## Focus areas
 
-The tracker focuses on five areas:
+The tracker focuses on six areas:
 
 1. LGBTQ and transgender rights
 2. Government surveillance and tracking
 3. Health-data and personal-data privacy
 4. Online identity and age verification
 5. Government use of artificial intelligence and automated decision systems
+6. Digital civic information, political media, and information provenance
 
-An issue belongs in the tracker when it has a meaningful connection to technology, data, records, identity systems, digital access, surveillance, or automated government decision-making.
+An issue belongs in the tracker when it has a meaningful connection to technology, data, records, identity systems, digital access, surveillance, automated government decision-making, or civic-information infrastructure and provenance.
 
 ## Recurring questions
 
