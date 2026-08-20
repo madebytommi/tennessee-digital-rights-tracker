@@ -2,10 +2,10 @@
 title: "Tennessee Public Chapter 765 prohibits TennCare coverage for specified transition-related medical procedures"
 date: 2026-07-21
 event_date: 2026-07-01
-last_reviewed: 2026-07-21
+last_reviewed: 2026-08-19
 status: "Active"
 level: "State"
-category: "health-data-privacy"
+category: "lgbtq-trans-policy"
 jurisdiction: "Tennessee"
 confidence: "Medium"
 summary: "Tennessee Public Chapter 765 took effect July 1, 2026, and prohibits TennCare coverage or reimbursement for specified surgeries, puberty blockers, and androgen or estrogen when provided for a transition-related purpose, including through telehealth. A temporary continuity exception through March 31, 2027 requires a treating physician's written certification and supporting findings in the medical record, while public details about claims edits, pharmacy processing, denial notices, appeals, certification access, and data retention remain incomplete."
@@ -24,6 +24,8 @@ tags:
 revision_history:
   - date: 2026-07-21
     note: "Initial publication based on Public Chapter 765, the enacted bill text and legislative history, TennCare program and appeals materials, managed-care policy indexes, official sponsor statements, and public advocacy and news analysis."
+  - date: 2026-08-19
+    note: "Corrected primary taxonomy classification to lgbtq-trans-policy, added BlueCare Tennessee's Public Chapter 765 attestation form as implementation evidence, narrowed implementation uncertainties resolved for BlueCare, and added the official legislative fiscal note concerning TennCare's reported preexisting policies."
 ---
 
 ## Research and legal limitations
@@ -118,7 +120,9 @@ It also does not specify:
 
 Public Chapter 765 creates a statutory prohibition. One post-session news report stated that TennCare already did not cover gender-affirming care before the law, suggesting that the act may codify or reinforce an existing administrative exclusion rather than terminate a uniformly available benefit.
 
-The public sources reviewed did not establish the exact pre-July 2026 coverage history for every affected drug, surgery, diagnosis, plan, age group, medical circumstance, or appeal. This entry therefore does not claim that every listed service was routinely payable immediately before the law took effect.
+The official legislative fiscal note for SB 2118 / HB 2498 similarly reported that the Fiscal Review Committee's estimate relied on information supplied by TennCare that the legislation would not conflict with the Division's existing policies and procedures. That official statement supports the possibility that Public Chapter 765 codified or reinforced existing TennCare policy rather than initiating a new administrative exclusion.
+
+However, the fiscal note does not document the pre-July 2026 coverage status of every specific medication, surgery, diagnosis, age group, plan, or appeal, and it does not establish that no operational changes occurred across managed-care contractors or pharmacy systems. The public sources reviewed did not establish the exact pre-July 2026 coverage history for every affected service or circumstance. This entry therefore does not claim that every listed service was routinely payable immediately before the law took effect, nor that no member or provider experienced practical changes upon enactment.
 
 ## TennCare's operational structure
 
@@ -143,13 +147,13 @@ This is an operational inference from the program structure, not proof of the sp
 
 ### Public implementation materials located
 
-UnitedHealthcare's Tennessee Medicaid policy library published a July 2026 update bulletin listing changes effective July 1 to policies addressing gonadotropin-releasing-hormone analogs and testosterone replacement or supplementation therapy.
+BlueCare Tennessee publicly posted a “TennCare Coverage Restrictions (Public Chapter 765) Attestation Form” within the patient-authorization section of its provider documents and forms directory. The document establishes that BlueCare has created a provider-facing implementation process specifically tied to Public Chapter 765. The form appears within BlueCare's patient-authorization materials and is associated with prior authorization. It requests member identifying information, provider details, and requested service or medication information. The prescribing physician must sign an attestation, and relevant clinical information must be attached. The completed form and supporting information are submitted to BlueCare using the instructions on the form. The form also states that continuation-of-therapy prior authorizations extend through March 31, 2027.
 
-The bulletin does not identify Public Chapter 765, does not describe a transition-related exclusion, and expressly states that listing a service does not itself imply coverage. The Tennessee policy library also did not display a policy titled Gender Dysphoria Treatment when searched during this review.
+Locating BlueCare's attestation form confirms a specific prior-authorization process for BlueCare, but it does not establish how UnitedHealthcare Community Plan, Wellpoint, OptumRx, or TennCare itself handle equivalent requests. The form also does not reveal BlueCare's internal claims-edit logic, denial codes, pharmacy rejection codes, record retention periods, access controls, audit logging, or secondary use of submitted information, nor does it establish whether the visible attestation language by itself contains every element needed to satisfy the statute's physician-certification requirement.
 
-Those July 1 updates are a relevant implementation lead, but the public record reviewed does not establish whether they were caused by Public Chapter 765 or how they affect a particular TennCare member.
+UnitedHealthcare's Tennessee Medicaid policy library published a July 2026 update bulletin listing changes effective July 1 to policies addressing gonadotropin-releasing-hormone analogs and testosterone replacement or supplementation therapy. The bulletin does not identify Public Chapter 765, does not describe a transition-related exclusion, and expressly states that listing a service does not itself imply coverage. The Tennessee policy library also did not display a policy titled Gender Dysphoria Treatment when searched during this review. Those July 1 updates are a relevant implementation lead, but the public record reviewed does not establish whether they were caused by Public Chapter 765 or how they affect a particular TennCare member.
 
-As of the last review date, this project did not locate a clearly labeled Public Chapter 765 implementation bulletin, coverage manual section, physician certification form, member notice, claims-edit notice, or pharmacy notice from TennCare, BlueCare, UnitedHealthcare Community Plan of Tennessee, Wellpoint, or OptumRx.
+As of the last review date, no equivalent Public Chapter 765 implementation bulletins, coverage manual sections, physician certification forms, member notices, claims-edit notices, or pharmacy notices were located for TennCare, UnitedHealthcare Community Plan of Tennessee, Wellpoint, or OptumRx.
 
 ## Claims, denials, and appeals
 
@@ -208,15 +212,15 @@ A Nashville Scene session review reported that TennCare did not cover gender-aff
 As of the last review date, the following questions remained unresolved in the public materials reviewed:
 
 - Whether TennCare has issued nonpublic or difficult-to-locate guidance to its managed-care and pharmacy contractors
-- Whether BlueCare, UnitedHealthcare, Wellpoint, or OptumRx issued provider or member notices specifically tied to Public Chapter 765
+- Whether TennCare, UnitedHealthcare, Wellpoint, or OptumRx issued provider or member notices specifically tied to Public Chapter 765
 - Which CPT, HCPCS, NDC, diagnosis, modifier, place-of-service, telehealth, or prior-authorization combinations trigger review or denial
 - Whether the restriction is implemented through automated edits, manual clinical review, pharmacy point-of-sale blocks, or a combination
 - Which denial, remittance, and pharmacy rejection codes are used
 - How systems distinguish a prohibited purpose from an allowed indication for the same medication or procedure
 - What documentation a provider must submit to establish an allowed congenital, puberty, disease, or injury indication
-- Whether a standard continuity-certification form exists
-- Whether the certification must be submitted to TennCare, an MCO, OptumRx, a pharmacy, or more than one entity
-- Whether supporting clinical findings must be transmitted in full or may remain with the treating physician
+- Whether a standard continuity-certification form exists for TennCare, UnitedHealthcare, Wellpoint, or OptumRx (resolved for BlueCare via its published Public Chapter 765 attestation form)
+- Whether the certification must be submitted to TennCare, an MCO, OptumRx, a pharmacy, or more than one entity (partially resolved for BlueCare prior authorizations via its dedicated form, but unresolved for TennCare itself, other MCOs, or pharmacy benefit claims)
+- Whether supporting clinical findings must be transmitted in full or may remain with the treating physician (BlueCare requires attaching relevant clinical information, but specific required findings, correspondence to the statutory harm certification, and practices of other contractors remain unresolved)
 - Who may access the certification and supporting findings
 - How access is logged and audited
 - How long copies are retained by providers, contractors, pharmacies, and TennCare
@@ -279,19 +283,23 @@ The most defensible current conclusion is:
 1. [Tennessee General Assembly — HB 2498 / SB 2118 history, summary, text, fiscal note, and votes](https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB2498&ga=114)
 2. [Tennessee Secretary of State — Public Chapter 765](https://publications.tnsosfiles.com/acts/114/pub/pc0765.pdf)
 3. [Tennessee General Assembly — enacted bill text](https://capitol.tn.gov/Bills/114/Bill/HB2498.pdf)
-4. [TennCare — Information and Statistics: managed-care and pharmacy-benefit structure](https://www.tn.gov/tenncare/information-statistics.html)
-5. [TennCare — Claims, Appeals and Provider Complaints](https://www.tn.gov/tenncare/providers/claims-appeals-provider-complaints.html)
-6. [UnitedHealthcare Community Plan of Tennessee — Medical and Drug Policies](https://www.uhcprovider.com/en/health-plans-by-state/tennessee-health-plans/tn-comm-plan-home/tn-cp-policies/medicaid-community-state-policies-tn.html)
-7. [UnitedHealthcare Community Plan of Tennessee — July 2026 Medical Policy Update Bulletin](https://www.uhcprovider.com/content/dam/provider/docs/public/policies/medicaid-comm-plan/tn/community-plan-tn-medical-policy-update-bulletin-july-2026.pdf)
-8. [Tennessee Senate Republican Caucus — July 1, 2026 enactment summary](https://www.tnsenategop.com/press-releases/july-1-2026-enactments)
+4. [Tennessee General Assembly Fiscal Review Committee — Fiscal Note for SB 2118 / HB 2498](https://capitol.tn.gov/Bills/114/Fiscal/SB2118.pdf)
+5. [TennCare — Information and Statistics: managed-care and pharmacy-benefit structure](https://www.tn.gov/tenncare/information-statistics.html)
+6. [TennCare — Claims, Appeals and Provider Complaints](https://www.tn.gov/tenncare/providers/claims-appeals-provider-complaints.html)
+7. [BlueCare Tennessee — Provider Documents and Forms](https://bluecare.bcbst.com/providers/tools-resources/documents-forms)
+8. [BlueCare Tennessee — TennCare Coverage Restrictions (Public Chapter 765) Attestation Form](https://content.bcbst.com/api/public/content/bct-attestation-form-tennessee-law-2026.pdf?v=65766f3a)
+9. [UnitedHealthcare Community Plan of Tennessee — Medical and Drug Policies](https://www.uhcprovider.com/en/health-plans-by-state/tennessee-health-plans/tn-comm-plan-home/tn-cp-policies/medicaid-community-state-policies-tn.html)
+10. [UnitedHealthcare Community Plan of Tennessee — July 2026 Medical Policy Update Bulletin](https://www.uhcprovider.com/content/dam/provider/docs/public/policies/medicaid-comm-plan/tn/community-plan-tn-medical-policy-update-bulletin-july-2026.pdf)
+11. [Tennessee Senate Republican Caucus — July 1, 2026 enactment summary](https://www.tnsenategop.com/press-releases/july-1-2026-enactments)
 
 ### Advocacy, clinical, and news context
 
-9. [Tennessee Equality Project — 2026 bill watch](https://www.tnep.org/billwatch2026)
-10. [Tennessee Equality Project — March 2026 legislative campaign concerning HB 2498 and SB 2118](https://www.tnep.org/legislative_campaigns_week_of_march_9_2026)
-11. [Nashville Scene — 2026 legislative-session review](https://www.nashvillescene.com/news/pithinthewind/2026-legislative-session-wraps/article_774d28a4-bbff-49f9-a001-804d35ba4918.html)
-12. [Endocrine Society — clinical practice guideline on gender dysphoria and gender incongruence](https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence)
+12. [Tennessee Equality Project — 2026 bill watch](https://www.tnep.org/billwatch2026)
+13. [Tennessee Equality Project — March 2026 legislative campaign concerning HB 2498 and SB 2118](https://www.tnep.org/legislative_campaigns_week_of_march_9_2026)
+14. [Nashville Scene — 2026 legislative-session review](https://www.nashvillescene.com/news/pithinthewind/2026-legislative-session-wraps/article_774d28a4-bbff-49f9-a001-804d35ba4918.html)
+15. [Endocrine Society — clinical practice guideline on gender dysphoria and gender incongruence](https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence)
 
 ## Revision history
 
 - **2026-07-21:** Initial publication. Verified enactment, effective date, vote history, procedure definitions, telehealth reach, allowed indications, continuity deadline, physician certification requirement, and medical-record language; reviewed TennCare's managed-care and appeals structure; documented a July 1 UnitedHealthcare Tennessee policy bulletin as an implementation lead without attributing it to the law; and recorded unresolved claims, pharmacy, denial, appeal, certification-access, retention, and reporting questions.
+- **2026-08-19:** Corrected primary taxonomy classification to `lgbtq-trans-policy`, added BlueCare Tennessee's Public Chapter 765 attestation form as implementation evidence, narrowed implementation uncertainties resolved for BlueCare, and added the official legislative fiscal note concerning TennCare's reported preexisting policies.
