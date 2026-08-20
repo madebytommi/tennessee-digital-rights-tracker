@@ -2,7 +2,7 @@
 title: "Tennessee Public Chapter 932 creates detailed reporting rules for transition-related procedures"
 date: 2026-07-18
 event_date: 2026-05-07
-last_reviewed: 2026-07-18
+last_reviewed: 2026-08-19
 status: "Active"
 level: "State"
 category: "health-data-privacy"
@@ -19,6 +19,8 @@ tags:
   - public-data
   - de-identification
 revision_history:
+  - date: 2026-08-19
+    note: "Updated the essential-health-benefits implementation status with TDCI's public notice and actuarial report, noted expiration of the statutory application deadline, and added the new federal cost-defrayal context beginning with plan year 2028."
   - date: 2026-07-18
     note: "Initial publication based on Public Chapter 932, the adopted amendments, legislative history, and publicly available implementation information."
 ---
@@ -109,6 +111,16 @@ County of residence was removed before enactment. These reporting forms also mus
 
 The statute requires submission within 15 days after the end of the relevant calendar month. The timing sentence refers to a month in which a claim for a “gender transition procedure” was approved, even though the surrounding subsection concerns detransition claims. The practical interpretation of that wording may require agency guidance or legal analysis.
 
+### Essential-health-benefits implementation
+
+Public Chapter 932 also directs the Tennessee Department of Commerce and Insurance to seek a change to Tennessee’s essential-health-benefits benchmark plan for marketplace coverage of detransition procedures.
+
+TDCI publicly began that process before this entry’s initial publication. The department posted a proposed Plan Year 2029 benchmark change and an actuarial report prepared by Lewis & Ellis. The report says the proposed benchmark would add coverage for gender detransition services to qualified health plans offered on the marketplace and concludes that the proposal falls within the federal typical-employer-plan scope range required by 45 CFR § 156.111. TDCI accepted public comments through June 18, 2026, and stated that it intended to submit the final application to the Centers for Medicare and Medicaid Services shortly afterward.
+
+The statute required TDCI to apply within 90 days of Public Chapter 932 taking effect. That period expired on August 5, 2026. As of this review, this project did not locate public documentation sufficient to confirm that the final application was submitted or that CMS approved or implemented it. The absence of a public filing located in this review does not establish that no submission occurred.
+
+Federal cost-defrayal rules also changed while Tennessee’s benchmark process was underway. CMS’s 2027 Payment Notice, effective July 20, 2026, provides that beginning with plan year 2028 a qualifying state-required benefit enacted after December 31, 2011 is treated as “in addition to” essential health benefits for cost-defrayal purposes even if the benefit is embedded in the state’s EHB benchmark plan. Tennessee’s proposed benchmark change targets plan year 2029. How CMS and Tennessee will apply the new defrayal rule to Public Chapter 932’s detransition-coverage requirement has not yet been established in Tennessee-specific public guidance.
+
 ## What officials say
 
 The legislation labels its relevant sections “Right to Effective Care” and “Right to Public Transparency.” Legislative materials present the measure as increasing transparency and requiring insurers or state-supported clinics that cover or provide transition care to also support detransition care.
@@ -137,6 +149,8 @@ This tracker does **not** adopt “registry” as a neutral description of the l
 - The first annual report is due by December 31, 2026.
 - Professional noncompliance can trigger a suspension of at least six months, and the clinic may face a fine of up to $150,000.
 - The final law authorizes the attorney general to investigate potential violations but removed the bill’s earlier express civil-demand and enforcement language.
+- TDCI publicly proposed a Plan Year 2029 EHB-benchmark change adding detransition coverage, published an actuarial report, and accepted public comments through June 18, 2026.
+- The statute’s 90-day deadline for the EHB application expired on August 5, 2026; public confirmation of final submission or CMS action was not located in this review.
 
 ## What remains uncertain?
 
@@ -154,7 +168,8 @@ As of the last review date, this project did not locate a publicly posted Depart
 - Whether submitted forms or underlying datasets are exempt from Tennessee public-records disclosure
 - How the reporting obligation operates alongside Tennessee’s existing prohibition on most transition-related procedures for minors
 - How the apparent wording inconsistency in the insurance-reporting deadline will be interpreted
-- Whether the Department of Commerce and Insurance has submitted, or CMS has approved, the required essential-health-benefits waiver; the statute’s 90-day application period had not yet expired on the last review date
+- Whether TDCI submitted its final EHB-benchmark application to CMS and whether CMS has approved or implemented it
+- How the CMS cost-defrayal rule beginning with plan year 2028 will apply to Tennessee’s proposed Plan Year 2029 detransition benefit
 - Whether litigation will challenge any portion of the law
 
 The absence of public documentation does not prove that no internal policies or controls exist.
@@ -189,7 +204,7 @@ Whether the system is adequately protective is a technical and legal question re
 - Ask the Tennessee Department of Health to publish the reporting form, data dictionary, de-identification methodology, small-cell policy, retention schedule, access-control policy, and public-report specification.
 - Request non-patient-level implementation records under the Tennessee Public Records Act, such as policies, contracts, security standards, and form-development documents. Do not request or redistribute identifiable medical information.
 - Monitor the Department of Health website for the first report due by December 31, 2026.
-- Ask the Department of Commerce and Insurance for the status of the required CMS waiver application after the statutory deadline.
+- Ask the Department of Commerce and Insurance for the final EHB-benchmark application, any CMS correspondence or decision, and any Tennessee analysis of the federal cost-defrayal rule that begins with plan year 2028.
 - Submit factual corrections or newly released primary sources through this repository’s public issue forms.
 - For questions about personal legal rights, reporting obligations, medical privacy, or litigation, consult a qualified Tennessee attorney or an established civil-liberties organization.
 
@@ -205,14 +220,19 @@ Whether the system is adequately protective is a technical and legal question re
 6. [Senate Amendment 4 — removed county data and barred provider identification](https://capitol.tn.gov/Bills/114/Amend/SA0993.pdf)
 7. [Tennessee’s existing prohibition on most transition-related medical procedures for minors](https://law.justia.com/codes/tennessee/title-68/health/chapter-33/section-68-33-103/)
 8. [HHS guidance on HIPAA de-identification and re-identification risk](https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html)
+9. [Tennessee Department of Commerce and Insurance — EHB benchmark notice and implementation page](https://www.tn.gov/commerce/insurance/rules-and-laws.html)
+10. [Tennessee Department of Commerce and Insurance — EHB public-comment notice](https://www.tn.gov/content/dam/tn/commerce/documents/insurance/posts/EHB%20Public%20Comment%20Notice%20_20260601.pdf)
+11. [Tennessee Plan Year 2029 Benchmark Plan Change Actuarial Report](https://www.tn.gov/content/dam/tn/commerce/documents/insurance/posts/TN%20PY2029%20Benchmark%20Plan%20Change%20Actuarial%20DRAFT%20Report%2020260526.pdf)
+12. [CMS — HHS Notice of Benefit and Payment Parameters for 2027 Final Rule](https://www.cms.gov/newsroom/fact-sheets/hhs-notice-benefit-payment-parameters-2027-final-rule)
 
 ### Statements and analysis
 
-9. [WSMV report on the Senate debate and privacy amendment](https://www.actionnews5.com/2026/04/14/tennessee-senate-passes-bill-requiring-reporting-gender-transition-detransition-care/)
-10. [ACLU of Tennessee veto request and privacy analysis](https://www.aclu-tn.org/press-releases/aclu-tn-urges-gov-bill-lee-to-veto-invasive-transgender-healthcare-registry-legislation/)
-11. [Tennessee Equality Project campaign concerning HB 754](https://www.tnep.org/legislative_campaigns_week_of_april_20_2026)
-12. [Tennessee Advocates for Planned Parenthood bill analysis](https://www.plannedparenthoodaction.org/tennessee-advocates-planned-parenthood/bills-2026)
+13. [WSMV report on the Senate debate and privacy amendment](https://www.actionnews5.com/2026/04/14/tennessee-senate-passes-bill-requiring-reporting-gender-transition-detransition-care/)
+14. [ACLU of Tennessee veto request and privacy analysis](https://www.aclu-tn.org/press-releases/aclu-tn-urges-gov-bill-lee-to-veto-invasive-transgender-healthcare-registry-legislation/)
+15. [Tennessee Equality Project campaign concerning HB 754](https://www.tnep.org/legislative_campaigns_week_of_april_20_2026)
+16. [Tennessee Advocates for Planned Parenthood bill analysis](https://www.plannedparenthoodaction.org/tennessee-advocates-planned-parenthood/bills-2026)
 
 ## Revision history
 
+- **2026-08-19:** Added TDCI’s proposed Plan Year 2029 EHB-benchmark process and actuarial report, updated the expired August 5 application deadline, and documented the CMS cost-defrayal rule taking effect for plan year 2028 and later.
 - **2026-07-18:** Initial publication. Verified enacted status, reconciled the adopted amendments, distinguished the minor-focused statutory definition from adult care, and documented unresolved implementation and security questions.
