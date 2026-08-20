@@ -2,7 +2,7 @@
 title: "Tennessee requires age verification for websites covered by the Protect Tennessee Minors Act"
 date: 2026-07-18
 event_date: 2025-01-01
-last_reviewed: 2026-07-18
+last_reviewed: 2026-08-19
 status: "Active"
 level: "State"
 category: "online-identity-age-verification"
@@ -22,6 +22,8 @@ tags:
 revision_history:
   - date: 2026-07-18
     note: "Initial publication based on Public Chapters 1021 and 405, the current statutory history, federal court records, the Supreme Court’s Paxton decision, and publicly available technical and civil-liberties analysis."
+  - date: 2026-08-19
+    note: "Expanded the post-Paxton litigation chronology to incorporate the Sixth Circuit's November 4, 2025 order vacating the preliminary injunction and remanding to the district court, added documented platform-response evidence regarding website blocking, and narrowed the related market-compliance uncertainty."
 ---
 
 ## Research and legal limitations
@@ -45,7 +47,9 @@ A federal district court preliminarily blocked enforcement on December 30, 2024.
 
 On May 8, 2025, Public Chapter 405 amended the statute by deleting its section-specific definition of “content harmful to minors.” The statute’s operative provisions continue to use that phrase.
 
-On June 27, 2025, the United States Supreme Court upheld a different age-verification law in *Free Speech Coalition, Inc. v. Paxton*. The Tennessee challenge was not automatically resolved by that decision. The plaintiffs later stated that they intended to continue the case, and their current public lawsuit tracker lists the Tennessee case as in progress and the law as in effect.
+On June 27, 2025, the United States Supreme Court upheld a different age-verification law in *Free Speech Coalition, Inc. v. Paxton*. Following that decision, the State of Tennessee moved to vacate the preliminary injunction and remand the Tennessee appeal. On November 4, 2025, the Sixth Circuit granted Tennessee’s motion, vacated the district court’s preliminary injunction, and remanded the case for further proceedings consistent with *Paxton*. This procedural order removed the preliminary injunction, but it did not constitute a final merits ruling resolving every Tennessee-specific constitutional challenge to the statute. The plaintiffs’ ongoing challenge returned to the district court, where proceedings continue.
+
+After the law was allowed to operate in January 2025, Pornhub/Aylo blocked access from Tennessee rather than implement the statute’s verification process for Tennessee users. This confirmed that platform responses have included blocking access, though it does not establish how the broader market is complying across all covered websites.
 
 ## What the primary source says
 
@@ -144,7 +148,7 @@ The Supreme Court held in *Paxton* that Texas may require age verification for c
 - They must not retain personally identifying information after access has been granted.
 - The statute creates private civil remedies, attorney-general enforcement authority, and Class C felony exposure for violations of the age-verification or data-handling subsections.
 - Public Chapter 405, effective May 8, 2025, deleted the statute’s section-specific definition of “content harmful to minors.”
-- A district court initially granted a preliminary injunction, but the Sixth Circuit stayed it on January 13, 2025, allowing the law to take effect.
+- A district court initially granted a preliminary injunction on December 30, 2024; the Sixth Circuit stayed it on January 13, 2025; and following the Supreme Court’s *Paxton* decision, the Sixth Circuit vacated the preliminary injunction and remanded the case on November 4, 2025, for further proceedings in the district court.
 - The Supreme Court upheld Texas’s age-verification law in *Free Speech Coalition v. Paxton* on June 27, 2025.
 - The Tennessee plaintiffs’ current public tracker lists their case as in progress and the Tennessee law as in effect.
 
@@ -169,7 +173,7 @@ As of the last review date, the following questions remained unresolved or were 
 - Whether photo matching creates or retains biometric templates under a particular implementation
 - What breach-notification, incident-response, vendor-risk, and insurance requirements apply
 - How often users are actually required to repeat verification under real-world session designs
-- Whether websites are choosing to block Tennessee traffic instead of implementing verification
+- How common blocking, age verification, or other compliance responses are across websites potentially covered by the statute; Pornhub/Aylo has publicly blocked Tennessee access, while compliance practices across the broader market remain unestablished
 - How *Paxton* and the 2025 statutory amendment will ultimately affect the Tennessee lawsuit
 
 The statute’s prohibition on retaining personal information is a meaningful privacy safeguard. Its practical strength depends on system design, data minimization, deletion verification, vendor practices, and enforcement evidence that are not fully visible from the statutory text alone.
@@ -233,14 +237,17 @@ Privacy-preserving age assurance is technically possible in principle—for exam
 
 6. [Federal district-court order discussing the preliminary injunction and stay](https://docs.justia.com/cases/federal/district-courts/tennessee/tnwdce/2%3A2024cv02933/104414/55)
 7. [Sixth Circuit docket — Free Speech Coalition, Inc. v. Skrmetti](https://dockets.justia.com/docket/circuit-courts/ca6/24-6158)
-8. [United States Supreme Court — Free Speech Coalition, Inc. v. Paxton, 606 U.S. 461](https://www.supremecourt.gov/opinions/slipopinion/24)
-9. [Free Speech Coalition lawsuit tracker — Tennessee case](https://action.freespeechcoalition.com/age-verification-resources/av-lawsuits/)
+8. [Sixth Circuit order and judgment vacating preliminary injunction and remanding in Free Speech Coalition, Inc. v. Skrmetti, No. 24-6158](https://dockets.justia.com/docket/circuit-courts/ca6/24-6158)
+9. [United States Supreme Court — Free Speech Coalition, Inc. v. Paxton, 606 U.S. 461](https://www.supremecourt.gov/opinions/slipopinion/24)
+10. [Free Speech Coalition lawsuit tracker — Tennessee case](https://action.freespeechcoalition.com/age-verification-resources/av-lawsuits/)
 
 ### Reporting and technical context
 
-10. [Associated Press — district-court ruling and competing arguments](https://apnews.com/article/2fdc2563836315c6d4e8eb4d57ab9913)
-11. [Adequately Tailoring Age Verification Regulations — technical and policy research](https://arxiv.org/abs/2601.20241)
+11. [Associated Press — district-court ruling and competing arguments](https://apnews.com/article/2fdc2563836315c6d4e8eb4d57ab9913)
+12. [Adequately Tailoring Age Verification Regulations — technical and policy research](https://arxiv.org/abs/2601.20241)
+13. [Tennessee Bar Association — Pornhub Blocks Tennessee Users After Court Rules in Favor of Age Verification Law](https://www.tba.org/?pg=LawBlog&blAction=showEntry&blogEntry=99166)
 
 ## Revision history
 
 - **2026-07-18:** Initial publication. Verified enactment and current statutory history, incorporated the 2025 definition amendment, documented the law’s verification and data-handling requirements, reviewed the federal litigation and *Paxton* decision, and recorded unresolved privacy, accessibility, coverage, and enforcement questions.
+- **2026-08-19:** Expanded the post-*Paxton* litigation chronology to incorporate the Sixth Circuit’s November 4, 2025 order vacating the preliminary injunction and remanding to the district court, added documented platform-response evidence regarding website blocking, and narrowed the related market-compliance uncertainty.
