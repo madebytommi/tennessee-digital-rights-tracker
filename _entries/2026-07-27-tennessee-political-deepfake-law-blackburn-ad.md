@@ -2,13 +2,13 @@
 title: "Tennessee’s political-deepfake disclaimer law faces an early dispute over an anti-Blackburn advertisement"
 date: 2026-07-31
 event_date: 2026-07-27
-last_reviewed: 2026-07-31
+last_reviewed: 2026-08-22
 status: "Monitoring"
 level: "State"
 category: "government-ai-automation"
 jurisdiction: "Tennessee"
 confidence: "Medium"
-summary: "Tennessee’s new political-deepfake law requires prescribed disclosures for certain covered advertisements that use AI-generated or manipulated media to depict a candidate saying or doing something that did not occur. A July 2026 anti-Marsha Blackburn television advertisement prompted a demand letter and reported broadcaster removals, but the complete viewer-facing advertisement has not been independently preserved by this project and no court or government authority has determined that the advertiser violated the law."
+summary: "Tennessee’s new political-deepfake law requires prescribed disclosures for certain covered advertisements that use AI-generated or manipulated media to depict a candidate saying or doing something that did not occur. American Exceptionalism Institute’s anti-Marsha Blackburn advertising has now also prompted a sworn complaint before the Tennessee Registry of Election Finance alleging campaign-finance registration failures and undisclosed AI or similar synthetic-media use, but no court or government authority has determined that the advertiser violated Tennessee’s deepfake law."
 primary_source_url: "https://capitol.tn.gov/Bills/114/Bill/HB1513.pdf"
 primary_source_type: "law"
 source_archive_url: ""
@@ -30,20 +30,24 @@ revision_history:
     note: "Revised after a fresh search for the original advertisement, advertiser and broadcaster responses, litigation, enforcement, and agency guidance; confirmed repository metadata and validation requirements."
   - date: 2026-08-19
     note: "Added civic-information secondary tag following adoption of the candidate digital-civic-information research taxonomy; primary category remains government-ai-automation."
+  - date: 2026-08-22
+    note: "Added the sworn Tennessee Registry of Election Finance complaint, separated its campaign-finance allegations from its AI-disclosure allegation, and added the reported September 15 Registry consideration date while preserving that no violation has been adjudicated."
 ---
 
 ## Research and legal limitations
 
 This entry is public-record research, not legal advice. The project and its contributors:
 
-- cannot provide a binding interpretation of Tennessee Code § 2-19-120, the incorporated definition of a deepfake, criminal liability, civil remedies, constitutional defenses, or federal campaign-law requirements;
+- cannot provide a binding interpretation of Tennessee Code § 2-19-120, the incorporated definition of a deepfake, criminal liability, civil remedies, constitutional defenses, campaign-finance registration requirements, or federal campaign-law requirements;
 - have not obtained an authenticated, complete copy of the advertisement exactly as it appeared to television viewers;
 - cannot verify from public records which images, audio, or editing elements were generated or manipulated with artificial intelligence;
 - do not have the original media file, production metadata, prompts, model records, editing history, content credentials, station airchecks, targeting records, or production contracts;
 - cannot determine from an audio transcript whether an on-screen visual disclosure appeared; and
-- found no public court ruling, prosecutor finding, election-agency determination, filed enforcement action, or advertiser admission resolving the dispute as of July 31, 2026.
+- have located a sworn complaint pending before the Tennessee Registry of Election Finance, but no public court ruling, prosecutor finding, Registry determination, other election-agency determination, or advertiser admission resolving whether Tennessee’s deepfake-disclosure law was violated as of August 22, 2026.
 
 A publicly linked PDF of the July 27 demand letter has been preserved in the source list. The project could confirm its existence and key contents through the Tennessee Lookout article that embeds it, but could not independently render the complete PDF during this review. Statements attributed to the letter are positions taken by Blackburn’s attorney, not adjudicated facts.
+
+The sworn Registry complaint is also an allegation, not a finding. Reporting says it raises both campaign-finance compliance questions and an allegation involving undisclosed AI or similar technology. Those are distinct legal theories and should not be collapsed into a determination that Public Chapter 625 was violated.
 
 The advertisement’s political allegations and any potential defamation dispute are separate from the narrower digital-rights question of whether Tennessee’s synthetic-media disclosure law applied and, if so, whether the required notice appeared.
 
@@ -59,11 +63,22 @@ In late July 2026, a television advertisement titled **“Queen Pharma Mama”**
 
 On July 27, an attorney representing Blackburn sent a cease-and-desist and evidence-preservation letter to American Exceptionalism Institute Chairman Wayne Ducote and consultant Joel Riter. Tennessee Lookout reported that the letter denied the advertisement’s allegations, demanded that distribution stop, sought confirmation within 48 hours, requested preservation of evidence, and asked whether artificial intelligence, synthetic media, deepfake technology, digital manipulation, or similar tools had been used.
 
+A separate enforcement development had already begun before that demand letter. Tennessee Lookout and News From The States reported that Chip Buck of Pall Mall filed a **sworn complaint** with the Tennessee Registry of Election Finance concerning American Exceptionalism Institute’s Tennessee advertising. Reporting says the complaint was notarized July 10 and received by the Registry July 20. Because those dates precede the late-July appearance of “Queen Pharma Mama,” this tracker does **not** treat the complaint as limited to that single advertisement.
+
+Reporting describes two distinct sets of allegations in the Registry complaint:
+
+1. **Campaign-finance registration/disclosure allegation:** Buck alleges that American Exceptionalism Institute failed to register with Tennessee even though it likely spent more than $5,000 attacking Blackburn, which he contends triggered state campaign-finance requirements.
+2. **AI/synthetic-media disclosure allegation:** Buck also alleges that the group failed to disclose the use of artificial intelligence or similar deceptive/synthetic technology in its advertising.
+
+Those allegations overlap with this tracker’s deepfake-law research, but they are not the same claim. The campaign-finance registration allegation concerns Tennessee election-finance requirements. The AI allegation raises a synthetic-media disclosure question, but the public reporting reviewed does not establish that the Registry has already determined that Public Chapter 625 applies to a particular advertisement or that its prescribed disclaimer was legally required and omitted.
+
+News From The States reported that the Registry is set to consider Buck’s complaint at its **September 15, 2026** meeting. That scheduled consideration is a procedural development, not a finding on the merits.
+
 Axios reported, based on information from Blackburn’s campaign, that Comcast and Viamedia removed the advertisement. This review did not locate an independent statement from either company explaining whether a removal occurred, which version was affected, or whether the decision resulted from legal concerns, advertiser action, substantiation rules, scheduling, or another reason.
 
 The AdImpact viewer page previously linked in reporting now identifies the advertisement as deleted and no longer available for viewing. A public Reddit discussion contains a comment from a user who said they recorded the advertisement from WKRN during *Wheel of Fortune* and attached a video. The project could locate that recovery lead but could not retrieve or authenticate the attached media during this review.
 
-A demand letter is not a lawsuit, criminal charge, agency complaint, or official finding. A fresh search through July 31 did not locate a public advertiser response, civil complaint, injunction request, criminal charge, agency decision, or court order resolving whether the law applied or was violated.
+A demand letter and a sworn administrative complaint are not court judgments, criminal convictions, or agency findings. As of August 22, this review did not locate a public advertiser admission, civil judgment, criminal charge, Registry decision, or court order resolving whether the deepfake-disclosure law applied to the advertisement or was violated.
 
 ## What the primary source says
 
@@ -96,6 +111,8 @@ Subdivision (a)(6) was inserted into a statute that already requires payor and a
 
 The surviving transcript attributed to the advertisement reportedly ends by urging viewers to contact Blackburn rather than using an obvious vote-for, vote-against, elect, or defeat instruction. Whether the full advertisement qualified as the type of communication covered by subsection (a) is an unresolved textual and factual question. The transcript may be incomplete or inaccurate, and the complete video has not been independently reviewed by this project.
 
+The Registry complaint’s separate campaign-finance registration allegation does not resolve this coverage question. Even if the Registry were to find that American Exceptionalism Institute should have registered or disclosed spending under campaign-finance law, that would not automatically establish that a particular advertisement satisfied every element of Tennessee’s statutory deepfake definition or disclaimer requirement.
+
 ### Candidate and timing provision
 
 When the impersonated or depicted candidate is not an incumbent office holder, the new disclosure provisions apply only if the communication is distributed within 120 days of the initiation of voting in an election in which the candidate appears on the ballot.
@@ -118,6 +135,10 @@ Blackburn’s attorney contends that the advertisement made false and defamatory
 
 Those assertions remain allegations made on Blackburn’s behalf. This entry does not determine whether the advertisement’s political claims were defamatory, whether the advertiser acted with actual malice, or whether the deepfake-disclosure statute applied.
 
+The sworn Registry complaint was filed by Chip Buck, whom reporting describes as a Blackburn surrogate. Reporting attributes to Buck the campaign-finance registration allegation and the separate AI/synthetic-media disclosure allegation described above. The complaint’s filing does not mean that the Registry has adopted Buck’s factual or legal conclusions.
+
+News From The States reported that the Registry is scheduled to consider the complaint on September 15. As of August 22, this tracker did not locate a Registry order, finding, penalty, dismissal, or other merits decision concerning American Exceptionalism Institute or this advertising dispute.
+
 Tennessee Lookout reported that it could not reach American Exceptionalism Institute’s officers for comment. A fresh search did not locate a later public response from the organization, Ducote, Riter, a production company, or identified legal counsel.
 
 Axios reported that Comcast and Viamedia removed the advertisement according to Blackburn’s campaign. No direct company statement explaining the reported action was located.
@@ -132,6 +153,8 @@ Civil-liberties and free-speech concerns can arise when a law’s definitions ar
 
 The missing advertisement also illustrates a preservation problem. Political advertisements can be aired briefly, removed from commercial databases, or redistributed without their original labels and surrounding context. Researchers may then be left with transcripts, screenshots, partisan descriptions, or viewer recordings that do not preserve the full experience.
 
+The pending Registry matter adds a second provenance problem: administrative complaints can combine several legal theories. Researchers should distinguish a campaign-finance registration or spending-disclosure allegation from an allegation that synthetic media lacked a legally required notice, and then distinguish both from an agency finding after investigation or hearing.
+
 ## What is confirmed?
 
 - HB 1513 / SB 1624 became Public Chapter 625, the Transparency for Deepfakes in Political Advertising Act.
@@ -143,9 +166,14 @@ The missing advertisement also illustrates a preservation problem. Political adv
 - The letter raised possible use of AI or synthetic media and requested that the recipients disclose whether such technology was used.
 - Axios described the advertisement as containing an obviously AI-generated Blackburn image.
 - Axios reported broadcaster removal based on information attributed to Blackburn’s campaign.
+- A sworn complaint concerning American Exceptionalism Institute’s Tennessee advertising was filed with the Tennessee Registry of Election Finance.
+- Reporting says the complaint was notarized July 10 and received by the Registry July 20, before “Queen Pharma Mama” appeared, so the complaint is not treated as limited to that one advertisement.
+- Reporting says the complaint alleges that American Exceptionalism Institute failed to register despite spending that Buck contends triggered Tennessee campaign-finance requirements.
+- Reporting separately says the complaint alleges undisclosed use of artificial intelligence or similar synthetic/deceptive technology.
+- News From The States reports that the Registry is set to consider the complaint at its September 15, 2026 meeting.
 - The previously linked AdImpact viewer no longer provides the complete advertisement.
 - A public social-media discussion contains a lead to a viewer-recorded WKRN copy, but this project has not retrieved or authenticated that video.
-- No public court or government determination establishing a violation was located as of July 31, 2026.
+- No public court or government determination establishing a violation of Tennessee’s deepfake-disclosure law was located as of August 22, 2026.
 
 ## What remains uncertain?
 
@@ -160,8 +188,10 @@ The missing advertisement also illustrates a preservation problem. Political adv
 - The identity of the production company, creative vendor, editor, model provider, or individual creator
 - The complete placement history, versions, markets, spending, impressions, and audience
 - Whether Comcast or Viamedia removed the advertisement and the companies’ reasons for any action
-- Whether American Exceptionalism Institute or its representatives responded privately or publicly to the demand letter
-- Whether a civil action, criminal referral, election complaint, or government inquiry will be filed
+- Whether American Exceptionalism Institute or its representatives responded privately or publicly to the demand letter or Registry complaint
+- How the Registry will characterize its jurisdiction and the legal theories raised in the complaint
+- Whether the Registry will investigate, dismiss, defer, penalize, or otherwise act on the complaint after September 15
+- Whether a separate civil action or criminal referral will be filed under the deepfake statute
 - Which Tennessee official or office would investigate or prosecute an alleged misdemeanor violation
 - How a Tennessee court would interpret the realism, candidate-status, intermediary, satire, parody, federal-candidate, preemption, and First Amendment questions
 
@@ -188,10 +218,13 @@ Disclosure rules may improve transparency while allowing political speech to con
 
 This dispute also demonstrates why provenance matters. A transcript cannot reveal every visual label. A screenshot cannot establish audio content or duration. A repost may crop disclosures. A viewer recording may omit the beginning or end. Without the complete original file and broadcast context, strong claims about compliance or violation are not supportable.
 
+The Registry complaint makes procedural provenance equally important. A sworn allegation can create a formal government proceeding without establishing that the alleged conduct occurred or violated the cited law. The scheduled September meeting therefore increases the public-accountability significance of this dispute while leaving the core merits questions unresolved.
+
 ## Lawful actions and resources
 
 - Read the enacted bill text and official legislative history before relying on summaries.
-- Treat the July 27 letter as a party allegation, not an official ruling.
+- Treat the July 27 demand letter and the sworn Registry complaint as party allegations, not official rulings.
+- Check the Tennessee Registry of Election Finance before and after its reported September 15 meeting for an agenda, complaint materials, response, staff analysis, order, dismissal, penalty, or other disposition.
 - Preserve the complete advertisement, including opening and closing frames, audio, captions, sponsor identification, and platform context, if a lawful copy becomes available.
 - Ask AdImpact, the news organizations that reported on the dispute, the relevant broadcasters, and the advertiser whether they can preserve or provide a complete viewer-facing copy.
 - Check Tennessee courts, election authorities, the Attorney General, and relevant district attorneys for later complaints, guidance, filings, or decisions.
@@ -208,8 +241,12 @@ This dispute also demonstrates why provenance matters. A transcript cannot revea
 6. [Axios Nashville — “Sen. Blackburn fights AI-generated attack ad”](https://www.axios.com/local/nashville/2026/07/29/sen-blackburn-fights-ai-generated-attack-ad)
 7. [AdImpact viewer record for “Queen Pharma Mama”](https://host2.adimpact.com/admo/viewer/8f943261-837c-45c2-997f-4031cf48461f)
 8. [Public Reddit discussion containing a lead to a viewer-recorded WKRN copy](https://www.reddit.com/r/nashville/comments/1v9b6d0/blackburn_goes_after_darkmoney_group_calling_her/)
+9. [Tennessee Lookout — Blackburn backer seeks investigation into dark-money ads against gubernatorial candidate](https://tennesseelookout.com/2026/07/29/blackburn-backer-seeks-investigation-into-dark-money-ads-against-gubernatorial-candidate/)
+10. [News From The States — Registry set to consider the sworn complaint Sept. 15](https://www.newsfromthestates.com/article/stockard-stump-dark-money-complaint-headed-tennessee-election-finance-registry)
 
 ## Revision history
 
 - **2026-07-30:** Initial research draft prepared; not published.
 - **2026-07-31:** Rechecked the enacted law and incorporated definition; conducted a fresh search for the original advertisement, advertiser response, broadcaster statements, litigation, enforcement, and agency guidance; documented the viewer-recording lead and unresolved evidence gaps; confirmed the metadata category and repository validation requirements.
+- **2026-08-19:** Added civic-information secondary tag following adoption of the candidate digital-civic-information research taxonomy; primary category remains government-ai-automation.
+- **2026-08-22:** Added the sworn Tennessee Registry of Election Finance complaint and the reported September 15 consideration date; separated campaign-finance registration allegations from the separate AI/synthetic-media disclosure allegation; preserved that no court or agency has determined that Tennessee’s deepfake law was violated.
