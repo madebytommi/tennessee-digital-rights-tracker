@@ -2,13 +2,13 @@
 title: "Tennessee Public Chapter 938 requires government policies to use a birth-based binary definition of sex and gender"
 date: 2026-07-27
 event_date: 2026-05-07
-last_reviewed: 2026-07-27
+last_reviewed: 2026-08-22
 status: "Active"
 level: "State"
 category: "lgbtq-trans-policy"
 jurisdiction: "Tennessee"
 confidence: "Medium"
-summary: "Tennessee Public Chapter 938 requires state and local governmental entities to use a birth-based binary definition when their ordinances, rules, policies, or procedures refer to a person's sex or gender. New nonconforming definitions have been barred since July 1, 2026, and existing materials must be revised by January 1, 2027. The law creates court, Comptroller, grant-eligibility, and state-funding enforcement mechanisms, while leaving the practical treatment of databases, forms, portals, identity records, historical data, and system integrations largely unspecified."
+summary: "Tennessee Public Chapter 938 requires state and local governmental entities to use a birth-based binary definition when their ordinances, rules, policies, or procedures refer to a person's sex or gender. New nonconforming definitions have been barred since July 1, 2026, and existing materials must be revised by January 1, 2027. Metro Nashville's published code and Manchester City Schools board materials now provide concrete examples of local implementation, while the practical treatment of databases, forms, portals, identity records, historical data, and system integrations remains largely unspecified."
 primary_source_url: "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1271&ga=114"
 primary_source_type: "law"
 source_archive_url: ""
@@ -24,6 +24,8 @@ tags:
 revision_history:
   - date: 2026-07-27
     note: "Initial publication based on Public Chapter 938, the adopted replacement amendment, official legislative history and sponsor statements, current Tennessee identity-document information, and public advocacy analysis."
+  - date: 2026-08-22
+    note: "Added verified local implementation evidence from Metro Nashville's published code and Manchester City Schools board materials; retained the January 1, 2027 compliance deadline from the official General Assembly record and preserved unresolved technical-system questions."
 ---
 
 ## Research and legal limitations
@@ -41,7 +43,7 @@ The absence of a publicly located implementation document does not prove that no
 
 Governor Bill Lee signed House Bill 1271 on May 7, 2026. It was assigned Public Chapter 938 on May 15.
 
-The House passed the final amended bill 72-16 on April 20, 2026. The Senate passed the House bill 24-6 on April 22. The adopted House amendment replaced the introduced bill's original one-line substance and became the operative enacted text.
+The House passed the final amended bill 72-16 on March 30, 2026. The Senate passed the House bill 24-6 on April 22. The adopted House amendment replaced the introduced bill's original one-line substance and became the operative enacted text.
 
 Public Chapter 938 creates a statewide mandate governing how state and local governmental entities define **sex** or **gender** in ordinances, resolutions, rules, policies, and procedures.
 
@@ -50,7 +52,9 @@ The law took effect when signed. It establishes two additional implementation da
 - Beginning July 1, 2026, covered entities may not adopt new covered materials using a definition inconsistent with the statute.
 - By January 1, 2027, covered entities must revise existing covered materials that use the terms sex or gender.
 
-The tracker uses **Active** status because the law is in effect and its July 1 restriction has begun. Confidence is **Medium** because the enacted requirements are documented, while the public record reviewed does not fully establish how agencies and local governments will modify forms, databases, portals, identity workflows, historical records, or data exchanges before January 1, 2027.
+The official General Assembly bill summary and fiscal memorandum both state the January 1, 2027 revision deadline. This tracker follows those official legislative materials when secondary summaries conflict about implementation dates.
+
+The tracker uses **Active** status because the law is in effect and its July 1 restriction has begun. Confidence is **Medium** because the enacted requirements and some local implementation activity are documented, while the public record reviewed does not fully establish how agencies and local governments will modify forms, databases, portals, identity workflows, historical records, or data exchanges before January 1, 2027.
 
 ## What the primary source says
 
@@ -193,7 +197,17 @@ Public Chapter 938 may therefore prompt data-governance work even though it does
 
 Those are reasonable technical implications of the mandate, not confirmed changes to every Tennessee system.
 
-As of the last review date, this project did not locate a clearly labeled statewide implementation manual, data standard, model policy, database schema, form inventory, identity-document rule, system-change directive, or cross-agency technical bulletin specific to Public Chapter 938 from the Comptroller, Department of Finance and Administration, Strategic Technology Solutions, Department of Safety and Homeland Security, or the state's public higher-education systems.
+### Verified local implementation examples
+
+Public records now show local entities beginning to implement the statute in published policy and code materials.
+
+**Metro Nashville and Davidson County.** The Municode-hosted Metro Code now contains an editor's note stating that, pursuant to Public Chapter 938, Metro ordinances, resolutions, rules, policies, and procedures referring to a natural person's sex or gender must be interpreted using the statute's birth-based definition. This is concrete evidence that the law is already affecting how a major local government's published code is to be interpreted. The editor's note does not establish that every underlying ordinance, form, database, or individual record has been separately rewritten.
+
+**Manchester City Schools.** The school board's July 6, 2026 public agenda included a specific "Notice of Public Chapter 938" identifying ten district policies for review or revision: Policies 4.100, 4.300, 4.301, 5.104, 5.501, 6.100, 6.301, 6.303, 6.304, and 6.3041. The agenda repeats the statutory definition and places the matter alongside policy-revision business. This provides direct evidence that a Tennessee school district is identifying multiple existing policies affected by the law. The agenda alone does not establish the final text, effective date, or technical-system changes resulting from each policy revision.
+
+These examples narrow one earlier uncertainty: implementation is no longer purely prospective. Local governments and school districts are already incorporating or reviewing the statutory definition in published governance materials. They do **not** resolve whether forms, portals, student-information systems, HR systems, identity records, data exchanges, or historical records are being modified.
+
+As of August 22, 2026, this project still did not locate a clearly labeled statewide implementation manual, data standard, model policy, database schema, form inventory, identity-document rule, system-change directive, or cross-agency technical bulletin specific to Public Chapter 938 from the Comptroller, Department of Finance and Administration, Strategic Technology Solutions, Department of Safety and Homeland Security, or the state's public higher-education systems.
 
 ## What officials say
 
@@ -204,6 +218,8 @@ Senate sponsor Paul Rose framed the proposal as creating consistency and clarity
 Those statements describe the sponsors' policy rationale. They are not independent findings by this tracker about administrative efficiency, scientific consensus, civil-rights effects, technical cost, or the experiences of affected people.
 
 The official fiscal analysis estimated that the act could affect state and local operations but did not establish a complete inventory or statewide cost for policy review, legal work, software changes, data migration, training, complaint handling, or funding enforcement.
+
+Metro Nashville's published code now carries an editor's note applying Public Chapter 938's definition across Metro materials that refer to sex or gender. Manchester City Schools separately placed a Public Chapter 938 notice identifying ten affected policies on its July 6 board agenda. These records show concrete local compliance work, but neither source establishes a statewide implementation method.
 
 ## What advocates and critics say
 
@@ -234,12 +250,14 @@ These positions identify serious policy and implementation questions. They do no
 - Continued noncompliance by certain state entities or public higher-education institutions can lead to escalating notices and possible withholding of general-fund revenue.
 - A state or local entity is not noncompliant based solely on accepting a valid birth certificate or other lawfully issued government identification.
 - The law does not prescribe a specific database schema, identity platform, form design, individual record-correction process, historical-data rule, or technical security control.
+- Metro Nashville's published code contains an editor's note applying the Public Chapter 938 definition to Metro ordinances, resolutions, rules, policies, and procedures that refer to sex or gender.
+- Manchester City Schools' July 6 board agenda identified ten district policies under a specific Public Chapter 938 implementation notice.
 
 ## What remains uncertain?
 
 As of the last review date, the following questions remained unresolved in the public materials reviewed:
 
-- Which state agencies and local governments have completed inventories of covered rules, policies, procedures, ordinances, and resolutions
+- Which additional state agencies and local governments have completed inventories of covered rules, policies, procedures, ordinances, and resolutions
 - Which documents or practices officials consider to contain a definition rather than merely use the words sex or gender
 - Whether statewide model language or implementation guidance will be published before January 1, 2027
 - Whether the Comptroller will publish complaint standards, investigation procedures, evidence requirements, findings, or compliance certifications
@@ -247,7 +265,7 @@ As of the last review date, the following questions remained unresolved in the p
 - How agencies will determine whether a form, database field, data dictionary, report, or software rule is itself a covered policy or procedure
 - Which online forms and government portals will change
 - Whether agencies will modify allowed values, field labels, tooltips, instructions, validation rules, or internal mappings
-- How public colleges, school districts, human-resources systems, benefit systems, licensing systems, and public-health datasets will implement the definition
+- How public colleges, additional school districts, human-resources systems, benefit systems, licensing systems, and public-health datasets will implement the definition
 - Whether existing individual records will be changed, preserved, segmented, annotated, or left untouched
 - Whether historical records will retain terminology and values created under earlier policies
 - How systems will handle a valid identification document containing information that differs from an agency's current classification or policy
@@ -288,6 +306,8 @@ Public Chapter 938 is a government data-governance law as well as an LGBTQ and t
 
 Definitions shape how government systems classify people. Once a definition is embedded in forms, databases, portals, reports, and interoperability rules, it can affect what information a person may submit, how records are matched, which values are accepted, what appears to government employees, and how eligibility or compliance decisions are made.
 
+The newly documented local implementation examples show that the statute is already influencing published government and school-district policy materials. They still do not show whether the same definition has been translated into database fields, portal logic, individual records, data exchanges, or automated decision rules.
+
 The statute's identity-document carveout may reduce one direct risk by preventing acceptance of a valid government-issued document from being the sole basis for a noncompliance finding. But the law does not explain what happens when a document, database, policy, and individual record do not align.
 
 Implementation could create privacy risks if agencies begin collecting additional birth, medical, anatomical, or documentary evidence to classify records. It could also create accuracy and due-process risks if systems overwrite historical information, reject lawful documents, create duplicate identities, or change records without notice and a correction process.
@@ -296,7 +316,7 @@ The law does not require those outcomes. They are risks to monitor because the s
 
 The most defensible current conclusion is:
 
-> Public Chapter 938 clearly requires state and local government policies to use a birth-based binary definition of sex and gender and creates meaningful enforcement consequences. It does not itself establish a digital-identification system or order every individual record changed. The public record does not yet show how Tennessee entities will translate the mandate into forms, databases, identity workflows, historical records, data exchanges, or individual correction procedures.
+> Public Chapter 938 clearly requires state and local government policies to use a birth-based binary definition of sex and gender and creates meaningful enforcement consequences. Metro Nashville and Manchester City Schools now provide concrete examples of local implementation in published governance materials. The law still does not itself establish a digital-identification system or order every individual record changed, and the public record does not yet show how Tennessee entities will translate the mandate into forms, databases, identity workflows, historical records, data exchanges, or individual correction procedures.
 
 ## Lawful actions and resources
 
@@ -316,16 +336,20 @@ The most defensible current conclusion is:
 2. [Tennessee Secretary of State — Public Chapter 938](https://publications.tnsosfiles.com/acts/114/pub/pc0938.pdf)
 3. [Tennessee General Assembly — adopted House Amendment 763](https://capitol.tn.gov/Bills/114/Amend/HA0763.pdf)
 4. [Tennessee General Assembly — introduced HB 1271](https://www.capitol.tn.gov/Bills/114/Bill/HB1271.pdf)
-5. [Tennessee Senate Republican Caucus — sponsor explanation and legislative update](https://www.tnsenategop.com/weekly-wraps/senators-promote-agriculture-and-advance-important-legislation-to-protect-children-improve-public-safety-and-support-first-respondersnbsp)
-6. [Tennessee Vital Records — current information about correcting the sex field on a Tennessee birth certificate](https://vitalrecords.tn.gov/hc/en-us/articles/36331137173779-How-do-I-correct-the-sex-on-my-birth-certificate)
-7. [Tennessee Department of Labor and Workforce Development — documents accepted for identity verification](https://lwdsupport.tn.gov/hc/en-us/articles/4407872741139-What-documents-can-I-use-to-verify-my-identity)
+5. [Tennessee General Assembly — fiscal memorandum for SB 936 / HB 1271](https://capitol.tn.gov/Bills/114/Fiscal/FM2863.pdf)
+6. [Tennessee Senate Republican Caucus — sponsor explanation and legislative update](https://www.tnsenategop.com/weekly-wraps/senators-promote-agriculture-and-advance-important-legislation-to-protect-children-improve-public-safety-and-support-first-respondersnbsp)
+7. [Metro Nashville and Davidson County Code — Public Chapter 938 editor's note](https://library.municode.com/TN/Metro_Government_of_Nashville_and_Davidson_County/codes/code_of_ordinances?nodeId=CD_TIT1GEPR_CH1.08CIDI_1.08.020SECIDIDEOU)
+8. [Manchester City Schools — July 6, 2026 board agenda, Public Chapter 938 notice](https://meeting.boeconnect.net/Public/Agenda/manchestercitysch?meeting=751335)
+9. [Tennessee Vital Records — current information about correcting the sex field on a Tennessee birth certificate](https://vitalrecords.tn.gov/hc/en-us/articles/36331137173779-How-do-I-correct-the-sex-on-my-birth-certificate)
+10. [Tennessee Department of Labor and Workforce Development — documents accepted for identity verification](https://lwdsupport.tn.gov/hc/en-us/articles/4407872741139-What-documents-can-I-use-to-verify-my-identity)
 
 ### Advocacy and news context
 
-8. [Tennessee Equality Project — 2026 bill watch](https://www.tnep.org/billwatch2026)
-9. [Tennessee Equality Project — legislative campaign concerning HB 1271 and related bills](https://www.tnep.org/legislative_campaigns_week_of_jan_18_2026)
-10. [Tennessee Lookout — LGBTQ advocates urge a veto of legislation including HB 1271](https://tennesseelookout.com/2026/05/01/tennessee-lgbtq-advocates-urge-governor-to-veto-slate-of-bills/)
+11. [Tennessee Equality Project — 2026 bill watch](https://www.tnep.org/billwatch2026)
+12. [Tennessee Equality Project — legislative campaign concerning HB 1271 and related bills](https://www.tnep.org/legislative_campaigns_week_of_jan_18_2026)
+13. [Tennessee Lookout — LGBTQ advocates urge a veto of legislation including HB 1271](https://tennesseelookout.com/2026/05/01/tennessee-lgbtq-advocates-urge-governor-to-veto-slate-of-bills/)
 
 ## Revision history
 
 - **2026-07-27:** Initial publication. Verified enactment, replacement-amendment history, effective and compliance dates, local and state enforcement routes, grant and funding consequences, the identity-document carveout, and the federal-law provision; separated direct statutory requirements from unconfirmed database and identity-system effects; and recorded unresolved form, records, interoperability, notice, correction, privacy, and implementation questions.
+- **2026-08-22:** Added verified local implementation examples from Metro Nashville's published code and Manchester City Schools' July board agenda; clarified that implementation is no longer purely prospective while forms, databases, portals, identity records, and other technical changes remain unresolved; and reaffirmed the January 1, 2027 compliance deadline using official General Assembly materials.
