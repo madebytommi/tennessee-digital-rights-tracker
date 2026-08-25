@@ -13,6 +13,10 @@ layout: default
     <h1>{{ page.title }}</h1>
     <p class="lede">{{ page.summary }}</p>
 
+    {% if page.case_id == "federal-election-administration-2026" %}
+      {% include federal-election-case-hero.html %}
+    {% endif %}
+
     <dl class="entry-facts case-status-grid">
       <div><dt>Status</dt><dd>{{ page.status }}</dd></div>
       <div><dt>Jurisdiction</dt><dd>{{ page.jurisdiction | default: "Tennessee" }}</dd></div>
