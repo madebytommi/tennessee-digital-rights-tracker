@@ -8,7 +8,7 @@ layout: default
   <p class="back-link"><a href="{{ '/special-cases/' | relative_url }}">← Back to Special Cases</a></p>
 
   <header class="special-case-header">
-    <p class="special-case-label">Special Case · Ongoing investigation</p>
+    <p class="special-case-label">Special Case · {{ page.status }}</p>
     <p class="eyebrow">{{ page.level | default: "Multi-level" }} · {{ category_label }}</p>
     <h1>{{ page.title }}</h1>
     <p class="lede">{{ page.summary }}</p>
