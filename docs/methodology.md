@@ -102,9 +102,35 @@ Low-confidence material should not be framed as settled.
 - **Blocked or Enjoined:** prevented from taking effect by a court or other authority
 - **Repealed, Expired, or Resolved:** no longer active, while retained for historical context
 
+## Special Cases
+
+A Special Case is a living evidence record for a complex subject that cannot be represented accurately as one dated event or one primary source. It may connect multiple Tracker entries, laws, court decisions, technical systems, agency actions, and implementation changes while keeping the evidence for each component separate.
+
+Special Cases use the same evidence hierarchy, confidence rules, research boundaries, and editorial standards as ordinary entries. They do not permit broader claims merely because several developments appear related.
+
+Every published Special Case must:
+
+- have a meaningful Tennessee nexus;
+- have at least one related published Tracker entry;
+- identify its scope and current status;
+- distinguish documented connections from supported or merely possible relationships;
+- include a chronological evidence record;
+- state what the evidence does **not** establish; and
+- identify material unresolved questions and update triggers.
+
+For Special Cases, Tennessee nexus is classified as:
+
+- **Direct:** the development directly involves Tennessee, a Tennessee government entity, Tennessee-specific data or infrastructure, or a documented Tennessee implementation.
+- **Conditional:** the development would materially apply to Tennessee if an identified legal, technical, or operational condition occurs.
+- **Context:** the development is necessary to understand a Tennessee-connected system, authority, institution, or chronology but does not itself establish a Tennessee implementation or effect.
+
+Context-only material cannot substitute for a genuine Tennessee nexus.
+
+When discussing relationships among developments, timing or institutional proximity alone does not establish causation, coordination, motive, or operational connection. See [`docs/special-cases.md`](special-cases.md) for the full authoring rules.
+
 ## Update triggers
 
-Review an entry when:
+Review an entry or Special Case when:
 
 - A bill is amended, passed, signed, vetoed, or withdrawn
 - An agency publishes implementing guidance
@@ -112,6 +138,7 @@ Review an entry when:
 - A contract or public record becomes available
 - Atlas of Surveillance adds or materially revises a relevant Tennessee record
 - A factual correction is received
+- A Special Case receives a material new related entry or a documented relationship changes
 - Six months pass without review on an active issue
 
 ## Archiving

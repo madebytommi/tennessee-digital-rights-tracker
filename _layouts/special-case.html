@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+{% assign category_label = page.category | replace: "-", " " | capitalize %}
+{% assign related_entries = site.entries | where: "special_case_id", page.case_id | sort: "event_date" | reverse %}
+<article class="special-case">
+  <p class="back-link"><a href="{{ '/special-cases/' | relative_url }}">← Back to Special Cases</a></p>
+
+  <header class="special-case-header">
+    <p class="special-case-label">Special Case · {{ page.status }}</p>
+    <p class="eyebrow">{{ page.level | default: "Multi-level" }} · {{ category_label }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="lede">{{ page.summary }}</p>
+
+    <dl class="entry-facts case-status-grid">
+      <div><dt>Status</dt><dd>{{ page.status }}</dd></div>
+      <div><dt>Jurisdiction</dt><dd>{{ page.jurisdiction | default: "Tennessee" }}</dd></div>
+      <div><dt>Period covered</dt><dd>{{ page.scope_start | date: "%B %-d, %Y" }}{% if page.scope_end %}–{{ page.scope_end | date: "%B %-d, %Y" }}{% else %}–present{% endif %}</dd></div>
+      <div><dt>Last reviewed</dt><dd>{{ page.last_reviewed | date: "%B %-d, %Y" }}</dd></div>
+      <div><dt>Confidence</dt><dd>{{ page.confidence }}</dd></div>
+      <div><dt>Related entries</dt><dd>{{ related_entries.size }}</dd></div>
+    </dl>
+  </header>
+
+  {{ content }}
+
+  <section class="related-entries" aria-labelledby="related-entries-heading">
+    <h2 id="related-entries-heading">Related Tracker entries</h2>
+    {% if related_entries.size > 0 %}
+    <ul class="entry-list compact-entry-list">
+      {% for entry in related_entries %}
+      <li>
+        <h3><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></h3>
+        <div class="entry-meta">
+          {{ entry.event_date | default: entry.date | date: "%B %-d, %Y" }} ·
+          {{ entry.status | default: "Monitoring" }} ·
+          {{ entry.jurisdiction | default: entry.level }}
+        </div>
+        {% if entry.summary %}<p>{{ entry.summary }}</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No related published entries are linked to this Special Case yet.</p>
+    {% endif %}
+  </section>
+
+  {% if page.tags %}
+  <footer class="entry-tags">
+    <strong>Tags:</strong>
+    {% for tag in page.tags %}<span>{{ tag }}</span>{% endfor %}
+  </footer>
+  {% endif %}
+
+  <p class="back-link bottom-link"><a href="{{ '/special-cases/' | relative_url }}">← Back to Special Cases</a></p>
+</article>

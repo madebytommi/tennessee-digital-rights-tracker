@@ -3,8 +3,16 @@ layout: default
 ---
 
 {% assign category_label = page.category | replace: "-", " " | capitalize %}
+{% assign related_case = site.special_cases | where: "case_id", page.special_case_id | first %}
 <article>
   <p class="back-link"><a href="{{ '/' | relative_url }}">← Back to all entries</a></p>
+
+  {% if related_case %}
+  <aside class="related-case-notice">
+    <strong>Part of an ongoing Special Case:</strong>
+    <a href="{{ related_case.url | relative_url }}">{{ related_case.title }}</a>
+  </aside>
+  {% endif %}
 
   <header class="entry-header">
     <p class="eyebrow">{{ page.level | default: "State" }} · {{ category_label }}</p>

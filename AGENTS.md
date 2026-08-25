@@ -12,8 +12,11 @@ Use task routing rather than reading every policy for every task. When this file
 - Evidence standards and research boundaries: `docs/methodology.md`
 - Public-facing tone and corrections: `docs/editorial-policy.md`
 - Entry categories and tags: `docs/taxonomy.md`
+- Special Case rules: `docs/special-cases.md`
 - Machine-valid entry metadata: `schemas/entry.schema.json` and `scripts/validate_entries.py`
+- Machine-valid Special Case metadata: `schemas/special-case.schema.json` and `scripts/validate_entries.py`
 - Entry structure: `templates/ENTRY_TEMPLATE.md`
+- Special Case structure: `templates/SPECIAL_CASE_TEMPLATE.md`
 - Privacy and security: `docs/privacy-policy.md`, `docs/security-model.md`, and `SECURITY.md`
 - Contribution and pull-request process: `CONTRIBUTING.md` and `.github/pull_request_template.md`
 
@@ -35,9 +38,19 @@ For surveillance, ALPR, or police-technology research, also follow the Atlas of 
 
 Read `docs/research-protocol.md`, `docs/methodology.md`, `docs/editorial-policy.md`, `docs/taxonomy.md`, `templates/ENTRY_TEMPLATE.md`, `schemas/entry.schema.json`, and `CONTRIBUTING.md`.
 
+### Creating or updating a Special Case
+
+Read everything required for a new published Tracker entry plus `docs/special-cases.md`, `templates/SPECIAL_CASE_TEMPLATE.md`, and `schemas/special-case.schema.json`.
+
+A Special Case is a synthesis layer, not a shortcut around entry-level research. Do not create a published Special Case until its Tennessee nexus is supported, at least one related ordinary entry is publication-ready and linked, and the case satisfies the publication threshold in `docs/special-cases.md`.
+
+Do not treat chronology, shared institutions, policy similarity, or political context as proof of coordination, motive, causation, or operational linkage. Use the relationship labels in `docs/special-cases.md` and preserve material evidence that weakens the working theory.
+
 ### Updating an existing entry
 
 Read everything required for a new entry, plus the existing entry, its revision history, and relevant prior sources where necessary.
+
+If the entry has `special_case_id`, also read the linked Special Case and `docs/special-cases.md` so the relationship remains accurate.
 
 ### Correcting a factual error
 
@@ -46,6 +59,8 @@ Read the target entry, `docs/research-protocol.md`, `docs/methodology.md`, `docs
 ### Changing categories, statuses, confidence values, or front matter
 
 Read `docs/taxonomy.md`, `schemas/entry.schema.json`, `templates/ENTRY_TEMPLATE.md`, and the relevant status and confidence sections of `docs/methodology.md`.
+
+For Special Case metadata, also read `docs/special-cases.md`, `schemas/special-case.schema.json`, and `templates/SPECIAL_CASE_TEMPLATE.md`.
 
 The schema and validator control literal machine-valid front-matter values. Do not use the conceptual prose label `Blocked or Enjoined` where the schema requires either `Blocked` or `Enjoined`. Likewise, `Repealed`, `Expired`, and `Resolved` are distinct schema values.
 
@@ -75,7 +90,7 @@ Read `CONTRIBUTING.md` and `.github/pull_request_template.md`.
 
 ### Changing validation, schema, templates, or entry tooling
 
-Read `schemas/entry.schema.json`, `scripts/validate_entries.py`, `templates/ENTRY_TEMPLATE.md`, and representative files under `_entries/`.
+Read `schemas/entry.schema.json`, `schemas/special-case.schema.json` when applicable, `scripts/validate_entries.py`, `templates/ENTRY_TEMPLATE.md`, `templates/SPECIAL_CASE_TEMPLATE.md` when applicable, and representative files under `_entries/`.
 
 Do not load unrelated implementation files for pure research tasks. `docs/roadmap.md` is primarily for feature planning and architectural expansion; privacy and security policies become mandatory when a task touches data collection, tracking, sensitive content, accounts, embeds, or security.
 
@@ -118,9 +133,13 @@ Use `templates/ENTRY_TEMPLATE.md` for new published entries and conform front ma
 
 Files under `_entries/` are published Tracker items, not scratch research notes. Do not create a new `_entries/` file until the underlying research is publication-ready under `docs/research-protocol.md`.
 
+Use `templates/SPECIAL_CASE_TEMPLATE.md` for published Special Cases and conform front matter to `schemas/special-case.schema.json`, `docs/special-cases.md`, and the validator.
+
+Files under `_special_cases/` are published synthesis records, not scratch research notes. Substantive Special Case investigations should maintain their working evidence under `research/` before publication.
+
 ## Validation and diff review
 
-For changes touching `_entries/`, `templates/ENTRY_TEMPLATE.md`, `schemas/entry.schema.json`, or `scripts/validate_entries.py`, run at minimum:
+For changes touching `_entries/`, `_special_cases/`, `templates/ENTRY_TEMPLATE.md`, `templates/SPECIAL_CASE_TEMPLATE.md`, `schemas/entry.schema.json`, `schemas/special-case.schema.json`, or `scripts/validate_entries.py`, run at minimum:
 
 ```bash
 python3 scripts/validate_entries.py

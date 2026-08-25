@@ -14,7 +14,7 @@ The Tennessee Digital Rights Tracker turns complicated laws, contracts, court de
 
 Use the tracker to learn what the government is doing, what personal information may be collected or shared, how civic information may be produced or distributed, who may be affected, what protections or oversight exist, what remains unknown, and what lawful actions are available.
 
-[**Browse the tracker**](#browse-entries) · [About the project]({{ '/about/' | relative_url }})
+[**Browse the tracker**](#browse-entries) · [Special Cases]({{ '/special-cases/' | relative_url }}) · [About the project]({{ '/about/' | relative_url }})
 
 <div class="notice">
   <strong>How this site works:</strong> Every entry keeps confirmed facts, official statements, outside criticism, project analysis, and unanswered questions separate. Sources are linked so readers can examine the evidence themselves. This project does not provide legal advice or claim access to nonpublic systems.
@@ -47,13 +47,36 @@ Use the tracker to learn what the government is doing, what personal information
     <h3>Digital civic information</h3>
     <p>Political media, synthetic content, information provenance, targeting, and digital systems that shape how Tennesseans encounter election, government, or public-policy information.</p>
   </section>
+  <section class="coverage-card">
+    <h3>Election systems and voter data</h3>
+    <p>Voter-registration databases, eligibility verification, election cybersecurity, ballot-transmission systems, voting-system certification, and related government data infrastructure.</p>
+  </section>
 </div>
 
 ## Why this matters
 
-Government technology and civic-information systems can affect where people travel, how they access healthcare, what they can view online, how their identity is recorded, and how they encounter information about elections and public life.
+Government technology and civic-information systems can affect where people travel, how they access healthcare, what they can view online, how their identity is recorded, how elections are administered, and how they encounter information about elections and public life.
 
 These systems are often described through technical language, lengthy legislation, scattered public records, or unclear ownership and production methods. This project brings the available evidence together, explains it plainly, and clearly identifies what the public still does not know.
+
+{% assign sorted_special_cases = site.special_cases | sort: "last_reviewed" | reverse %}
+{% if sorted_special_cases.size > 0 %}
+## Special Cases
+
+Special Cases are ongoing investigations that connect multiple sourced developments without treating timing, proximity, or political controversy as proof of coordination.
+
+<div class="special-case-grid">
+{% for case in sorted_special_cases %}
+  {% assign related_entries = site.entries | where: "special_case_id", case.case_id %}
+  <section class="special-case-card">
+    <p class="special-case-label">Special Case · {{ case.status }}</p>
+    <h3><a href="{{ case.url | relative_url }}">{{ case.title }}</a></h3>
+    <p>{{ case.summary }}</p>
+    <div class="entry-meta">Updated {{ case.last_reviewed | date: "%B %-d, %Y" }} · {{ related_entries.size }} related entr{% if related_entries.size == 1 %}y{% else %}ies{% endif %}</div>
+  </section>
+{% endfor %}
+</div>
+{% endif %}
 
 ## Browse entries
 

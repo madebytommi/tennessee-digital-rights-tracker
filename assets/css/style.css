@@ -75,6 +75,20 @@ table { width: 100%; border-collapse: collapse; margin-block: 1rem; }
 th, td { border: 1px solid var(--border); padding: .65rem; text-align: left; vertical-align: top; }
 th { background: var(--panel); }
 
+.special-case-grid, .special-case-list { display: grid; gap: 1rem; }
+.special-case-list { list-style: none; padding: 0; }
+.special-case-card { border: 1px solid var(--border); border-left: .3rem solid var(--accent); background: var(--panel); border-radius: .55rem; padding: 1.15rem; }
+.special-case-card h2, .special-case-card h3 { margin: .35rem 0 .5rem; }
+.special-case-card p:last-child { margin-bottom: 0; }
+.special-case-label { color: var(--accent); font-size: .8rem; font-weight: 800; letter-spacing: .07em; margin: 0 0 .4rem; text-transform: uppercase; }
+.special-case-header { border-bottom: 1px solid var(--border); margin-bottom: 2rem; padding-bottom: 1.5rem; }
+.case-status-grid { margin-top: 1.4rem; }
+.related-case-notice { border: 1px solid var(--border); border-left: .3rem solid var(--accent); background: var(--panel); border-radius: .45rem; margin-bottom: 1.5rem; padding: .85rem 1rem; }
+.related-case-notice strong { margin-right: .25rem; }
+.related-entries { border-top: 1px solid var(--border); margin-top: 2.5rem; padding-top: .25rem; }
+.compact-entry-list li { padding: 1rem; }
+.compact-entry-list h3 { margin-top: 0; }
+
 @media (max-width: 640px) {
   .header-inner { align-items: flex-start; flex-direction: column; padding-block: .8rem; }
   main { padding-top: 1.75rem; }

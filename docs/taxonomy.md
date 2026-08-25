@@ -99,6 +99,48 @@ Use `digital-civic-information` when the central research issue is the creation,
 
 The secondary tag `civic-information` may still be used when civic-information concerns are important to an entry whose primary category belongs elsewhere, such as a political-deepfake entry primarily categorized under `government-ai-automation`.
 
+## `election-systems-data`
+
+Government technology, databases, identity-verification systems, cybersecurity systems, ballot-transmission infrastructure, voting-system certification, voter-record sharing, automated eligibility processes, and related technical or data systems used to administer elections.
+
+Use this category when the core digital-rights question concerns how an election is technically administered rather than how political information is created or distributed.
+
+### In scope
+
+An issue may fit when it has a meaningful Tennessee nexus and involves one or more of the following:
+
+- voter-registration databases or voter-file sharing;
+- citizenship or eligibility-verification systems used for election administration;
+- automated or database-assisted voter-list maintenance;
+- election cybersecurity systems or federal-state election-security infrastructure;
+- electronic poll books, ballot-tracking systems, or ballot-transmission infrastructure;
+- voting-system testing, certification, standards, or technical oversight;
+- technical audits, access controls, logging, or data-sharing rules for election systems;
+- government use of federal identity, immigration, or benefits databases for voter eligibility decisions; or
+- Tennessee implementation of federal election-technology, voter-data, or ballot-processing requirements.
+
+### Out of scope by itself
+
+The following do not qualify without a material technology, data, identity-system, cybersecurity, or digital-infrastructure component:
+
+- ordinary campaign strategy;
+- candidate or party disputes;
+- political rhetoric about election integrity;
+- general allegations of voter fraud;
+- election-result disputes considered solely as political or legal controversies;
+- polling, endorsements, fundraising, or get-out-the-vote activity; or
+- ordinary election-law changes that do not materially involve data or technical infrastructure.
+
+The category must not be used to imply that a technical change is improper, partisan, fraudulent, or outcome-determinative without evidence supporting that conclusion.
+
+### Relationship to `digital-civic-information`
+
+Use `election-systems-data` when the central issue is the technical administration of voting, voter eligibility, voter records, ballot handling, or election-system security.
+
+Use `digital-civic-information` when the central issue is political-media provenance, targeting, authentication, synthetic content, or distribution of civic information.
+
+An entry may use secondary tags to reflect overlap, but it should have only one primary category.
+
 ## Secondary tags
 
 Examples:
@@ -115,3 +157,5 @@ Examples:
 - `executive-action`
 - `contracting`
 - `civic-information`
+- `elections`
+- `voter-data`

@@ -12,6 +12,8 @@ summary: "One or two sentences explaining the development without advocacy langu
 primary_source_url: "https://example.gov/primary-source"
 primary_source_type: "bill"
 source_archive_url: ""
+# Optional: link this entry to one published Special Case by exact case_id.
+# special_case_id: "example-special-case"
 tags:
   - privacy
   - healthcare

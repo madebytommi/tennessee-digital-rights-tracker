@@ -14,7 +14,7 @@ The tracker brings together Tennessee laws, policies, court decisions, governmen
 
 ## Focus areas
 
-The tracker focuses on six areas:
+The tracker focuses on seven areas:
 
 1. LGBTQ and transgender rights
 2. Government surveillance and tracking
@@ -22,8 +22,9 @@ The tracker focuses on six areas:
 4. Online identity and age verification
 5. Government use of artificial intelligence and automated decision systems
 6. Digital civic information, political media, and information provenance
+7. Election systems, voter data, eligibility verification, and election cybersecurity infrastructure
 
-An issue belongs in the tracker when it has a meaningful connection to technology, data, records, identity systems, digital access, surveillance, automated government decision-making, or civic-information infrastructure and provenance.
+An issue belongs in the tracker when it has a meaningful connection to technology, data, records, identity systems, digital access, surveillance, automated government decision-making, election infrastructure, or civic-information infrastructure and provenance.
 
 ## Recurring questions
 
@@ -46,6 +47,14 @@ Across different subjects, the tracker asks:
 - **No partisan scorekeeping.**
 - **No claims of anonymity or safety that the project cannot guarantee.**
 - **Every entry includes a practical, lawful action section.**
+
+## Special Cases
+
+Most Tracker items are ordinary entries centered on one development and one event date. A **Special Case** is reserved for a complex, ongoing investigation that requires multiple independently sourced developments to understand accurately.
+
+Special Cases must have a meaningful Tennessee nexus, must link to at least one ordinary published Tracker entry, and must clearly distinguish documented connections from supported or merely possible relationships. They also include a mandatory section stating what the available evidence does **not** establish.
+
+See [`docs/special-cases.md`](docs/special-cases.md) for the full rules.
 
 ## Research and legal boundaries
 
@@ -90,20 +99,24 @@ Every tracked item answers:
 
 Use [`templates/ENTRY_TEMPLATE.md`](templates/ENTRY_TEMPLATE.md) when preparing a new entry. Files placed under `_entries/` are treated as published tracker items by Jekyll.
 
+Special Cases use [`templates/SPECIAL_CASE_TEMPLATE.md`](templates/SPECIAL_CASE_TEMPLATE.md) and are published from `_special_cases/` only after the underlying research satisfies the Special Case publication threshold.
+
 ## Repository layout
 
 ```text
 .
-├── _entries/                 # Published tracker entries only
+├── _entries/                 # Published single-development tracker entries
+├── _special_cases/           # Published multi-event Special Cases
 ├── _layouts/                 # GitHub Pages/Jekyll page layouts
 ├── assets/                   # CSS and other static assets
 ├── docs/                     # Methodology, taxonomy, policies, and roadmap
 ├── research/                 # Working research notes; excluded from the public site
 ├── templates/                # Authoring templates excluded from the live site
-├── schemas/                  # Entry metadata schema
+├── schemas/                  # Entry and Special Case metadata schemas
 ├── scripts/                  # Validation tools
 ├── .github/                  # Issue forms, PR template, and CI workflow
 ├── index.md                  # Tracker homepage
+├── special-cases.md          # Special Cases landing page
 ├── about.md                  # Public project overview
 ├── LICENSE                   # MIT license for code
 ├── LICENSE-CONTENT.md        # CC BY 4.0 notice for original writing
@@ -117,11 +130,11 @@ python -m pip install -r requirements-dev.txt
 python3 scripts/validate_entries.py
 ```
 
-The same validator runs in GitHub Actions for pull requests and pushes to `main`.
+The validator checks both ordinary entries and Special Cases, including references from entries to published Special Cases. The same validator runs in GitHub Actions for pull requests and pushes to `main`.
 
 ## Publishing workflow
 
-1. Create a branch for one entry or focused maintenance change.
+1. Create a branch for one entry, Special Case, or focused maintenance change.
 2. Add or revise files.
 3. Run the validator.
 4. Open a pull request.
@@ -131,6 +144,8 @@ The same validator runs in GitHub Actions for pull requests and pushes to `main`
 
 ## Licensing
 
-- Repository code, layouts, styles, templates, and validation tooling are licensed under the [MIT License](LICENSE).
-- Original tracker writing is licensed under [Creative Commons Attribution 4.0 International](LICENSE-CONTENT.md), unless otherwise noted.
-- Government documents and third-party material retain their original legal status and ownership.
+Repository code, layouts, styles, templates, and validation tooling are licensed under the [MIT License](LICENSE).
+
+Original tracker writing is licensed under [Creative Commons Attribution 4.0 International](LICENSE-CONTENT.md), unless otherwise noted.
+
+Government documents and third-party material retain their original legal status and ownership.

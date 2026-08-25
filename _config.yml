@@ -10,6 +10,9 @@ collections:
   entries:
     output: true
     permalink: /entries/:name/
+  special_cases:
+    output: true
+    permalink: /special-cases/:name/
 
 defaults:
   - scope:
@@ -17,6 +20,11 @@ defaults:
       type: entries
     values:
       layout: entry
+  - scope:
+      path: ""
+      type: special_cases
+    values:
+      layout: special-case
 
 exclude:
   - research
