@@ -204,7 +204,7 @@ In the modified bulk workflow, a user could upload a spreadsheet containing firs
 
 For inconclusive results, SAVE could require more information or supporting documents. The administrative record described responses including U.S. Citizen, Deceased, Immigration Enumerator Required, Unable to Return Record from SSA, or Full SSN Required.
 
-This is the architecture Tennessee could use when it compared approximately four million records in 2025.
+These were the enhanced capabilities available during the period in which Tennessee reported its approximately four-million-record SAVE comparison. The public sources located in this pass do not independently document Tennessee's exact query-file structure or which optional fields it supplied in that comparison.
 
 ## Finding 10 — The 2025 enhanced architecture was vacated in June 2026
 
