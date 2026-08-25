@@ -22,7 +22,7 @@ tags:
   - Tennessee
 revision_history:
   - date: 2026-08-24
-    note: "Unpublished public-format draft prepared from the research dossier."
+    note: "Unpublished public-format draft prepared from the research dossier and revised after adversarial review."
 ---
 
 > **Draft status:** This file is an unpublished public-format draft stored under `research/`. It is not a live Special Case. Before publication it requires a linked ordinary Tracker entry, a final same-day legal-status recheck, validator review, and merge into `_special_cases/`.
@@ -49,14 +49,16 @@ Tennessee has several documented direct connections to the systems in this case:
 - Tennessee law authorizes the Coordinator of Elections to compare the statewide voter-registration database with SAVE and other government records for citizenship-verification purposes.
 - Tennessee reported using the enhanced 2025 SAVE system to compare about four million voter records and referred 42 people identified as **potential** non-U.S. citizens who had voted to the FBI. The referrals were not final adjudications of citizenship or criminal liability.
 - Tennessee provided its statewide voter-registration information to the U.S. Department of Justice. Secretary of State Tre Hargett and Elections Coordinator Mark Goins have directly confirmed the transfer.
-- Tennessee declined DOJ's proposed voter-roll memorandum of understanding because, according to Goins, state officials were concerned about federal voter-removal requirements and false-positive risk.
+- Tennessee declined DOJ's proposed voter-roll memorandum of understanding because, according to Goins, state officials were concerned the proposed terms could conflict with National Voter Registration Act removal rules and create false-positive removal risk.
 - Tennessee enacted Public Chapter 473 in 2025 to create a county-facing citizenship-verification portal before January 1, 2028. Public Chapter 775 in 2026 authorizes that portal to incorporate SAVE through a secure federal web service if the service is made available.
+
+A SAVE result does **not** itself automatically remove a Tennessee voter. Tennessee law controls the subsequent notice, proof, purge, and appeal process for a registered voter whose citizenship is questioned.
 
 ### Conditional
 
 The following federal developments could materially affect Tennessee but are not presently established as operating against Tennessee voters:
 
-- Executive Order 14399 directs DHS and SSA to take lawful and feasible steps toward compiling State Citizenship Lists and sending them to states before federal elections.
+- Executive Order 14399 directs DHS and SSA to take lawful and feasible steps toward compiling State Citizenship Lists and sending them to states before federal elections. The Supreme Court's August 24 opinion emphasized that the order does not require states to use those lists.
 - USPS finalized new federal ballot-mail preparation and data-submission rules that could apply to Tennessee election offices if the current injunction against 2026 implementation is lifted.
 
 ### Context
@@ -73,22 +75,22 @@ The enhanced 2025 SAVE system that added bulk searching, Social Security Adminis
 
 Tennessee also transferred its statewide voter-registration information to DOJ. Public evidence strongly supports that the transferred data included names, dates of birth, addresses, and the last four digits of Social Security numbers; driver's-license or DMV identifiers are also strongly supported, although the exact Tennessee transmission manifest has not been located. No evidence reviewed establishes that full Social Security numbers were transmitted.
 
-DOJ has documented a general federal architecture for processing collected state voter files through a DOJ-controlled SAVE account with DHS involvement. **No Tennessee-specific upload log, batch record, DHS request, or return-results file has been located showing that Tennessee's particular DOJ copy traveled through that federal SAVE pathway.** That connection remains unresolved.
+DOJ has described a general workflow in which collected state voter files can be processed through a DOJ-controlled SAVE account with DHS involvement. **No Tennessee-specific upload log, batch record, DHS request, or return-results file has been located showing that Tennessee's particular DOJ copy traveled through that federal SAVE pathway.** That connection remains unresolved.
 
-Executive Order 14399 is in an unusual legal posture. On August 24, the Supreme Court stayed the injunction in `California v. Trump` while the appeal proceeds, largely on standing and ripeness grounds. The Court expressly did not hold that later implementation measures will necessarily be lawful.
+Executive Order 14399 is in an unusual legal posture. On August 24, the Supreme Court stayed the injunction in `California v. Trump` while the appeal proceeds, largely on standing and ripeness grounds. The Court characterized the State Citizenship List directive as an internal federal instruction constrained by feasibility and applicable law, noted that states are not required by the order to use the lists, and expressly did not hold that later implementation measures will necessarily be lawful.
 
 A **separate nationwide August 11 injunction in `League of Women Voters of Massachusetts v. Trump` remains the current practical barrier to USPS implementing Section 3 for the November 3, 2026 election or earlier federal elections.** USPS issued a final ballot-mail rule effective August 21, but the rule says USPS will not implement it for the 2026 election while the relevant injunctions remain.
 
 The USPS final rule is narrower than a broad reading of the Executive Order. It does not direct USPS to determine a voter's citizenship or eligibility and does not establish a SAVE or State Citizenship List check by postal workers. Its new verification process applies to **outbound ballot mailings prepared by election officials before USPS accepts the batch**, not to a voter's completed return ballot.
 
-Tennessee's existing absentee-voting rule therefore remains unchanged today: a completed absentee ballot must be returned by mail or qualifying carrier and received by the county election commission by the close of polls on Election Day.
+No change to Tennessee's published absentee-return instructions from the federal USPS rule was located as of this research cutoff. Tennessee continues to instruct absentee voters to return completed ballots by mail, including USPS, FedEx, or UPS, in time for the county election commission to receive them by the close of polls on Election Day; hand delivery is not permitted.
 
 ## Documented timeline
 
 | Date | Development | Tennessee nexus | Status | Evidence |
 |---|---|---|---|---|
 | 2024-10-10 | USCIS identifies Tennessee among ten states registered to use SAVE for voter registration or voter-list maintenance. | Direct baseline | Verified | USCIS correspondence |
-| 2025-03-25 | Executive Order 14248 directs a broad federal election-integrity program; later federal changes substantially expand SAVE for voter verification. | Context / later direct through TN use | Verified in relevant part | Executive order; D.D.C. SAVE record |
+| 2025-03-25 | Executive Order 14248 directs a broad federal election-integrity program. | Context | Verified | Executive order |
 | 2025-05-21 | Tennessee Public Chapter 473 requires creation of a secure county citizenship-verification portal before Jan. 1, 2028. | Direct | Verified | Tennessee General Assembly |
 | 2025-11-03 | Tennessee reports that it used enhanced SAVE to compare about four million records and referred 42 potential non-U.S.-citizen voters to the FBI. | Direct | Verified for comparison/referral; final outcomes unresolved | Tennessee reporting based on Hargett correspondence |
 | 2025-12-18 | DOJ announces that Tennessee intends to voluntarily provide its full voter-registration list. | Direct | Verified | U.S. DOJ |
@@ -111,7 +113,7 @@ Tennessee's existing absentee-voting rule therefore remains unchanged today: a c
 
 **Tennessee election administration → SAVE.** This connection predates the current administration. Tennessee law authorizes statewide voter-database comparisons with SAVE, and Tennessee used the enhanced system at large scale in 2025.
 
-**Federal voter-roll collection → SAVE/DHS architecture.** DOJ's May 2026 OLC opinion and statements in federal litigation describe a general federal workflow in which DOJ can use collected voter data with a DOJ-controlled SAVE account and DHS involvement.
+**Federal voter-roll collection → DOJ-described SAVE/DHS workflow.** DOJ's May 2026 OLC opinion and statements in federal litigation describe a general workflow in which collected voter data can be processed through a DOJ-controlled SAVE account with DHS involvement. The sources do not establish that every collected state file has been processed through that workflow.
 
 **Tennessee county portal → possible future SAVE integration.** Public Chapter 775 expressly allows Tennessee's in-development citizenship portal to obtain SAVE information through a secure web service if USCIS makes it available.
 
@@ -119,9 +121,9 @@ Tennessee's existing absentee-voting rule therefore remains unchanged today: a c
 
 ### Supported relationships that require qualification
 
-The same broad policy area—citizenship verification in voter administration—appears across Tennessee's own SAVE use, DOJ's voter-roll collection effort, EO 14399's State Citizenship Lists, and the federal SAVE architecture. These are not merely unrelated subjects, but they also should not be collapsed into one proven end-to-end data pipeline.
+Tennessee's own SAVE use, DOJ's voter-roll collection effort, DOJ's described SAVE workflow, and EO 14399's State Citizenship List directive share a policy subject: using government records to assess citizenship or eligibility in election administration. The evidence does **not** establish that they are one unified technical system.
 
-The available record supports a federal policy architecture aimed at combining voter-roll information with federal citizenship-verification capabilities. It does **not** yet establish that Tennessee's particular DOJ file was the file processed through DOJ's SAVE workflow or that Tennessee received match results from that copy.
+More specifically, DOJ has separately described a workflow for cross-checking collected voter information through SAVE, while EO 14399 separately directs DHS/SSA work on State Citizenship Lists, and Tennessee separately operates under its own state SAVE authority. The record does **not** establish that Tennessee's particular DOJ file was processed through DOJ's SAVE workflow, that it fed a State Citizenship List, or that Tennessee received match results from that copy.
 
 ### Possible relationships that are not established
 
@@ -131,13 +133,13 @@ Public statements by political officials about mail voting, federal involvement 
 
 ## What is confirmed?
 
-- Tennessee's election authorities had access to SAVE for voter verification before the 2025 federal overhaul.
+- Tennessee election authorities were registered to use SAVE for voter verification before the 2025 federal overhaul.
 - Tennessee law authorizes the Coordinator of Elections to compare statewide voter data with SAVE and establishes a notice/proof/appeal process when citizenship evidence concerning a registered voter is at issue.
 - Tennessee used the enhanced 2025 SAVE system at statewide scale and referred 42 **potential** non-U.S.-citizen voters to the FBI; their final disposition is not established here.
 - Tennessee is building a separate county-facing citizenship-verification portal, and 2026 law permits that portal to incorporate SAVE through a secure web service if available.
 - The county-facing portal is not publicly established as production-live today.
 - Tennessee transferred statewide voter-registration information to DOJ and declined DOJ's proposed MOU.
-- DOJ has publicly documented a general SAVE/DHS architecture for using collected state voter information.
+- DOJ has publicly described a general SAVE/DHS workflow for using collected state voter information.
 - The enhanced 2025 SAVE bulk/SSA/SSN architecture was vacated in federal court; Tennessee is not part of the four-state restoration order identified in separate litigation.
 - EO 14399 directs State Citizenship List work and USPS election-mail rulemaking.
 - SCOTUS stayed one injunction against EO 14399 on August 24 but did not decide that all future implementation measures are lawful.
@@ -233,3 +235,4 @@ This Special Case should be re-reviewed if any of the following occurs:
 ## Revision history
 
 - **2026-08-24:** Unpublished public-format draft prepared from the Tennessee DOJ-transfer, SAVE, and EO 14399/USPS research passes. Broader EAC/CISA/FBI developments were excluded from the core factual chain where no Tennessee operational effect had been established.
+- **2026-08-24:** Revised after adversarial review to narrow DOJ/SAVE workflow language, separate the different federal/state data systems, emphasize Tennessee's statutory voter process and the optional nature of State Citizenship List use, remove a possible EO14248/SAVE causation implication, and bound the Tennessee absentee-voting claim to published guidance.
