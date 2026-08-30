@@ -15,24 +15,40 @@ jobs:
       github.event.pull_request.draft == false &&
       github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
     steps:
+      - name: Check Gemini configuration
+        id: gemini
+        shell: bash
+        run: |
+          if [ -n "$GEMINI_API_KEY" ]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "GEMINI_API_KEY is not configured; skipping Gemini review."
+          fi
+
       - name: Check out repository
+        if: steps.gemini.outputs.configured == 'true'
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Set up Python
+        if: steps.gemini.outputs.configured == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
       - name: Install Gemini review dependencies
+        if: steps.gemini.outputs.configured == 'true'
         run: python -m pip install google-genai requests
 
       - name: Run Gemini tracker review
+        if: steps.gemini.outputs.configured == 'true'
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
           REPO: ${{ github.repository }}
