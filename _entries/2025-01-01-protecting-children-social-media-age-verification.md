@@ -329,3 +329,7 @@ The Tennessee General Assembly bill page and public-chapter materials establish 
 Justia is used here as a convenient public reproduction of statutory text and the district court opinion. Where a conflict exists, official Tennessee statutory publications, official court records, and later authoritative legal sources control.
 
 Statements from the Tennessee Attorney General and NetChoice are included to document the parties' positions and should not be treated as neutral findings of fact.
+
+## Revision history
+
+- **2026-08-30:** Initial publication based on Public Chapter 899, current statutory text, the district court's 2025 preliminary-injunction ruling, and the Sixth Circuit's August 28, 2026 published opinion in *NetChoice, LLC v. Skrmetti*.
