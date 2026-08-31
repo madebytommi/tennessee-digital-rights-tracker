@@ -10,6 +10,7 @@ import sys
 import requests
 from google import genai
 
+# Workflow smoke-test note: changing this comment does not affect runtime behavior.
 MARKER = "<!-- gemini-tracker-review -->"
 
 
