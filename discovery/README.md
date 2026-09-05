@@ -28,7 +28,7 @@ Adapters only collect and normalize. Gemini evaluation is a separate layer in `e
 
 ## Scoring
 
-Gemini (`gemini-2.5-flash`, the same model already used by the repository's PR review workflows) assigns 0–1 scores for:
+Gemini (`gemini-3.5-flash-lite` by default; override with `GEMINI_MODEL`) assigns 0–1 scores for:
 
 - Tennessee relevance
 - digital/civil-rights relevance
@@ -93,8 +93,12 @@ Useful flags:
 Environment:
 
 - `GEMINI_API_KEY` — required to score and surface leads (same secret as the existing Gemini PR workflows)
+- `GEMINI_MODEL` — optional; defaults to `gemini-3.5-flash-lite`
+- `GEMINI_MIN_INTERVAL_SECONDS` — optional; minimum seconds between Gemini request starts (default `4.5`, to stay under the free-tier 15 requests/minute limit)
 - `GITHUB_TOKEN` and `GITHUB_REPOSITORY` — required to create issues
 - `COURTLISTENER_TOKEN` — optional; anonymous CourtListener requests are attempted first
+
+Scout paces only Gemini evaluation calls, not source collection. HTTP 429/`RESOURCE_EXHAUSTED` retries the same candidate, honoring Google's retry delay when present. HTTP 503/`UNAVAILABLE` uses bounded exponential backoff. Permanent errors such as authentication failures are not retried. Transient Gemini failures do not mark a candidate seen.
 
 ## GitHub Actions
 

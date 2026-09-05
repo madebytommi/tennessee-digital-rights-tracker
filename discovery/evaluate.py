@@ -7,21 +7,33 @@ import logging
 import os
 import re
 import time
+from collections.abc import Callable
 
 from discovery.config import (
     COMPOSITE_THRESHOLD,
     DIGITAL_RIGHTS_THRESHOLD,
     GEMINI_API_KEY_ENV,
-    GEMINI_MODEL,
-    GEMINI_PAUSE_SECONDS,
+    GEMINI_MAX_ATTEMPTS,
+    GEMINI_RATE_LIMIT_FALLBACK_SECONDS,
+    GEMINI_UNAVAILABLE_INITIAL_BACKOFF_SECONDS,
+    GEMINI_UNAVAILABLE_MAX_BACKOFF_SECONDS,
     SCORE_WEIGHTS,
     TENNESSEE_THRESHOLD,
+    gemini_min_interval_seconds,
+    gemini_model,
 )
 from discovery.types import Candidate, Evaluation, TrackerEntry
 
 LOGGER = logging.getLogger("scout.evaluate")
 
 JSON_FENCE_RE = re.compile(r"^```(?:json)?\s*|\s*```$", re.S)
+DURATION_RE = re.compile(
+    r"^\s*(?:(?P<hours>\d+(?:\.\d+)?)h)?(?:(?P<minutes>\d+(?:\.\d+)?)m)?"
+    r"(?:(?P<seconds>\d+(?:\.\d+)?)s)?\s*$",
+    re.I,
+)
+
+_last_gemini_request_start: float | None = None
 
 
 def composite_score(scores: dict[str, float]) -> float:
@@ -168,26 +180,233 @@ Use WATCH when it may matter later but is too thin, too early, or too weakly con
 """
 
 
+def reset_gemini_pacing() -> None:
+    """Clear the Gemini start-to-start clock. Tests call this between cases."""
+    global _last_gemini_request_start
+    _last_gemini_request_start = None
+
+
+def classify_gemini_error(exc: BaseException) -> str:
+    """Return 'rate_limit', 'unavailable', or 'permanent'."""
+    code_int: int | None
+    try:
+        code_int = int(getattr(exc, "code", None))  # type: ignore[arg-type]
+    except (TypeError, ValueError):
+        code_int = None
+    status = str(getattr(exc, "status", "") or "").upper().replace(" ", "_")
+    message = str(getattr(exc, "message", "") or str(exc)).upper()
+
+    if code_int == 429 or status == "RESOURCE_EXHAUSTED" or "RESOURCE_EXHAUSTED" in message:
+        return "rate_limit"
+    if code_int == 503 or status == "UNAVAILABLE":
+        return "unavailable"
+    return "permanent"
+
+
+def _duration_to_seconds(value: object) -> float | None:
+    if value is None:
+        return None
+    if isinstance(value, bool):
+        return None
+    if isinstance(value, (int, float)):
+        return float(value) if value >= 0 else None
+    if isinstance(value, dict):
+        seconds = value.get("seconds", 0) or 0
+        nanos = value.get("nanos", 0) or 0
+        try:
+            return max(0.0, float(seconds) + float(nanos) / 1_000_000_000)
+        except (TypeError, ValueError):
+            return None
+    text = str(value).strip()
+    if not text:
+        return None
+    try:
+        return max(0.0, float(text))
+    except ValueError:
+        pass
+    match = DURATION_RE.match(text)
+    if not match or not any(match.groups()):
+        return None
+    hours = float(match.group("hours") or 0)
+    minutes = float(match.group("minutes") or 0)
+    seconds = float(match.group("seconds") or 0)
+    return hours * 3600 + minutes * 60 + seconds
+
+
+def _find_retry_delay(obj: object) -> float | None:
+    if isinstance(obj, dict):
+        for key in ("retryDelay", "retry_delay"):
+            if key in obj:
+                parsed = _duration_to_seconds(obj[key])
+                if parsed is not None:
+                    return parsed
+        for value in obj.values():
+            parsed = _find_retry_delay(value)
+            if parsed is not None:
+                return parsed
+    elif isinstance(obj, (list, tuple)):
+        for item in obj:
+            parsed = _find_retry_delay(item)
+            if parsed is not None:
+                return parsed
+    return None
+
+
+def parse_retry_delay_seconds(exc: BaseException) -> float | None:
+    """Read Google's retry delay from headers or error details when present."""
+    response = getattr(exc, "response", None)
+    headers = getattr(response, "headers", None) or {}
+    header_value = None
+    try:
+        header_value = headers.get("Retry-After") or headers.get("retry-after")
+    except (AttributeError, TypeError):
+        header_value = None
+    if header_value:
+        parsed = _duration_to_seconds(header_value)
+        if parsed is not None:
+            return parsed
+    for blob in (getattr(exc, "details", None), getattr(exc, "message", None)):
+        parsed = _find_retry_delay(blob)
+        if parsed is not None:
+            return parsed
+    return None
+
+
+def wait_for_gemini_slot(
+    *,
+    clock: Callable[[], float] | None = None,
+    sleeper: Callable[[float], None] | None = None,
+    min_interval: float | None = None,
+) -> None:
+    """Sleep only as needed so Gemini request starts stay at least min_interval apart."""
+    global _last_gemini_request_start
+    clock = clock or time.monotonic
+    sleeper = sleeper or time.sleep
+    interval = gemini_min_interval_seconds() if min_interval is None else min_interval
+    now = clock()
+    last = _last_gemini_request_start
+    if last is not None and interval > 0:
+        remaining = interval - (now - last)
+        if remaining > 0:
+            LOGGER.debug("Pacing Gemini: waiting %.1fs before next request", remaining)
+            sleeper(remaining)
+            now = clock()
+    _last_gemini_request_start = now
+
+
+def unavailable_backoff_seconds(failed_attempt: int) -> float:
+    """Bounded exponential backoff after a 503/UNAVAILABLE failure."""
+    exponent = max(0, failed_attempt - 1)
+    delay = GEMINI_UNAVAILABLE_INITIAL_BACKOFF_SECONDS * (2**exponent)
+    return min(delay, GEMINI_UNAVAILABLE_MAX_BACKOFF_SECONDS)
+
+
+def invoke_gemini(prompt: str, api_key: str, model: str) -> str:
+    try:
+        from google import genai
+    except ImportError as exc:
+        raise RuntimeError("google-genai is not installed") from exc
+
+    client = genai.Client(api_key=api_key)
+    response = client.models.generate_content(model=model, contents=prompt)
+    text = (getattr(response, "text", None) or "").strip()
+    if not text:
+        raise ValueError("Gemini returned empty text")
+    return text
+
+
+def call_gemini_with_retry(
+    generate: Callable[[], str],
+    *,
+    candidate_id: str = "",
+    sleeper: Callable[[float], None] | None = None,
+    clock: Callable[[], float] | None = None,
+    min_interval: float | None = None,
+    max_attempts: int | None = None,
+) -> str:
+    """Pace Gemini calls and retry transient 429/503 errors for one candidate."""
+    sleeper = sleeper or time.sleep
+    clock = clock or time.monotonic
+    attempts = GEMINI_MAX_ATTEMPTS if max_attempts is None else max_attempts
+    last_error: BaseException | None = None
+
+    for attempt in range(1, attempts + 1):
+        wait_for_gemini_slot(clock=clock, sleeper=sleeper, min_interval=min_interval)
+        try:
+            return generate()
+        except Exception as exc:  # noqa: BLE001 - classify API and transport errors
+            last_error = exc
+            kind = classify_gemini_error(exc)
+            if kind == "rate_limit" and attempt < attempts:
+                delay = parse_retry_delay_seconds(exc)
+                if delay is None:
+                    delay = GEMINI_RATE_LIMIT_FALLBACK_SECONDS
+                LOGGER.warning(
+                    "Gemini rate-limited (HTTP 429/RESOURCE_EXHAUSTED) for %s; "
+                    "waiting %.1fs before retry %s/%s",
+                    candidate_id or "candidate",
+                    delay,
+                    attempt + 1,
+                    attempts,
+                )
+                sleeper(delay)
+                continue
+            if kind == "unavailable" and attempt < attempts:
+                delay = unavailable_backoff_seconds(attempt)
+                LOGGER.warning(
+                    "Gemini temporarily unavailable (HTTP 503/UNAVAILABLE) for %s; "
+                    "waiting %.1fs before retry %s/%s",
+                    candidate_id or "candidate",
+                    delay,
+                    attempt + 1,
+                    attempts,
+                )
+                sleeper(delay)
+                continue
+            if kind == "unavailable":
+                LOGGER.warning(
+                    "Gemini unavailable for %s after %s attempts; giving up: %s",
+                    candidate_id or "candidate",
+                    attempts,
+                    exc,
+                )
+            elif kind == "rate_limit":
+                LOGGER.warning(
+                    "Gemini still rate-limited for %s after %s attempts; giving up: %s",
+                    candidate_id or "candidate",
+                    attempts,
+                    exc,
+                )
+            raise
+
+    assert last_error is not None  # pragma: no cover - loop always sets last_error
+    raise last_error
+
+
 def evaluate_candidate(
     candidate: Candidate,
     entries: list[TrackerEntry],
     matching_hint: str | None = None,
     *,
     api_key: str | None = None,
+    sleeper: Callable[[float], None] | None = None,
+    clock: Callable[[], float] | None = None,
+    min_interval: float | None = None,
+    generate_text: Callable[[str, str, str], str] | None = None,
 ) -> Evaluation:
     key = api_key if api_key is not None else os.environ.get(GEMINI_API_KEY_ENV)
     if not key:
         raise RuntimeError(f"{GEMINI_API_KEY_ENV} is not set")
-    try:
-        from google import genai
-    except ImportError as exc:
-        raise RuntimeError("google-genai is not installed") from exc
 
     prompt = build_prompt(candidate, entries, matching_hint)
-    client = genai.Client(api_key=key)
-    response = client.models.generate_content(model=GEMINI_MODEL, contents=prompt)
-    text = (getattr(response, "text", None) or "").strip()
-    if not text:
-        raise ValueError("Gemini returned empty text")
-    time.sleep(GEMINI_PAUSE_SECONDS)
+    model = gemini_model()
+    producer = generate_text or invoke_gemini
+
+    text = call_gemini_with_retry(
+        lambda: producer(prompt, key, model),
+        candidate_id=candidate.candidate_id,
+        sleeper=sleeper,
+        clock=clock,
+        min_interval=min_interval,
+    )
     return parse_evaluation_payload(text)

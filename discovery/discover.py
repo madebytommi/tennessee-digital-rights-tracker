@@ -20,6 +20,8 @@ from discovery.config import (  # noqa: E402
     MAX_EVALUATE,
     MAX_ISSUES_PER_RUN,
     SOURCE_PAUSE_SECONDS,
+    gemini_min_interval_seconds,
+    gemini_model,
 )
 from discovery.dedupe import (  # noqa: E402
     hint_entry_slug,
@@ -214,6 +216,12 @@ def run(args: argparse.Namespace) -> int:
     if not api_key:
         LOGGER.warning("GEMINI_API_KEY is not set; collected leads will not be scored or surfaced")
         return 0
+
+    LOGGER.info(
+        "Scoring with Gemini model=%s min_interval=%.1fs",
+        gemini_model(),
+        gemini_min_interval_seconds(),
+    )
 
     opened = 0
     for candidate in to_evaluate:
