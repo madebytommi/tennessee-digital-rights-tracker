@@ -19,6 +19,7 @@ Use task routing rather than reading every policy for every task. When this file
 - Special Case structure: `templates/SPECIAL_CASE_TEMPLATE.md`
 - Privacy and security: `docs/privacy-policy.md`, `docs/security-model.md`, and `SECURITY.md`
 - Contribution and pull-request process: `CONTRIBUTING.md` and `.github/pull_request_template.md`
+- Discovery scout: `discovery/README.md`
 
 ## Required reading by task
 
@@ -79,6 +80,10 @@ Read `SECURITY.md`, `docs/security-model.md`, and the relevant implementation fi
 ### Sensitive submissions or personal information
 
 Read `SECURITY.md`, `docs/security-model.md`, and `docs/privacy-policy.md`.
+
+### Changing the discovery scout
+
+Read `discovery/README.md`, `docs/research-protocol.md`, and `docs/methodology.md`. Discovery leads are not published Tracker entries. Do not auto-publish Gemini output, do not write scout results into `_entries/`, and do not treat source adapters as verification.
 
 ### New feature planning or architectural expansion
 

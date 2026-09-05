@@ -51,6 +51,13 @@ Acceptance criteria:
 - [ ] Downloadable data export
 - [ ] Mirror and backup process
 
+## Discovery scout
+
+- [x] Phase 1 Tennessee Rights Scout: source adapters, keyword filter, Gemini triage, `discovery` GitHub Issues, durable `seen.json`
+- [ ] Phase 2: additional sources, bill-action dates, Atlas of Surveillance adapter, human accept/reject feedback
+
+The scout may open research leads. It must not auto-publish Tracker entries.
+
 ## Not in the first version
 
 - User accounts

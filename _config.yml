@@ -28,6 +28,8 @@ defaults:
 
 exclude:
   - research
+  - discovery
+  - discovery-data
   - scripts
   - schemas
   - templates

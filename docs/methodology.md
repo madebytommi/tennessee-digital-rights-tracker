@@ -23,6 +23,10 @@ Use sources in this order whenever possible:
 
 Discovery sources help identify possible tracker subjects and locate underlying records. They are not automatically sufficient to establish that a system is currently active, configured as described, or governed by a particular policy.
 
+### Tennessee Rights Scout
+
+The repository's scout watches a small set of public sources and may open GitHub Issues labeled `discovery`. Those issues are leads for human review. They are not published entries, and model-generated scores or summaries are not evidence. Follow the research protocol before creating or updating a Tracker item. See `discovery/README.md`.
+
 ### Atlas of Surveillance
 
 The tracker uses the Electronic Frontier Foundation and University of Nevada, Reno Reynolds School of Journalism's [Atlas of Surveillance](https://www.atlasofsurveillance.org/) as an approved statewide discovery source for law-enforcement surveillance technologies in Tennessee.
