@@ -56,6 +56,8 @@ The scout skips a candidate only when it is the same item with the same content:
 - match to a published Tracker entry by bill number, public chapter, or primary-source URL → keep the candidate and tell Gemini `UPDATE EXISTING`
 - an open `discovery` issue for the same candidate still suppresses a second issue
 
+After dedupe, Scout evaluates `UPDATE EXISTING` matches before new leads so `--max-evaluate` does not drop them. When two in-batch items share a content fingerprint, the update candidate is kept.
+
 ## GitHub Issues
 
 High-scoring leads open an issue labeled `discovery` with:

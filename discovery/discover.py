@@ -24,6 +24,7 @@ from discovery.config import (  # noqa: E402
     gemini_model,
 )
 from discovery.dedupe import (  # noqa: E402
+    UPDATE_HINT_PREFIX,
     hint_entry_slug,
     load_seen,
     mark_seen,
@@ -101,28 +102,68 @@ def collect_candidates(source_ids: list[str], lookback_days: int) -> list[Candid
     return collected
 
 
-def prioritize(candidates: list[Candidate]) -> list[Candidate]:
+def _has_update_existing_hint(candidate: Candidate, hints: dict[str, str] | None) -> bool:
+    if not hints:
+        return False
+    hint = hints.get(candidate.candidate_id) or ""
+    return hint.startswith(UPDATE_HINT_PREFIX)
+
+
+def _newest_then_undated(candidates: list[Candidate]) -> list[Candidate]:
     dated = [item for item in candidates if item.published_at]
     undated = [item for item in candidates if not item.published_at]
     dated.sort(key=lambda item: item.published_at or "", reverse=True)
     return dated + undated
 
 
-def collapse_same_content(candidates: list[Candidate]) -> list[Candidate]:
-    """Keep one candidate per content fingerprint within a single run."""
-    seen_fp: set[str] = set()
+def prioritize(
+    candidates: list[Candidate],
+    hints: dict[str, str] | None = None,
+) -> list[Candidate]:
+    """Order candidates for triage or evaluation.
+
+    When hints are supplied, UPDATE EXISTING matches are placed first so
+    ``max-evaluate`` cannot drop them behind newer unrelated leads.
+    Within each group, dated items stay newest-first, then undated items
+    keep their incoming relative order.
+    """
+    if not hints:
+        return _newest_then_undated(list(candidates))
+    updates = [item for item in candidates if _has_update_existing_hint(item, hints)]
+    others = [item for item in candidates if not _has_update_existing_hint(item, hints)]
+    return _newest_then_undated(updates) + _newest_then_undated(others)
+
+
+def collapse_same_content(
+    candidates: list[Candidate],
+    hints: dict[str, str] | None = None,
+) -> list[Candidate]:
+    """Keep one candidate per content fingerprint within a single run.
+
+    Prefer a candidate with an UPDATE EXISTING hint over an equivalent
+    non-update companion. If both (or neither) are updates, keep the first.
+    """
+    kept_index: dict[str, int] = {}
     collapsed: list[Candidate] = []
     for candidate in candidates:
         fingerprint = candidate.content_fingerprint
-        if fingerprint and fingerprint in seen_fp:
+        if fingerprint and fingerprint in kept_index:
+            existing_index = kept_index[fingerprint]
+            existing = collapsed[existing_index]
+            keep_new = _has_update_existing_hint(candidate, hints) and not _has_update_existing_hint(
+                existing, hints
+            )
+            discarded = existing if keep_new else candidate
             LOGGER.info(
                 "REJECTED in-batch-duplicate %s same-content-as-earlier-item %s",
-                candidate.candidate_id,
-                candidate.title,
+                discarded.candidate_id,
+                discarded.title,
             )
+            if keep_new:
+                collapsed[existing_index] = candidate
             continue
         if fingerprint:
-            seen_fp.add(fingerprint)
+            kept_index[fingerprint] = len(collapsed)
         collapsed.append(candidate)
     return collapsed
 
@@ -186,8 +227,15 @@ def run(args: argparse.Namespace) -> int:
             LOGGER.info("UPDATE-HINT %s %s", candidate.candidate_id, update_hint)
         fresh.append(candidate)
 
-    fresh = collapse_same_content(fresh)
+    fresh = collapse_same_content(fresh, hints)
     LOGGER.info("%s candidate(s) remain after dedupe", len(fresh))
+    fresh = prioritize(fresh, hints)
+    update_count = sum(1 for item in fresh if _has_update_existing_hint(item, hints))
+    if update_count:
+        LOGGER.info(
+            "Prioritizing %s UPDATE EXISTING candidate(s) before new leads",
+            update_count,
+        )
     to_evaluate = fresh[: args.max_evaluate]
     overflow = fresh[args.max_evaluate :]
     if overflow:
