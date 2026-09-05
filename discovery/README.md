@@ -12,7 +12,7 @@ It does **not** publish Tracker entries, edit `_entries/`, or treat model output
 4. Deduplicate identical previously-seen items and open `discovery` issues. Matches to published entries become `UPDATE EXISTING` hints, not automatic rejections.
 5. Ask Gemini to score remaining candidates, including later developments of an already-seen bill or case.
 6. Open a `discovery` GitHub Issue for high-scoring leads.
-7. Record processed items in `discovery-data/seen.json`.
+7. Record processed items in `discovery-data/seen.json`. GitHub Actions persist that file on the `scout-state` branch, not on `main`.
 
 ## Sources
 
@@ -104,9 +104,13 @@ Scout paces only Gemini evaluation calls, not source collection. HTTP 429/`RESOU
 
 ## GitHub Actions
 
-`.github/workflows/discovery.yml` runs once a day and on `workflow_dispatch`. It installs dependencies, runs unit tests, runs the scout, creates issues with `GITHUB_TOKEN`, and commits `discovery-data/seen.json` when the state changes.
+`.github/workflows/discovery.yml` runs once a day and on `workflow_dispatch`. It installs dependencies, runs unit tests, runs the scout, and creates issues with `GITHUB_TOKEN`.
 
-If branch protection later blocks the bot from pushing to `main`, issues can still be created; duplicate protection then relies more on open `discovery` issues than on `seen.json`. A maintainer would need to allow the workflow to update the state file.
+Scout **code** and the workflow live on `main`. Durable `discovery-data/seen.json` state lives on a separate `scout-state` branch. That split is required because `main` is protected: changes must go through pull requests, and there is no bypass actor for automated commits. `scout-state` is machine state only. It is not evidence, not a published Tracker record, and must not be merged into `main`.
+
+The workflow checks out the normal repository/code, then checks out `scout-state` into `.scout-state/`. Before Scout runs, it copies `.scout-state/discovery-data/seen.json` into the working tree. After a successful non-dry-run, it copies the updated file back and commits it to `scout-state` only. Dry runs still use live sources and Gemini, but they do not create issues and they do not write `scout-state`.
+
+If `scout-state` or its `seen.json` cannot be loaded, the workflow fails before scoring or opening issues. It does not continue a live run with empty state.
 
 ## Known Phase 1 limitations
 

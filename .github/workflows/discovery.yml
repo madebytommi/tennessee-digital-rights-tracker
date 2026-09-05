@@ -29,6 +29,13 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Check out Scout state
+        uses: actions/checkout@v4
+        with:
+          ref: scout-state
+          path: .scout-state
+          persist-credentials: true
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -41,6 +48,40 @@ jobs:
 
       - name: Run scout unit tests
         run: python3 -m unittest discover -s discovery/tests -t .
+
+      - name: Load Scout seen state
+        run: |
+          set -euo pipefail
+          state_src=".scout-state/discovery-data/seen.json"
+          if [ ! -f "$state_src" ]; then
+            echo "::error::Missing Scout state file ${state_src} on branch scout-state. Live runs cannot continue with empty state."
+            exit 1
+          fi
+          python3 - "$state_src" <<'PY'
+          import json
+          import sys
+
+          path = sys.argv[1]
+          try:
+              with open(path, encoding="utf-8") as handle:
+                  payload = json.load(handle)
+          except (OSError, json.JSONDecodeError) as exc:
+              print(
+                  f"::error::Corrupt Scout state file {path}: {exc}",
+                  file=sys.stderr,
+              )
+              sys.exit(1)
+          if not isinstance(payload, dict) or "items" not in payload:
+              print(
+                  f"::error::Scout state file {path} is malformed; expected an object with an 'items' key.",
+                  file=sys.stderr,
+              )
+              sys.exit(1)
+          items = payload.get("items") or {}
+          print(f"Loaded Scout state with {len(items)} recorded item(s).")
+          PY
+          mkdir -p discovery-data
+          cp "$state_src" discovery-data/seen.json
 
       - name: Run Tennessee Rights Scout
         env:
@@ -61,6 +102,14 @@ jobs:
       - name: Persist discovery state
         if: github.event.inputs.dry_run != 'true'
         run: |
+          set -euo pipefail
+          if [ ! -f discovery-data/seen.json ]; then
+            echo "::error::Scout did not produce discovery-data/seen.json; refusing to update scout-state."
+            exit 1
+          fi
+          mkdir -p .scout-state/discovery-data
+          cp discovery-data/seen.json .scout-state/discovery-data/seen.json
+          cd .scout-state
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add discovery-data/seen.json
@@ -69,4 +118,4 @@ jobs:
             exit 0
           fi
           git commit -m "chore: update Tennessee Rights Scout seen state"
-          git push
+          git push origin HEAD:scout-state
