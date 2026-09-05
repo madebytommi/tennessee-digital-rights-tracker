@@ -9,8 +9,8 @@ It does **not** publish Tracker entries, edit `_entries/`, or treat model output
 1. Collect records from source adapters.
 2. Normalize them into a common candidate format.
 3. Filter by digital-rights keyword/topic lists already covered by the Tracker.
-4. Deduplicate against `discovery-data/seen.json`, published entries, and open `discovery` issues.
-5. Ask Gemini to score remaining candidates.
+4. Deduplicate identical previously-seen items and open `discovery` issues. Matches to published entries become `UPDATE EXISTING` hints, not automatic rejections.
+5. Ask Gemini to score remaining candidates, including later developments of an already-seen bill or case.
 6. Open a `discovery` GitHub Issue for high-scoring leads.
 7. Record processed items in `discovery-data/seen.json`.
 
@@ -45,6 +45,16 @@ A candidate is surfaced only when:
 - digital-rights relevance ≥ 0.45
 
 Each run also caps Gemini evaluations and issue creation so a noisy day cannot flood the issue tracker.
+
+## Update detection
+
+The scout skips a candidate only when it is the same item with the same content:
+
+- same candidate ID and same content fingerprint → duplicate; skip
+- same candidate ID and a changed fingerprint → new development; score again
+- identical content under another ID or URL → duplicate; skip
+- match to a published Tracker entry by bill number, public chapter, or primary-source URL → keep the candidate and tell Gemini `UPDATE EXISTING`
+- an open `discovery` issue for the same candidate still suppresses a second issue
 
 ## GitHub Issues
 

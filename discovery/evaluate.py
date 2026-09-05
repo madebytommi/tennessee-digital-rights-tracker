@@ -135,6 +135,11 @@ Candidate:
 - source_summary: {candidate.summary[:1500]}
 - possible_existing_match_hint: {matching_hint or "none"}
 
+If the hint starts with "UPDATE EXISTING", the scout already matched this candidate
+to a published Tracker entry by bill number, public chapter, primary-source URL, or
+similar identifier. That is a strong signal. Prefer suggested_action "UPDATE EXISTING"
+and set matching_entry to that slug unless the item is clearly a distinct development.
+
 Return JSON only, no markdown, with this exact shape:
 {{
   "tennessee_relevance": 0.0,
@@ -157,7 +162,7 @@ Scoring rules (0.0 to 1.0):
 - source_quality: official records and court opinions score higher than commentary; still usable if the source is a reputable newsroom or advocacy release.
 - novelty: high if this appears new relative to the published entries; low if it is already covered.
 
-Use UPDATE EXISTING when the item is likely a development on a listed entry.
+Use UPDATE EXISTING when the item is likely a development on a listed entry, especially when the scout supplied an UPDATE EXISTING hint.
 Use NEW ENTRY when it appears distinct and tracker-worthy.
 Use WATCH when it may matter later but is too thin, too early, or too weakly connected.
 """

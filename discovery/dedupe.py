@@ -17,6 +17,7 @@ from discovery.types import Candidate, SeenRecord, TrackerEntry
 LOGGER = logging.getLogger("scout.dedupe")
 
 SEEN_VERSION = 1
+UPDATE_HINT_PREFIX = "UPDATE EXISTING:"
 
 
 def _now() -> str:
@@ -89,24 +90,90 @@ def mark_seen(state: dict, candidate: Candidate, status: str, **fields: object) 
         }
 
 
+def _fingerprints_match(stored: object, current: str) -> bool:
+    stored_fp = str(stored or "")
+    current_fp = current or ""
+    return stored_fp == current_fp
+
+
 def previously_processed(state: dict, candidate: Candidate) -> str | None:
+    """Skip only identical discoveries, not later developments of the same item.
+
+    Same candidate ID plus the same content fingerprint is a duplicate.
+    Same candidate ID with a changed fingerprint is a new development.
+    Identical content seen under another ID or URL is still a duplicate.
+    """
     items = state.get("items") or {}
+    current_fp = candidate.content_fingerprint or ""
     direct = items.get(candidate.candidate_id)
     if isinstance(direct, dict) and direct.get("status") not in {None, "fingerprint-alias"}:
-        return f"seen:{direct.get('status') or 'processed'}"
-    if candidate.content_fingerprint:
-        alias = items.get(f"fp:{candidate.content_fingerprint}")
+        if _fingerprints_match(direct.get("content_fingerprint"), current_fp):
+            return f"seen:{direct.get('status') or 'processed'}"
+        return None
+    if current_fp:
+        alias = items.get(f"fp:{current_fp}")
         if isinstance(alias, dict):
             return "seen:content-fingerprint"
     candidate_url = canonicalize_url(candidate.url)
+    if not candidate_url:
+        return None
     for item in items.values():
         if not isinstance(item, dict):
             continue
-        if canonicalize_url(str(item.get("url") or "")) == candidate_url and candidate_url:
-            if item.get("status") == "fingerprint-alias":
-                continue
+        if item.get("status") == "fingerprint-alias":
+            continue
+        if canonicalize_url(str(item.get("url") or "")) != candidate_url:
+            continue
+        if item.get("candidate_id") == candidate.candidate_id:
+            # Same ID with a changed fingerprint is handled above.
+            continue
+        if _fingerprints_match(item.get("content_fingerprint"), current_fp):
             return "seen:url"
     return None
+
+
+def format_update_hint(entry: TrackerEntry, reason: str) -> str:
+    return f"{UPDATE_HINT_PREFIX} {entry.slug} ({reason})"
+
+
+def hint_entry_slug(hint: str | None) -> str | None:
+    if not hint:
+        return None
+    text = hint.strip()
+    if text.startswith(UPDATE_HINT_PREFIX):
+        text = text[len(UPDATE_HINT_PREFIX):].strip()
+    slug = text.split()[0] if text else ""
+    return slug or None
+
+
+def matching_hint(candidate: Candidate, entries: list[TrackerEntry]) -> str | None:
+    match = match_existing_entry(candidate, entries)
+    if not match:
+        return None
+    entry, reason = match
+    return format_update_hint(entry, reason)
+
+
+def triage_candidate(
+    candidate: Candidate,
+    seen: dict,
+    entries: list[TrackerEntry],
+    issue_index: list[dict],
+) -> tuple[str | None, str | None]:
+    """Return (skip_reason, update_hint).
+
+    A skip_reason means the candidate should not be evaluated or surfaced.
+    An update_hint means a published entry likely matches and should be
+    passed to Gemini as an UPDATE EXISTING signal, not as a rejection.
+    """
+    seen_reason = previously_processed(seen, candidate)
+    if seen_reason:
+        return seen_reason, None
+    existing_issue = existing_issue_for_candidate(candidate, issue_index)
+    if existing_issue:
+        number = existing_issue.get("number")
+        return f"duplicate-issue:{number}", None
+    return None, matching_hint(candidate, entries)
 
 
 def _token_set(text: str) -> set[str]:

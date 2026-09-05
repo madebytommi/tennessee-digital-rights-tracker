@@ -22,12 +22,11 @@ from discovery.config import (  # noqa: E402
     SOURCE_PAUSE_SECONDS,
 )
 from discovery.dedupe import (  # noqa: E402
-    existing_issue_for_candidate,
+    hint_entry_slug,
     load_seen,
     mark_seen,
-    match_existing_entry,
-    previously_processed,
     save_seen,
+    triage_candidate,
 )
 from discovery.entries import load_tracker_entries  # noqa: E402
 from discovery.evaluate import evaluate_candidate, should_surface  # noqa: E402
@@ -126,14 +125,6 @@ def collapse_same_content(candidates: list[Candidate]) -> list[Candidate]:
     return collapsed
 
 
-def matching_hint(candidate: Candidate, entries: list) -> str | None:
-    match = match_existing_entry(candidate, entries)
-    if not match:
-        return None
-    entry, reason = match
-    return f"{entry.slug} ({reason})"
-
-
 def should_persist(args: argparse.Namespace) -> bool:
     if args.no_persist:
         return False
@@ -168,36 +159,29 @@ def run(args: argparse.Namespace) -> int:
     LOGGER.info("Collected %s keyword-matching candidate(s) before dedupe", len(raw_candidates))
 
     fresh: list[Candidate] = []
+    hints: dict[str, str] = {}
     for candidate in prioritize(raw_candidates):
-        seen_reason = previously_processed(seen, candidate)
-        if seen_reason:
-            LOGGER.info("REJECTED duplicate-seen %s [%s] %s", candidate.candidate_id, seen_reason, candidate.title)
-            continue
-        entry_match = match_existing_entry(candidate, entries)
-        if entry_match and entry_match[1].startswith(("primary-source-url", "url-in-entry", "identifier:")):
-            entry, reason = entry_match
-            LOGGER.info(
-                "REJECTED duplicate-entry %s matches %s (%s)",
-                candidate.candidate_id,
-                entry.slug,
-                reason,
-            )
-            mark_seen(seen, candidate, "duplicate-entry", matching_entry=entry.slug)
-            continue
-        existing_issue = existing_issue_for_candidate(candidate, issue_index)
-        if existing_issue:
+        skip_reason, update_hint = triage_candidate(candidate, seen, entries, issue_index)
+        if skip_reason and skip_reason.startswith("duplicate-issue:"):
+            issue_number = skip_reason.split(":", 1)[1]
             LOGGER.info(
                 "REJECTED duplicate-issue %s already issue #%s",
                 candidate.candidate_id,
-                existing_issue.get("number"),
+                issue_number,
             )
             mark_seen(
                 seen,
                 candidate,
                 "duplicate-issue",
-                issue_number=existing_issue.get("number"),
+                issue_number=int(issue_number) if str(issue_number).isdigit() else None,
             )
             continue
+        if skip_reason:
+            LOGGER.info("REJECTED duplicate-seen %s [%s] %s", candidate.candidate_id, skip_reason, candidate.title)
+            continue
+        if update_hint:
+            hints[candidate.candidate_id] = update_hint
+            LOGGER.info("UPDATE-HINT %s %s", candidate.candidate_id, update_hint)
         fresh.append(candidate)
 
     fresh = collapse_same_content(fresh)
@@ -214,10 +198,11 @@ def run(args: argparse.Namespace) -> int:
     if args.skip_gemini:
         for candidate in to_evaluate:
             LOGGER.info(
-                "SKIP-GEMINI %s %s keywords=%s url=%s",
+                "SKIP-GEMINI %s %s keywords=%s hint=%s url=%s",
                 candidate.candidate_id,
                 candidate.title,
                 ",".join(candidate.matched_keywords),
+                hints.get(candidate.candidate_id) or "none",
                 candidate.url,
             )
         if should_persist(args):
@@ -232,8 +217,8 @@ def run(args: argparse.Namespace) -> int:
 
     opened = 0
     for candidate in to_evaluate:
-        hint = matching_hint(candidate, entries)
-        LOGGER.info("SCORING %s %s", candidate.candidate_id, candidate.title)
+        hint = hints.get(candidate.candidate_id)
+        LOGGER.info("SCORING %s %s hint=%s", candidate.candidate_id, candidate.title, hint or "none")
         try:
             evaluation: Evaluation = evaluate_candidate(candidate, entries, hint, api_key=api_key)
         except Exception as exc:  # noqa: BLE001
@@ -266,7 +251,7 @@ def run(args: argparse.Namespace) -> int:
             result = create_discovery_issue(
                 candidate,
                 evaluation,
-                matching_entry=(hint.split()[0] if hint else evaluation.matching_entry),
+                matching_entry=hint_entry_slug(hint) or evaluation.matching_entry,
                 repo=args.repo,
                 dry_run=args.dry_run,
             )
