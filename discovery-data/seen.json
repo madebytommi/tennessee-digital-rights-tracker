@@ -1,5 +1,431 @@
 {
-  "items": {},
-  "updated_at": null,
+  "items": {
+    "cl:10954742": {
+      "candidate_id": "cl:10954742",
+      "composite": 0.21,
+      "content_fingerprint": "0338cfc524c4374c932e",
+      "first_seen": "2026-09-05T16:16:51+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-05T16:16:51+00:00",
+      "source_id": "courtlistener",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "Russ Gordon v. City of Hamtramck, Mich. (25-1917)",
+      "url": "https://www.courtlistener.com/opinion/10954742/russ-gordon-v-city-of-hamtramck-mich"
+    },
+    "fp:0338cfc524c4374c932e": {
+      "candidate_id": "cl:10954742",
+      "first_seen": "2026-09-05T16:16:51+00:00",
+      "last_seen": "2026-09-05T16:16:51+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:08e351a37c9b46c5b3d8": {
+      "candidate_id": "tn-ga:114:HB0825",
+      "first_seen": "2026-09-05T16:17:24+00:00",
+      "last_seen": "2026-09-05T16:17:24+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:0f844ce208e31b8c1608": {
+      "candidate_id": "tn-ga:114:HB1843",
+      "first_seen": "2026-09-05T16:17:17+00:00",
+      "last_seen": "2026-09-05T16:17:17+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:195a3edada50a7e56e5c": {
+      "candidate_id": "tn-ga:114:HB0061",
+      "first_seen": "2026-09-05T16:16:56+00:00",
+      "last_seen": "2026-09-05T16:16:56+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:1a30a3eb0a06bbbac381": {
+      "candidate_id": "tn-ga:114:SB2485",
+      "first_seen": "2026-09-05T16:17:11+00:00",
+      "last_seen": "2026-09-05T16:17:11+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:20e8deaf4e02850edf91": {
+      "candidate_id": "lookout:d51e5dbbf87ad7825db5",
+      "first_seen": "2026-09-05T16:16:08+00:00",
+      "last_seen": "2026-09-05T16:16:08+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:31950a044fe40a66dadb": {
+      "candidate_id": "tn-ag-news:pr26-33",
+      "first_seen": "2026-09-05T16:16:08+00:00",
+      "last_seen": "2026-09-05T16:16:08+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:51bb3a9d09cca0df56f7": {
+      "candidate_id": "lookout:259fee4dc0063bfa9496",
+      "first_seen": "2026-09-05T16:16:46+00:00",
+      "last_seen": "2026-09-05T16:16:46+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:9052acbeb51ddc996112": {
+      "candidate_id": "tn-ga:114:HB1316",
+      "first_seen": "2026-09-05T16:17:15+00:00",
+      "last_seen": "2026-09-05T16:17:15+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:a1790f111776713b6862": {
+      "candidate_id": "tn-ga:114:SB2412",
+      "first_seen": "2026-09-05T16:16:09+00:00",
+      "last_seen": "2026-09-05T16:16:09+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:a6e477e7c156c013c808": {
+      "candidate_id": "tn-ga:114:HB0933",
+      "first_seen": "2026-09-05T16:18:08+00:00",
+      "last_seen": "2026-09-05T16:18:08+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:b0d58c69bd2d30a08cde": {
+      "candidate_id": "lookout:02d3b2eeb8bff3ada288",
+      "first_seen": "2026-09-05T16:16:42+00:00",
+      "last_seen": "2026-09-05T16:16:42+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:ba31611f74c48f2a5b01": {
+      "candidate_id": "tn-ga:114:SB1624",
+      "first_seen": "2026-09-05T16:16:36+00:00",
+      "last_seen": "2026-09-05T16:16:36+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:c3aa1bf557182cc49cc5": {
+      "candidate_id": "tn-ga:114:SB0972",
+      "first_seen": "2026-09-05T16:16:08+00:00",
+      "last_seen": "2026-09-05T16:16:08+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:cb43adcd0666377fd6be": {
+      "candidate_id": "tn-ga:114:SB1894",
+      "first_seen": "2026-09-05T16:16:08+00:00",
+      "last_seen": "2026-09-05T16:16:08+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:de32e3416faad29f0c4b": {
+      "candidate_id": "tn-ga:114:SB1261",
+      "first_seen": "2026-09-05T16:18:13+00:00",
+      "last_seen": "2026-09-05T16:18:13+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:e1ff215aa1c866715637": {
+      "candidate_id": "tn-ga:114:HB0294",
+      "first_seen": "2026-09-05T16:16:08+00:00",
+      "last_seen": "2026-09-05T16:16:08+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:e69812e4c30a79a360e5": {
+      "candidate_id": "tn-ga:114:SB1799",
+      "first_seen": "2026-09-05T16:18:04+00:00",
+      "last_seen": "2026-09-05T16:18:04+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:e8c3c69b0f775f6169f8": {
+      "candidate_id": "tn-ga:114:SB2215",
+      "first_seen": "2026-09-05T16:17:00+00:00",
+      "last_seen": "2026-09-05T16:17:00+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:f0fc1e3e4cb605b08505": {
+      "candidate_id": "lookout:04cfc2416bfbcb0c60fa",
+      "first_seen": "2026-09-05T16:16:38+00:00",
+      "last_seen": "2026-09-05T16:16:38+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:f9e8a80168e8acda4aa6": {
+      "candidate_id": "tn-ga:114:HB0207",
+      "first_seen": "2026-09-05T16:17:28+00:00",
+      "last_seen": "2026-09-05T16:17:28+00:00",
+      "status": "fingerprint-alias"
+    },
+    "lookout:02d3b2eeb8bff3ada288": {
+      "candidate_id": "lookout:02d3b2eeb8bff3ada288",
+      "composite": 0.3475,
+      "content_fingerprint": "b0d58c69bd2d30a08cde",
+      "first_seen": "2026-09-05T16:16:42+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-05T16:16:42+00:00",
+      "source_id": "lookout",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "After decades of overhunting, black bears are slowly recolonizing the lower Mississippi River basin",
+      "url": "https://tennesseelookout.com/2026/08/27/after-decades-of-overhunting-black-bears-are-slowly-recolonizing-the-lower-mississippi-river-basin"
+    },
+    "lookout:04cfc2416bfbcb0c60fa": {
+      "candidate_id": "lookout:04cfc2416bfbcb0c60fa",
+      "composite": 0.485,
+      "content_fingerprint": "f0fc1e3e4cb605b08505",
+      "first_seen": "2026-09-05T16:16:38+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-05T16:16:38+00:00",
+      "source_id": "lookout",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "Four years after Tennessee \u201ctrigger law,\u201d poll shows Tennesseans favor abortion ban exceptions",
+      "url": "https://tennesseelookout.com/2026/08/27/four-years-after-tennessee-trigger-law-poll-shows-tennesseans-favor-abortion-ban-exceptions"
+    },
+    "lookout:259fee4dc0063bfa9496": {
+      "candidate_id": "lookout:259fee4dc0063bfa9496",
+      "composite": 0.345,
+      "content_fingerprint": "51bb3a9d09cca0df56f7",
+      "first_seen": "2026-09-05T16:16:46+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-05T16:16:46+00:00",
+      "source_id": "lookout",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "Abortion could return to Supreme Court, this time with a focus on women\u2019s health",
+      "url": "https://tennesseelookout.com/2026/08/23/repub/abortion-could-return-to-supreme-court-this-time-with-a-focus-on-womens-health"
+    },
+    "lookout:d51e5dbbf87ad7825db5": {
+      "candidate_id": "lookout:d51e5dbbf87ad7825db5",
+      "composite": null,
+      "content_fingerprint": "20e8deaf4e02850edf91",
+      "first_seen": "2026-09-05T16:16:08+00:00",
+      "issue_number": 61,
+      "last_seen": "2026-09-05T16:16:08+00:00",
+      "source_id": "lookout",
+      "status": "duplicate-issue",
+      "suggested_action": null,
+      "title": "Tennessee to receive $750M of $17B Facebook, Instagram settlement",
+      "url": "https://tennesseelookout.com/2026/08/26/tennessee-to-receive-750m-of-17b-facebook-instagram-settlement"
+    },
+    "tn-ag-news:pr26-33": {
+      "candidate_id": "tn-ag-news:pr26-33",
+      "composite": null,
+      "content_fingerprint": "31950a044fe40a66dadb",
+      "first_seen": "2026-09-05T16:16:08+00:00",
+      "issue_number": 60,
+      "last_seen": "2026-09-05T16:16:08+00:00",
+      "source_id": "attorney-general",
+      "status": "duplicate-issue",
+      "suggested_action": null,
+      "title": "Attorney General Skrmetti Announces Largest Big Tech Settlement in History",
+      "url": "https://www.tn.gov/attorneygeneral/news/2026/8/26/pr26-33.html"
+    },
+    "tn-ga:114:HB0061": {
+      "candidate_id": "tn-ga:114:HB0061",
+      "composite": 0.52,
+      "content_fingerprint": "195a3edada50a7e56e5c",
+      "first_seen": "2026-09-05T16:16:56+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-05T16:16:56+00:00",
+      "source_id": "general-assembly",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "HB0061: Education - As enacted, specifies that in an educational neglect case a subpoena may be issued for a student's attendance record, including all previous school years that the student attended a public school, in accordance with rele",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB0061&ga=114"
+    },
+    "tn-ga:114:HB0207": {
+      "candidate_id": "tn-ga:114:HB0207",
+      "composite": 0.57,
+      "content_fingerprint": "f9e8a80168e8acda4aa6",
+      "first_seen": "2026-09-05T16:17:28+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-05T16:17:28+00:00",
+      "source_id": "general-assembly",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "HB0207: Criminal Offenses - As enacted, expands the offense of organized retail crime to include certain acts, including knowingly using an online marketplace or social media platform to coordinate a meeting with one or more persons to sell",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB0207&ga=114"
+    },
+    "tn-ga:114:HB0294": {
+      "candidate_id": "tn-ga:114:HB0294",
+      "composite": null,
+      "content_fingerprint": "e1ff215aa1c866715637",
+      "first_seen": "2026-09-05T16:16:08+00:00",
+      "issue_number": 62,
+      "last_seen": "2026-09-05T16:16:08+00:00",
+      "source_id": "general-assembly",
+      "status": "duplicate-issue",
+      "suggested_action": null,
+      "title": "HB0294: Highways, Roads and Bridges - As introduced, authorizes surveillance cameras to be installed on federal interstate highways and operated by a state entity to aid in the investigation and prevention of terrorism and state criminal of",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB0294&ga=114"
+    },
+    "tn-ga:114:HB0825": {
+      "candidate_id": "tn-ga:114:HB0825",
+      "composite": 0.93,
+      "content_fingerprint": "08e351a37c9b46c5b3d8",
+      "first_seen": "2026-09-05T16:17:24+00:00",
+      "issue_number": 72,
+      "last_seen": "2026-09-05T16:17:24+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "HB0825: Education, Curriculum - As enacted, enacts the \"Teen Social Media and Internet Safety Act.\"",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB0825&ga=114"
+    },
+    "tn-ga:114:HB0933": {
+      "candidate_id": "tn-ga:114:HB0933",
+      "composite": 0.84,
+      "content_fingerprint": "a6e477e7c156c013c808",
+      "first_seen": "2026-09-05T16:18:08+00:00",
+      "issue_number": 74,
+      "last_seen": "2026-09-05T16:18:08+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "HB0933: Education, Dept. of - As introduced, requires the department to establish and administer a three-year artificial intelligence weapons detection system grant pilot program to award grants to eligible LEAs for the purchase of artifici",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB0933&ga=114"
+    },
+    "tn-ga:114:HB1316": {
+      "candidate_id": "tn-ga:114:HB1316",
+      "composite": 0.9475,
+      "content_fingerprint": "9052acbeb51ddc996112",
+      "first_seen": "2026-09-05T16:17:15+00:00",
+      "issue_number": 71,
+      "last_seen": "2026-09-05T16:17:15+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "HB1316: Driver Licenses - As enacted, prohibits the use of digital driver licenses and digital photo identification licenses for voter identification purposes; regulates the use, retention, and disclosure of data submitted by persons partic",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1316&ga=114"
+    },
+    "tn-ga:114:HB1513": {
+      "candidate_id": "tn-ga:114:HB1513",
+      "composite": null,
+      "content_fingerprint": "ba31611f74c48f2a5b01",
+      "first_seen": "2026-09-05T16:16:09+00:00",
+      "issue_number": 58,
+      "last_seen": "2026-09-05T16:16:09+00:00",
+      "source_id": "general-assembly",
+      "status": "duplicate-issue",
+      "suggested_action": null,
+      "title": "HB1513: Election Laws - As enacted, requires political advertisements to include a disclaimer if the advertisements include deepfake elements impersonating or depicting a candidate engaging in activity or speech in which the impersonated or",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1513&ga=114"
+    },
+    "tn-ga:114:HB1843": {
+      "candidate_id": "tn-ga:114:HB1843",
+      "composite": 0.595,
+      "content_fingerprint": "0f844ce208e31b8c1608",
+      "first_seen": "2026-09-05T16:17:17+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-05T16:17:17+00:00",
+      "source_id": "general-assembly",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "HB1843: Utilities, Utility Districts - As introduced, prohibits a utility that provides electric, water, wastewater, or natural gas services from increasing the rate charged to customers who are 65 years of age or older upon notice that the",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1843&ga=114"
+    },
+    "tn-ga:114:HB2410": {
+      "candidate_id": "tn-ga:114:HB2410",
+      "composite": null,
+      "content_fingerprint": "1a30a3eb0a06bbbac381",
+      "first_seen": "2026-09-05T16:16:08+00:00",
+      "issue_number": 65,
+      "last_seen": "2026-09-05T16:16:08+00:00",
+      "source_id": "general-assembly",
+      "status": "duplicate-issue",
+      "suggested_action": null,
+      "title": "HB2410: Local Education Agencies - As introduced, allows an LEA or public charter school to install, maintain, and use, subject to parental approval, a video camera surveillance system in the special education classrooms operated by the LEA",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB2410&ga=114"
+    },
+    "tn-ga:114:SB0972": {
+      "candidate_id": "tn-ga:114:SB0972",
+      "composite": null,
+      "content_fingerprint": "c3aa1bf557182cc49cc5",
+      "first_seen": "2026-09-05T16:16:08+00:00",
+      "issue_number": 63,
+      "last_seen": "2026-09-05T16:16:08+00:00",
+      "source_id": "general-assembly",
+      "status": "duplicate-issue",
+      "suggested_action": null,
+      "title": "SB0972: Local Education Agencies - As introduced, requires an LEA or public charter school to install, maintain, and use, subject to parental request and approval, a video camera surveillance system in each special education classroom opera",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB0972&ga=114"
+    },
+    "tn-ga:114:SB1261": {
+      "candidate_id": "tn-ga:114:SB1261",
+      "composite": 0.87,
+      "content_fingerprint": "de32e3416faad29f0c4b",
+      "first_seen": "2026-09-05T16:18:13+00:00",
+      "issue_number": 75,
+      "last_seen": "2026-09-05T16:18:13+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "SB1261: Insurance Companies, Agents, Brokers, Policies - As introduced, imposes requirements for health insurance issuers using artificial intelligence, algorithms, or other software for utilization review or utilization management function",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB1261&ga=114"
+    },
+    "tn-ga:114:SB1624": {
+      "candidate_id": "tn-ga:114:SB1624",
+      "composite": 0.86,
+      "content_fingerprint": "ba31611f74c48f2a5b01",
+      "first_seen": "2026-09-05T16:16:36+00:00",
+      "issue_number": 68,
+      "last_seen": "2026-09-05T16:16:36+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "UPDATE EXISTING",
+      "title": "SB1624: Election Laws - As enacted, requires political advertisements to include a disclaimer if the advertisements include deepfake elements impersonating or depicting a candidate engaging in activity or speech in which the impersonated or",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB1624&ga=114"
+    },
+    "tn-ga:114:SB1799": {
+      "candidate_id": "tn-ga:114:SB1799",
+      "composite": 0.93,
+      "content_fingerprint": "e69812e4c30a79a360e5",
+      "first_seen": "2026-09-05T16:18:04+00:00",
+      "issue_number": 73,
+      "last_seen": "2026-09-05T16:18:04+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "SB1799: Internet and e-Commerce - As introduced, requires that if an account holder deletes the account holder's account on a social media platform, the social media platform shall delete all personal information pertaining to the deleted a",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB1799&ga=114"
+    },
+    "tn-ga:114:SB1894": {
+      "candidate_id": "tn-ga:114:SB1894",
+      "composite": null,
+      "content_fingerprint": "cb43adcd0666377fd6be",
+      "first_seen": "2026-09-05T16:16:08+00:00",
+      "issue_number": 64,
+      "last_seen": "2026-09-05T16:16:08+00:00",
+      "source_id": "general-assembly",
+      "status": "duplicate-issue",
+      "suggested_action": null,
+      "title": "SB1894: Local Education Agencies - As introduced, requires each LEA and public charter school to install, maintain, and use, subject to parental approval, a video camera surveillance system in the special education classrooms operated by th",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB1894&ga=114"
+    },
+    "tn-ga:114:SB2215": {
+      "candidate_id": "tn-ga:114:SB2215",
+      "composite": 0.93,
+      "content_fingerprint": "e8c3c69b0f775f6169f8",
+      "first_seen": "2026-09-05T16:17:00+00:00",
+      "issue_number": 69,
+      "last_seen": "2026-09-05T16:17:00+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "SB2215: Privacy, Confidentiality - As introduced, enacts the \"Protecting Everyone from Excessive Police Surveillance (PEEPS) Act\" for the purposes of protecting, maintaining, and accessing historical location data.",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2215&ga=114"
+    },
+    "tn-ga:114:SB2412": {
+      "candidate_id": "tn-ga:114:SB2412",
+      "composite": null,
+      "content_fingerprint": "a1790f111776713b6862",
+      "first_seen": "2026-09-05T16:16:09+00:00",
+      "issue_number": 59,
+      "last_seen": "2026-09-05T16:16:09+00:00",
+      "source_id": "general-assembly",
+      "status": "duplicate-issue",
+      "suggested_action": null,
+      "title": "SB2412: Abortion - As enacted, revises present law that authorizes the attorney general to bring an action to enforce compliance with the Tennessee Abortion-Inducing Drug Risk Protocol Act or intervene as a matter of right in a case in whic",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2412&ga=114"
+    },
+    "tn-ga:114:SB2485": {
+      "candidate_id": "tn-ga:114:SB2485",
+      "composite": 0.845,
+      "content_fingerprint": "1a30a3eb0a06bbbac381",
+      "first_seen": "2026-09-05T16:17:11+00:00",
+      "issue_number": 70,
+      "last_seen": "2026-09-05T16:17:11+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "SB2485: Local Education Agencies - As introduced, allows an LEA or public charter school to install, maintain, and use, subject to parental approval, a video camera surveillance system in the special education classrooms operated by the LEA",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2485&ga=114"
+    }
+  },
+  "updated_at": "2026-09-05T16:19:20+00:00",
   "version": 1
 }
