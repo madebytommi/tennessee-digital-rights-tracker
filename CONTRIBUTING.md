@@ -13,6 +13,8 @@ Thank you for helping improve the tracker.
 
 Atlas of Surveillance is an approved discovery source, not automatic proof of current deployment, configuration, policy, or data-sharing practices. Promising Atlas leads should be independently verified and opened as separate research issues before publication.
 
+Automated `discovery` issues opened by the Tennessee Rights Scout are research leads, not publication-ready entries. Search those issues too, inspect the underlying source, and follow the research protocol before drafting an entry.
+
 ## Entry requirements
 
 A publishable entry needs:

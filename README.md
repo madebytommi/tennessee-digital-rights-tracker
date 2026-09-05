@@ -111,6 +111,8 @@ Special Cases use [`templates/SPECIAL_CASE_TEMPLATE.md`](templates/SPECIAL_CASE_
 ├── assets/                   # CSS and other static assets
 ├── docs/                     # Methodology, taxonomy, policies, and roadmap
 ├── research/                 # Working research notes; excluded from the public site
+├── discovery/                # Tennessee Rights Scout; discovery only, not publication
+├── discovery-data/           # Durable scout state (seen items); not Tracker entries
 ├── templates/                # Authoring templates excluded from the live site
 ├── schemas/                  # Entry and Special Case metadata schemas
 ├── scripts/                  # Validation tools
@@ -131,6 +133,12 @@ python3 scripts/validate_entries.py
 ```
 
 The validator checks both ordinary entries and Special Cases, including references from entries to published Special Cases. The same validator runs in GitHub Actions for pull requests and pushes to `main`.
+
+## Tennessee Rights Scout
+
+The repository includes a Phase 1 discovery helper that watches a small set of public Tennessee sources and opens `discovery` GitHub Issues for human review. It does not publish entries or treat Gemini output as evidence.
+
+See [`discovery/README.md`](discovery/README.md) for sources, scoring, local commands, and limitations.
 
 ## Publishing workflow
 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+<title>Fixture Feed</title>
+<item>
+<title>Tennessee court reviews Flock license plate readers</title>
+<link>https://tennesseelookout.com/2026/09/01/flock-alpr-example/</link>
+<pubDate>Tue, 01 Sep 2026 16:00:33 +0000</pubDate>
+<description><![CDATA[<p>A county is expanding automated license plate readers.</p>]]></description>
+</item>
+<item>
+<title>High school football scores</title>
+<link>https://tennesseelookout.com/2026/09/01/sports/</link>
+<pubDate>Tue, 01 Sep 2026 12:00:00 +0000</pubDate>
+<description><![CDATA[<p>Local sports roundup.</p>]]></description>
+</item>
+</channel>
+</rss>

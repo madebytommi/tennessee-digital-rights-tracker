@@ -1,0 +1,72 @@
+name: Tennessee Rights Scout
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Collect and score leads without creating GitHub issues or writing seen.json
+        required: false
+        type: boolean
+        default: false
+  schedule:
+    - cron: "15 13 * * *"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: tennessee-rights-scout
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-dev.txt -r discovery/requirements.txt
+
+      - name: Run scout unit tests
+        run: python3 -m unittest discover -s discovery/tests -t .
+
+      - name: Run Tennessee Rights Scout
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          cmd=(python3 -m discovery.discover)
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            cmd+=(--dry-run)
+          fi
+          if [ -z "${GEMINI_API_KEY:-}" ]; then
+            echo "GEMINI_API_KEY is not configured; running collection only."
+            cmd+=(--skip-gemini)
+          fi
+          "${cmd[@]}"
+
+      - name: Persist discovery state
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add discovery-data/seen.json
+          if git diff --cached --quiet; then
+            echo "No discovery state change to persist."
+            exit 0
+          fi
+          git commit -m "chore: update Tennessee Rights Scout seen state"
+          git push

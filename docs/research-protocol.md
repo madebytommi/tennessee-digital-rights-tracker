@@ -35,9 +35,12 @@ A lead may originate from:
 * public records;
 * procurement databases;
 * Atlas of Surveillance;
+* the Tennessee Rights Scout (`discovery/`);
 * tips from readers;
 * other research projects; or
 * AI-assisted discovery.
+
+Scout issues are discovery leads. They do not replace this protocol, and Gemini scoring is not evidence.
 
 Before conducting full research, determine whether the issue plausibly falls within the scope of the Tennessee Digital Rights Tracker.
 
