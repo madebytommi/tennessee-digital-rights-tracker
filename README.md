@@ -112,7 +112,7 @@ Special Cases use [`templates/SPECIAL_CASE_TEMPLATE.md`](templates/SPECIAL_CASE_
 ├── docs/                     # Methodology, taxonomy, policies, and roadmap
 ├── research/                 # Working research notes; excluded from the public site
 ├── discovery/                # Tennessee Rights Scout; discovery only, not publication
-├── discovery-data/           # Durable scout state (seen items); not Tracker entries
+├── discovery-data/           # Scout seen.json seed; live CI state lives on scout-state
 ├── templates/                # Authoring templates excluded from the live site
 ├── schemas/                  # Entry and Special Case metadata schemas
 ├── scripts/                  # Validation tools
@@ -136,7 +136,7 @@ The validator checks both ordinary entries and Special Cases, including referenc
 
 ## Tennessee Rights Scout
 
-The repository includes a Phase 1 discovery helper that watches a small set of public Tennessee sources and opens `discovery` GitHub Issues for human review. It does not publish entries or treat Gemini output as evidence.
+The repository includes a Phase 1 discovery helper that watches a small set of public Tennessee sources and opens `discovery` GitHub Issues for human review. It does not publish entries or treat Gemini output as evidence. GitHub Actions persist durable `seen.json` state on the `scout-state` branch, not on protected `main`.
 
 See [`discovery/README.md`](discovery/README.md) for sources, scoring, local commands, and limitations.
 
