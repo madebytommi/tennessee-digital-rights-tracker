@@ -19,6 +19,12 @@
       "last_seen": "2026-09-05T16:16:51+00:00",
       "status": "fingerprint-alias"
     },
+    "fp:03bbcb5a967cfdce7e98": {
+      "candidate_id": "tn-ga:114:SB0003",
+      "first_seen": "2026-09-06T16:14:54+00:00",
+      "last_seen": "2026-09-06T16:14:54+00:00",
+      "status": "fingerprint-alias"
+    },
     "fp:08e351a37c9b46c5b3d8": {
       "candidate_id": "tn-ga:114:HB0825",
       "first_seen": "2026-09-05T16:17:24+00:00",
@@ -43,6 +49,12 @@
       "last_seen": "2026-09-05T16:17:11+00:00",
       "status": "fingerprint-alias"
     },
+    "fp:1abcceca7e72039e1167": {
+      "candidate_id": "tn-ga:114:SB1580",
+      "first_seen": "2026-09-06T16:14:13+00:00",
+      "last_seen": "2026-09-06T16:14:13+00:00",
+      "status": "fingerprint-alias"
+    },
     "fp:20e8deaf4e02850edf91": {
       "candidate_id": "lookout:d51e5dbbf87ad7825db5",
       "first_seen": "2026-09-05T16:16:08+00:00",
@@ -55,16 +67,76 @@
       "last_seen": "2026-09-05T16:16:08+00:00",
       "status": "fingerprint-alias"
     },
+    "fp:447f7cefa45b343a76e7": {
+      "candidate_id": "tn-ga:114:HB1866",
+      "first_seen": "2026-09-06T16:14:09+00:00",
+      "last_seen": "2026-09-06T16:14:09+00:00",
+      "status": "fingerprint-alias"
+    },
     "fp:51bb3a9d09cca0df56f7": {
       "candidate_id": "lookout:259fee4dc0063bfa9496",
       "first_seen": "2026-09-05T16:16:46+00:00",
       "last_seen": "2026-09-05T16:16:46+00:00",
       "status": "fingerprint-alias"
     },
+    "fp:5582604480529560914d": {
+      "candidate_id": "tn-ga:114:SB0345",
+      "first_seen": "2026-09-06T16:15:12+00:00",
+      "last_seen": "2026-09-06T16:15:12+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:5adef67240a47030c8c8": {
+      "candidate_id": "tn-ga:114:SB0935",
+      "first_seen": "2026-09-06T16:15:03+00:00",
+      "last_seen": "2026-09-06T16:15:03+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:6bba6d778ca4f04a1c0c": {
+      "candidate_id": "tn-ga:114:SB2482",
+      "first_seen": "2026-09-06T16:15:25+00:00",
+      "last_seen": "2026-09-06T16:15:25+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:6c028a010449a2b09b32": {
+      "candidate_id": "tn-ga:114:HB2054",
+      "first_seen": "2026-09-06T16:14:00+00:00",
+      "last_seen": "2026-09-06T16:14:00+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:7afd671332b2e4ff9cef": {
+      "candidate_id": "tn-ga:114:HB2369",
+      "first_seen": "2026-09-06T16:15:30+00:00",
+      "last_seen": "2026-09-06T16:15:30+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:8da24b64cc47a70d96de": {
+      "candidate_id": "tn-ga:114:SB2105",
+      "first_seen": "2026-09-06T16:14:04+00:00",
+      "last_seen": "2026-09-06T16:14:04+00:00",
+      "status": "fingerprint-alias"
+    },
     "fp:9052acbeb51ddc996112": {
       "candidate_id": "tn-ga:114:HB1316",
       "first_seen": "2026-09-05T16:17:15+00:00",
       "last_seen": "2026-09-05T16:17:15+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:910977b9dc9d5ffdf55f": {
+      "candidate_id": "tn-ga:114:HB1241",
+      "first_seen": "2026-09-06T16:14:58+00:00",
+      "last_seen": "2026-09-06T16:14:58+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:9b6d97c35c7b34640bbe": {
+      "candidate_id": "tn-ga:114:SB0404",
+      "first_seen": "2026-09-06T16:13:46+00:00",
+      "last_seen": "2026-09-06T16:13:46+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:a091c8a5935bd3c0757f": {
+      "candidate_id": "tn-ga:114:HB1209",
+      "first_seen": "2026-09-06T16:13:42+00:00",
+      "last_seen": "2026-09-06T16:13:42+00:00",
       "status": "fingerprint-alias"
     },
     "fp:a1790f111776713b6862": {
@@ -79,6 +151,12 @@
       "last_seen": "2026-09-05T16:18:08+00:00",
       "status": "fingerprint-alias"
     },
+    "fp:aba700b25d3a4a2b5f75": {
+      "candidate_id": "tn-ga:114:HB1217",
+      "first_seen": "2026-09-06T16:15:16+00:00",
+      "last_seen": "2026-09-06T16:15:16+00:00",
+      "status": "fingerprint-alias"
+    },
     "fp:b0d58c69bd2d30a08cde": {
       "candidate_id": "lookout:02d3b2eeb8bff3ada288",
       "first_seen": "2026-09-05T16:16:42+00:00",
@@ -89,6 +167,12 @@
       "candidate_id": "tn-ga:114:SB1624",
       "first_seen": "2026-09-05T16:16:36+00:00",
       "last_seen": "2026-09-05T16:16:36+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:babd29038853d7258bb6": {
+      "candidate_id": "tn-ga:114:HB0990",
+      "first_seen": "2026-09-06T16:15:21+00:00",
+      "last_seen": "2026-09-06T16:15:21+00:00",
       "status": "fingerprint-alias"
     },
     "fp:c3aa1bf557182cc49cc5": {
@@ -109,6 +193,18 @@
       "last_seen": "2026-09-05T16:18:13+00:00",
       "status": "fingerprint-alias"
     },
+    "fp:dfec28dda44fa95f5ff3": {
+      "candidate_id": "tn-ga:114:HB1105",
+      "first_seen": "2026-09-06T16:15:07+00:00",
+      "last_seen": "2026-09-06T16:15:07+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:e08b2932512040792afb": {
+      "candidate_id": "tn-ga:114:HB1246",
+      "first_seen": "2026-09-06T16:13:55+00:00",
+      "last_seen": "2026-09-06T16:13:55+00:00",
+      "status": "fingerprint-alias"
+    },
     "fp:e1ff215aa1c866715637": {
       "candidate_id": "tn-ga:114:HB0294",
       "first_seen": "2026-09-05T16:16:08+00:00",
@@ -127,6 +223,12 @@
       "last_seen": "2026-09-05T16:17:00+00:00",
       "status": "fingerprint-alias"
     },
+    "fp:ed079a028cdcbc6ecdab": {
+      "candidate_id": "tn-ga:114:HB2586",
+      "first_seen": "2026-09-06T16:14:18+00:00",
+      "last_seen": "2026-09-06T16:14:18+00:00",
+      "status": "fingerprint-alias"
+    },
     "fp:f0fc1e3e4cb605b08505": {
       "candidate_id": "lookout:04cfc2416bfbcb0c60fa",
       "first_seen": "2026-09-05T16:16:38+00:00",
@@ -137,6 +239,12 @@
       "candidate_id": "tn-ga:114:HB0207",
       "first_seen": "2026-09-05T16:17:28+00:00",
       "last_seen": "2026-09-05T16:17:28+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:fb7c17aac9bbd9ae97b0": {
+      "candidate_id": "tn-ga:114:SB0514",
+      "first_seen": "2026-09-06T16:13:51+00:00",
+      "last_seen": "2026-09-06T16:13:51+00:00",
       "status": "fingerprint-alias"
     },
     "lookout:02d3b2eeb8bff3ada288": {
@@ -269,6 +377,84 @@
       "title": "HB0933: Education, Dept. of - As introduced, requires the department to establish and administer a three-year artificial intelligence weapons detection system grant pilot program to award grants to eligible LEAs for the purchase of artifici",
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB0933&ga=114"
     },
+    "tn-ga:114:HB0990": {
+      "candidate_id": "tn-ga:114:HB0990",
+      "composite": 0.525,
+      "content_fingerprint": "babd29038853d7258bb6",
+      "first_seen": "2026-09-06T16:15:21+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-06T16:15:21+00:00",
+      "source_id": "general-assembly",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "HB0990: Abortion - As enacted, clarifies the term \"serious risk of substantial and irreversible impairment of a major bodily function\" as used in present law provisions relative to criminal abortion.",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB0990&ga=114"
+    },
+    "tn-ga:114:HB1105": {
+      "candidate_id": "tn-ga:114:HB1105",
+      "composite": 0.465,
+      "content_fingerprint": "dfec28dda44fa95f5ff3",
+      "first_seen": "2026-09-06T16:15:07+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-06T16:15:07+00:00",
+      "source_id": "general-assembly",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "HB1105: Abortion - As introduced, creates an exception to the offense of criminal abortion if the person who performed or attempted to perform the abortion was a licensed physician and the patient's pregnancy was the result of rape or inces",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1105&ga=114"
+    },
+    "tn-ga:114:HB1209": {
+      "candidate_id": "tn-ga:114:HB1209",
+      "composite": 0.85,
+      "content_fingerprint": "a091c8a5935bd3c0757f",
+      "first_seen": "2026-09-06T16:13:42+00:00",
+      "issue_number": 76,
+      "last_seen": "2026-09-06T16:13:42+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "HB1209: Boards and Commissions - As introduced, provides for a new definition for the term \"artificial intelligence\" for the Tennessee artificial intelligence advisory council act; expands, from 24 to at least 24 and at most 27, the number ",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1209&ga=114"
+    },
+    "tn-ga:114:HB1217": {
+      "candidate_id": "tn-ga:114:HB1217",
+      "composite": 0.445,
+      "content_fingerprint": "aba700b25d3a4a2b5f75",
+      "first_seen": "2026-09-06T16:15:16+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-06T16:15:16+00:00",
+      "source_id": "general-assembly",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "HB1217: Abortion - As introduced, deletes the offense of criminal abortion; allows for an abortion before viability of the fetus or when necessary to protect the life or health of the pregnant woman.",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1217&ga=114"
+    },
+    "tn-ga:114:HB1241": {
+      "candidate_id": "tn-ga:114:HB1241",
+      "composite": 0.48,
+      "content_fingerprint": "910977b9dc9d5ffdf55f",
+      "first_seen": "2026-09-06T16:14:58+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-06T16:14:58+00:00",
+      "source_id": "general-assembly",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "HB1241: Abortion - As introduced, defines the terms \"serious risk of substantial and irreversible impairment of a major bodily function\" and \"lethal fetal anomaly\"; specifies that a physician does not commit the offense of criminal abortion",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1241&ga=114"
+    },
+    "tn-ga:114:HB1246": {
+      "candidate_id": "tn-ga:114:HB1246",
+      "composite": 0.825,
+      "content_fingerprint": "e08b2932512040792afb",
+      "first_seen": "2026-09-06T16:13:55+00:00",
+      "issue_number": 79,
+      "last_seen": "2026-09-06T16:13:55+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "HB1246: Consumer Protection - As introduced, requires the office of the attorney general and reporter to submit to the chair of the house committee having jurisdiction over consumer protection and the chair of the commerce and labor committ",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1246&ga=114"
+    },
     "tn-ga:114:HB1316": {
       "candidate_id": "tn-ga:114:HB1316",
       "composite": 0.9475,
@@ -308,6 +494,45 @@
       "title": "HB1843: Utilities, Utility Districts - As introduced, prohibits a utility that provides electric, water, wastewater, or natural gas services from increasing the rate charged to customers who are 65 years of age or older upon notice that the",
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1843&ga=114"
     },
+    "tn-ga:114:HB1866": {
+      "candidate_id": "tn-ga:114:HB1866",
+      "composite": 0.885,
+      "content_fingerprint": "447f7cefa45b343a76e7",
+      "first_seen": "2026-09-06T16:14:09+00:00",
+      "issue_number": 81,
+      "last_seen": "2026-09-06T16:14:09+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "HB1866: Insurance, Health, Accident - As introduced, creates the \"Regulate Artificial Intelligence (AI) In Health Care Act.\"",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1866&ga=114"
+    },
+    "tn-ga:114:HB2054": {
+      "candidate_id": "tn-ga:114:HB2054",
+      "composite": 0.68,
+      "content_fingerprint": "6c028a010449a2b09b32",
+      "first_seen": "2026-09-06T16:14:00+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-06T16:14:00+00:00",
+      "source_id": "general-assembly",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "HB2054: Energy - As introduced, enacts the \"Data Center, Artificial Intelligence, and Clean Transition Tariff Accountability Act.\"",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB2054&ga=114"
+    },
+    "tn-ga:114:HB2369": {
+      "candidate_id": "tn-ga:114:HB2369",
+      "composite": 0.685,
+      "content_fingerprint": "7afd671332b2e4ff9cef",
+      "first_seen": "2026-09-06T16:15:30+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-06T16:15:30+00:00",
+      "source_id": "general-assembly",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "HB2369: Criminal Procedure - As enacted, revises present law that authorizes the attorney general to bring an action to enforce compliance with the Tennessee Abortion-Inducing Drug Risk Protocol Act or intervene as a matter of right in a ca",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB2369&ga=114"
+    },
     "tn-ga:114:HB2410": {
       "candidate_id": "tn-ga:114:HB2410",
       "composite": null,
@@ -320,6 +545,84 @@
       "suggested_action": null,
       "title": "HB2410: Local Education Agencies - As introduced, allows an LEA or public charter school to install, maintain, and use, subject to parental approval, a video camera surveillance system in the special education classrooms operated by the LEA",
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB2410&ga=114"
+    },
+    "tn-ga:114:HB2586": {
+      "candidate_id": "tn-ga:114:HB2586",
+      "composite": 0.85,
+      "content_fingerprint": "ed079a028cdcbc6ecdab",
+      "first_seen": "2026-09-06T16:14:18+00:00",
+      "issue_number": 83,
+      "last_seen": "2026-09-06T16:14:18+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "HB2586: State Government - As introduced, expands the requirements of the 2026 and 2027 annual reports to be submitted by the artificial intelligence advisory council to the governor, speaker of the senate, and speaker of the house of repre",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB2586&ga=114"
+    },
+    "tn-ga:114:SB0003": {
+      "candidate_id": "tn-ga:114:SB0003",
+      "composite": 0.525,
+      "content_fingerprint": "03bbcb5a967cfdce7e98",
+      "first_seen": "2026-09-06T16:14:54+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-06T16:14:54+00:00",
+      "source_id": "general-assembly",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "SB0003: Abortion - As introduced, clarifies that the term \"abortion,\" as defined for the offense of criminal abortion, does not include the use of contraceptives, including any device, medication, biological product, or procedure that is ge",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB0003&ga=114"
+    },
+    "tn-ga:114:SB0345": {
+      "candidate_id": "tn-ga:114:SB0345",
+      "composite": 0.48,
+      "content_fingerprint": "5582604480529560914d",
+      "first_seen": "2026-09-06T16:15:12+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-06T16:15:12+00:00",
+      "source_id": "general-assembly",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "SB0345: Abortion - As introduced, specifies that the offense of criminal abortion does not include an abortion that was necessary due to a medical emergency affecting the physical or mental health of the pregnant person or performed on a pa",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB0345&ga=114"
+    },
+    "tn-ga:114:SB0404": {
+      "candidate_id": "tn-ga:114:SB0404",
+      "composite": 0.905,
+      "content_fingerprint": "9b6d97c35c7b34640bbe",
+      "first_seen": "2026-09-06T16:13:46+00:00",
+      "issue_number": 77,
+      "last_seen": "2026-09-06T16:13:46+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "SB0404: Criminal Offenses - As introduced, expands the offense of unlawful exposure to include the distribution, with the intent to cause emotional distress, of an image of the intimate parts of another identifiable person or an image of an",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB0404&ga=114"
+    },
+    "tn-ga:114:SB0514": {
+      "candidate_id": "tn-ga:114:SB0514",
+      "composite": 0.835,
+      "content_fingerprint": "fb7c17aac9bbd9ae97b0",
+      "first_seen": "2026-09-06T16:13:51+00:00",
+      "issue_number": 78,
+      "last_seen": "2026-09-06T16:13:51+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "SB0514: Education, Curriculum - As introduced, requires local education agencies and public charter schools to provide age-appropriate instruction to students on how to access, utilize, and critically evaluate various artificial intelligenc",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB0514&ga=114"
+    },
+    "tn-ga:114:SB0935": {
+      "candidate_id": "tn-ga:114:SB0935",
+      "composite": 0.635,
+      "content_fingerprint": "5adef67240a47030c8c8",
+      "first_seen": "2026-09-06T16:15:03+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-06T16:15:03+00:00",
+      "source_id": "general-assembly",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "SB0935: Abortion - As introduced, adds the chairs of the judiciary committee of the senate and the committee of the house of representatives with jurisdiction over criminal justice-related matters to whom the department of health shall subm",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB0935&ga=114"
     },
     "tn-ga:114:SB0972": {
       "candidate_id": "tn-ga:114:SB0972",
@@ -346,6 +649,19 @@
       "suggested_action": "NEW ENTRY",
       "title": "SB1261: Insurance Companies, Agents, Brokers, Policies - As introduced, imposes requirements for health insurance issuers using artificial intelligence, algorithms, or other software for utilization review or utilization management function",
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB1261&ga=114"
+    },
+    "tn-ga:114:SB1580": {
+      "candidate_id": "tn-ga:114:SB1580",
+      "composite": 0.945,
+      "content_fingerprint": "1abcceca7e72039e1167",
+      "first_seen": "2026-09-06T16:14:13+00:00",
+      "issue_number": 82,
+      "last_seen": "2026-09-06T16:14:13+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "SB1580: Health Care - As enacted, prohibits a person from developing or deploying an artificial intelligence system that advertises or represents to the public that such system is or is able to act as a qualified mental health professional.",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB1580&ga=114"
     },
     "tn-ga:114:SB1624": {
       "candidate_id": "tn-ga:114:SB1624",
@@ -386,6 +702,19 @@
       "title": "SB1894: Local Education Agencies - As introduced, requires each LEA and public charter school to install, maintain, and use, subject to parental approval, a video camera surveillance system in the special education classrooms operated by th",
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB1894&ga=114"
     },
+    "tn-ga:114:SB2105": {
+      "candidate_id": "tn-ga:114:SB2105",
+      "composite": 0.805,
+      "content_fingerprint": "8da24b64cc47a70d96de",
+      "first_seen": "2026-09-06T16:14:04+00:00",
+      "issue_number": 80,
+      "last_seen": "2026-09-06T16:14:04+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "SB2105: Education - As introduced, requires each public charter school to publish the policy adopted by its governing board on the use of artificial intelligence by students, teachers, and staff for instructional and assignment purposes on ",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2105&ga=114"
+    },
     "tn-ga:114:SB2215": {
       "candidate_id": "tn-ga:114:SB2215",
       "composite": 0.93,
@@ -412,6 +741,19 @@
       "title": "SB2412: Abortion - As enacted, revises present law that authorizes the attorney general to bring an action to enforce compliance with the Tennessee Abortion-Inducing Drug Risk Protocol Act or intervene as a matter of right in a case in whic",
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2412&ga=114"
     },
+    "tn-ga:114:SB2482": {
+      "candidate_id": "tn-ga:114:SB2482",
+      "composite": 0.65,
+      "content_fingerprint": "6bba6d778ca4f04a1c0c",
+      "first_seen": "2026-09-06T16:15:25+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-06T16:15:25+00:00",
+      "source_id": "general-assembly",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "SB2482: Abortion - As introduced, states that the report a physician is required to submit to the commissioner of health after performing an abortion may be submitted electronically.",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2482&ga=114"
+    },
     "tn-ga:114:SB2485": {
       "candidate_id": "tn-ga:114:SB2485",
       "composite": 0.845,
@@ -426,6 +768,6 @@
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2485&ga=114"
     }
   },
-  "updated_at": "2026-09-05T16:19:20+00:00",
+  "updated_at": "2026-09-06T16:15:30+00:00",
   "version": 1
 }
