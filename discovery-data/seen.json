@@ -61,16 +61,34 @@
       "last_seen": "2026-09-05T16:16:08+00:00",
       "status": "fingerprint-alias"
     },
+    "fp:225fc9e26a5695e02240": {
+      "candidate_id": "tn-ga:114:SB2321",
+      "first_seen": "2026-09-07T18:15:21+00:00",
+      "last_seen": "2026-09-07T18:15:21+00:00",
+      "status": "fingerprint-alias"
+    },
     "fp:31950a044fe40a66dadb": {
       "candidate_id": "tn-ag-news:pr26-33",
       "first_seen": "2026-09-05T16:16:08+00:00",
       "last_seen": "2026-09-05T16:16:08+00:00",
       "status": "fingerprint-alias"
     },
+    "fp:33c38e164005a0c15484": {
+      "candidate_id": "tn-ag-op:opinion-no-26-06",
+      "first_seen": "2026-09-07T18:15:26+00:00",
+      "last_seen": "2026-09-07T18:15:26+00:00",
+      "status": "fingerprint-alias"
+    },
     "fp:447f7cefa45b343a76e7": {
       "candidate_id": "tn-ga:114:HB1866",
       "first_seen": "2026-09-06T16:14:09+00:00",
       "last_seen": "2026-09-06T16:14:09+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:4dc20d77c9513092457f": {
+      "candidate_id": "tn-ga:114:SB2618",
+      "first_seen": "2026-09-07T18:14:54+00:00",
+      "last_seen": "2026-09-07T18:14:54+00:00",
       "status": "fingerprint-alias"
     },
     "fp:51bb3a9d09cca0df56f7": {
@@ -109,6 +127,12 @@
       "last_seen": "2026-09-06T16:15:30+00:00",
       "status": "fingerprint-alias"
     },
+    "fp:8af8f4fb314e68c6b8c5": {
+      "candidate_id": "tn-ga:114:SB0677",
+      "first_seen": "2026-09-07T18:14:59+00:00",
+      "last_seen": "2026-09-07T18:14:59+00:00",
+      "status": "fingerprint-alias"
+    },
     "fp:8da24b64cc47a70d96de": {
       "candidate_id": "tn-ga:114:SB2105",
       "first_seen": "2026-09-06T16:14:04+00:00",
@@ -125,6 +149,12 @@
       "candidate_id": "tn-ga:114:HB1241",
       "first_seen": "2026-09-06T16:14:58+00:00",
       "last_seen": "2026-09-06T16:14:58+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:98b32f4d13b3383d90dd": {
+      "candidate_id": "tn-ga:114:SB2171",
+      "first_seen": "2026-09-07T18:15:12+00:00",
+      "last_seen": "2026-09-07T18:15:12+00:00",
       "status": "fingerprint-alias"
     },
     "fp:9b6d97c35c7b34640bbe": {
@@ -181,10 +211,22 @@
       "last_seen": "2026-09-05T16:16:08+00:00",
       "status": "fingerprint-alias"
     },
+    "fp:c9c5137da930f703a4a7": {
+      "candidate_id": "tn-ga:114:HB0849",
+      "first_seen": "2026-09-07T18:15:08+00:00",
+      "last_seen": "2026-09-07T18:15:08+00:00",
+      "status": "fingerprint-alias"
+    },
     "fp:cb43adcd0666377fd6be": {
       "candidate_id": "tn-ga:114:SB1894",
       "first_seen": "2026-09-05T16:16:08+00:00",
       "last_seen": "2026-09-05T16:16:08+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:cf9217f4eeb6d8c96091": {
+      "candidate_id": "tn-ga:114:SB1493",
+      "first_seen": "2026-09-07T18:15:03+00:00",
+      "last_seen": "2026-09-07T18:15:03+00:00",
       "status": "fingerprint-alias"
     },
     "fp:de32e3416faad29f0c4b": {
@@ -209,6 +251,12 @@
       "candidate_id": "tn-ga:114:HB0294",
       "first_seen": "2026-09-05T16:16:08+00:00",
       "last_seen": "2026-09-05T16:16:08+00:00",
+      "status": "fingerprint-alias"
+    },
+    "fp:e3aab46e702221ba4784": {
+      "candidate_id": "tn-ga:114:HB1946",
+      "first_seen": "2026-09-07T18:15:16+00:00",
+      "last_seen": "2026-09-07T18:15:16+00:00",
       "status": "fingerprint-alias"
     },
     "fp:e69812e4c30a79a360e5": {
@@ -312,6 +360,19 @@
       "title": "Attorney General Skrmetti Announces Largest Big Tech Settlement in History",
       "url": "https://www.tn.gov/attorneygeneral/news/2026/8/26/pr26-33.html"
     },
+    "tn-ag-op:opinion-no-26-06": {
+      "candidate_id": "tn-ag-op:opinion-no-26-06",
+      "composite": 0.935,
+      "content_fingerprint": "33c38e164005a0c15484",
+      "first_seen": "2026-09-07T18:15:26+00:00",
+      "issue_number": 91,
+      "last_seen": "2026-09-07T18:15:26+00:00",
+      "source_id": "attorney-general",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "Opinion No. 26-06: Moderation of Social-Media Accounts by Elected Officials",
+      "url": "https://www.tn.gov/content/dam/tn/attorneygeneral/documents/ops/2026/op26-06.pdf"
+    },
     "tn-ga:114:HB0061": {
       "candidate_id": "tn-ga:114:HB0061",
       "composite": 0.52,
@@ -363,6 +424,19 @@
       "suggested_action": "NEW ENTRY",
       "title": "HB0825: Education, Curriculum - As enacted, enacts the \"Teen Social Media and Internet Safety Act.\"",
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB0825&ga=114"
+    },
+    "tn-ga:114:HB0849": {
+      "candidate_id": "tn-ga:114:HB0849",
+      "composite": 0.89,
+      "content_fingerprint": "c9c5137da930f703a4a7",
+      "first_seen": "2026-09-07T18:15:08+00:00",
+      "issue_number": 87,
+      "last_seen": "2026-09-07T18:15:08+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "HB0849: Statutes and Codification - As enacted, clarifies that a \"person,\" as used in Tennessee Code Annotated, does not include artificial intelligence, a computer algorithm, a software program, computer hardware, or any type of machine.",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB0849&ga=114"
     },
     "tn-ga:114:HB0933": {
       "candidate_id": "tn-ga:114:HB0933",
@@ -507,6 +581,19 @@
       "title": "HB1866: Insurance, Health, Accident - As introduced, creates the \"Regulate Artificial Intelligence (AI) In Health Care Act.\"",
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1866&ga=114"
     },
+    "tn-ga:114:HB1946": {
+      "candidate_id": "tn-ga:114:HB1946",
+      "composite": 0.915,
+      "content_fingerprint": "e3aab46e702221ba4784",
+      "first_seen": "2026-09-07T18:15:16+00:00",
+      "issue_number": 89,
+      "last_seen": "2026-09-07T18:15:16+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "HB1946: Consumer Protection - As enacted, requires the Tennessee advisory commission on intergovernmental relations (TACIR) to conduct a study of the potential regulation of artificial intelligence systems and generative artificial intellig",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1946&ga=114"
+    },
     "tn-ga:114:HB2054": {
       "candidate_id": "tn-ga:114:HB2054",
       "composite": 0.68,
@@ -611,6 +698,19 @@
       "title": "SB0514: Education, Curriculum - As introduced, requires local education agencies and public charter schools to provide age-appropriate instruction to students on how to access, utilize, and critically evaluate various artificial intelligenc",
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB0514&ga=114"
     },
+    "tn-ga:114:SB0677": {
+      "candidate_id": "tn-ga:114:SB0677",
+      "composite": 0.855,
+      "content_fingerprint": "8af8f4fb314e68c6b8c5",
+      "first_seen": "2026-09-07T18:14:59+00:00",
+      "issue_number": 85,
+      "last_seen": "2026-09-07T18:14:59+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "SB0677: Education, Dept. of - As enacted, requires the department to provide at least one professional development course that provides asynchronous instruction on the use of artificial intelligence in the classroom and that is made availab",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB0677&ga=114"
+    },
     "tn-ga:114:SB0935": {
       "candidate_id": "tn-ga:114:SB0935",
       "composite": 0.635,
@@ -649,6 +749,19 @@
       "suggested_action": "NEW ENTRY",
       "title": "SB1261: Insurance Companies, Agents, Brokers, Policies - As introduced, imposes requirements for health insurance issuers using artificial intelligence, algorithms, or other software for utilization review or utilization management function",
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB1261&ga=114"
+    },
+    "tn-ga:114:SB1493": {
+      "candidate_id": "tn-ga:114:SB1493",
+      "composite": 0.96,
+      "content_fingerprint": "cf9217f4eeb6d8c96091",
+      "first_seen": "2026-09-07T18:15:03+00:00",
+      "issue_number": 86,
+      "last_seen": "2026-09-07T18:15:03+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "SB1493: Computers and Electronic Processing - As enacted, requires TACIR to study artificial intelligence and submit a report to the governor and both speakers by January 31, 2027.",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB1493&ga=114"
     },
     "tn-ga:114:SB1580": {
       "candidate_id": "tn-ga:114:SB1580",
@@ -715,6 +828,19 @@
       "title": "SB2105: Education - As introduced, requires each public charter school to publish the policy adopted by its governing board on the use of artificial intelligence by students, teachers, and staff for instructional and assignment purposes on ",
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2105&ga=114"
     },
+    "tn-ga:114:SB2171": {
+      "candidate_id": "tn-ga:114:SB2171",
+      "composite": 0.85,
+      "content_fingerprint": "98b32f4d13b3383d90dd",
+      "first_seen": "2026-09-07T18:15:12+00:00",
+      "issue_number": 88,
+      "last_seen": "2026-09-07T18:15:12+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "SB2171: Safety - As introduced, enacts the \"Artificial Intelligence Public Safety and Child Protection Transparency Act.\"",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2171&ga=114"
+    },
     "tn-ga:114:SB2215": {
       "candidate_id": "tn-ga:114:SB2215",
       "composite": 0.93,
@@ -727,6 +853,19 @@
       "suggested_action": "NEW ENTRY",
       "title": "SB2215: Privacy, Confidentiality - As introduced, enacts the \"Protecting Everyone from Excessive Police Surveillance (PEEPS) Act\" for the purposes of protecting, maintaining, and accessing historical location data.",
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2215&ga=114"
+    },
+    "tn-ga:114:SB2321": {
+      "candidate_id": "tn-ga:114:SB2321",
+      "composite": 0.93,
+      "content_fingerprint": "225fc9e26a5695e02240",
+      "first_seen": "2026-09-07T18:15:21+00:00",
+      "issue_number": 90,
+      "last_seen": "2026-09-07T18:15:21+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "SB2321: Criminal Offenses - As introduced, prohibits a person or entity from distributing an electoral deepfake within 90 days of an election that the person or entity knows or should have known is a deceptive and fraudulent depiction of a ",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2321&ga=114"
     },
     "tn-ga:114:SB2412": {
       "candidate_id": "tn-ga:114:SB2412",
@@ -766,8 +905,21 @@
       "suggested_action": "NEW ENTRY",
       "title": "SB2485: Local Education Agencies - As introduced, allows an LEA or public charter school to install, maintain, and use, subject to parental approval, a video camera surveillance system in the special education classrooms operated by the LEA",
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2485&ga=114"
+    },
+    "tn-ga:114:SB2618": {
+      "candidate_id": "tn-ga:114:SB2618",
+      "composite": 0.83,
+      "content_fingerprint": "4dc20d77c9513092457f",
+      "first_seen": "2026-09-07T18:14:54+00:00",
+      "issue_number": 84,
+      "last_seen": "2026-09-07T18:14:54+00:00",
+      "source_id": "general-assembly",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "SB2618: Computers and Electronic Processing - As introduced, requires the joint chairs of the artificial intelligence advisory council to publish their annual findings regarding the economic, labor, and ethical impacts of artificial intelli",
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2618&ga=114"
     }
   },
-  "updated_at": "2026-09-06T16:15:30+00:00",
+  "updated_at": "2026-09-07T18:15:26+00:00",
   "version": 1
 }
