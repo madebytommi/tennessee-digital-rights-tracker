@@ -31,6 +31,12 @@
       "last_seen": "2026-09-05T16:17:24+00:00",
       "status": "fingerprint-alias"
     },
+    "fp:0a18018f652aedb03e0f": {
+      "candidate_id": "lookout:6dabef06787ad0254d5c",
+      "first_seen": "2026-09-08T17:14:29+00:00",
+      "last_seen": "2026-09-08T17:14:29+00:00",
+      "status": "fingerprint-alias"
+    },
     "fp:0f844ce208e31b8c1608": {
       "candidate_id": "tn-ga:114:HB1843",
       "first_seen": "2026-09-05T16:17:17+00:00",
@@ -333,6 +339,19 @@
       "suggested_action": "WATCH",
       "title": "Abortion could return to Supreme Court, this time with a focus on women\u2019s health",
       "url": "https://tennesseelookout.com/2026/08/23/repub/abortion-could-return-to-supreme-court-this-time-with-a-focus-on-womens-health"
+    },
+    "lookout:6dabef06787ad0254d5c": {
+      "candidate_id": "lookout:6dabef06787ad0254d5c",
+      "composite": 0.9,
+      "content_fingerprint": "0a18018f652aedb03e0f",
+      "first_seen": "2026-09-08T17:14:29+00:00",
+      "issue_number": 92,
+      "last_seen": "2026-09-08T17:14:29+00:00",
+      "source_id": "lookout",
+      "status": "issue-created",
+      "suggested_action": "NEW ENTRY",
+      "title": "Flock cameras divide Tennessee governments, residents over privacy as some end their contracts",
+      "url": "https://tennesseelookout.com/2026/09/08/flock-cameras-divide-governments-citizens-over-privacy-as-some-end-their-contracts"
     },
     "lookout:d51e5dbbf87ad7825db5": {
       "candidate_id": "lookout:d51e5dbbf87ad7825db5",
@@ -920,6 +939,6 @@
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2618&ga=114"
     }
   },
-  "updated_at": "2026-09-07T18:15:26+00:00",
+  "updated_at": "2026-09-08T17:14:29+00:00",
   "version": 1
 }
