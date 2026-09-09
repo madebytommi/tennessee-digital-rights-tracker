@@ -289,6 +289,12 @@
       "last_seen": "2026-09-05T16:16:38+00:00",
       "status": "fingerprint-alias"
     },
+    "fp:f150168b59ab2e5f0eea": {
+      "candidate_id": "lookout:f88b06529e48a104773a",
+      "first_seen": "2026-09-09T17:09:04+00:00",
+      "last_seen": "2026-09-09T17:09:04+00:00",
+      "status": "fingerprint-alias"
+    },
     "fp:f9e8a80168e8acda4aa6": {
       "candidate_id": "tn-ga:114:HB0207",
       "first_seen": "2026-09-05T16:17:28+00:00",
@@ -365,6 +371,19 @@
       "suggested_action": null,
       "title": "Tennessee to receive $750M of $17B Facebook, Instagram settlement",
       "url": "https://tennesseelookout.com/2026/08/26/tennessee-to-receive-750m-of-17b-facebook-instagram-settlement"
+    },
+    "lookout:f88b06529e48a104773a": {
+      "candidate_id": "lookout:f88b06529e48a104773a",
+      "composite": 0.23,
+      "content_fingerprint": "f150168b59ab2e5f0eea",
+      "first_seen": "2026-09-09T17:09:04+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-09T17:09:04+00:00",
+      "source_id": "lookout",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "Trump\u2019s trade war with Canada escalates as new tariffs launch",
+      "url": "https://tennesseelookout.com/2026/09/08/repub/trumps-trade-war-with-canada-escalates-as-new-tariffs-launch"
     },
     "tn-ag-news:pr26-33": {
       "candidate_id": "tn-ag-news:pr26-33",
@@ -939,6 +958,6 @@
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2618&ga=114"
     }
   },
-  "updated_at": "2026-09-08T17:14:29+00:00",
+  "updated_at": "2026-09-09T17:09:04+00:00",
   "version": 1
 }
