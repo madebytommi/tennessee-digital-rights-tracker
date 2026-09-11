@@ -117,4 +117,4 @@ When the available evidence does not support a conclusion, the tracker says so.
 
 ## Submit information or corrections
 
-Use the repository’s [GitHub issue forms](https://github.com/madebytommi/tennessee-digital-rights-tracker/issues/new/choose). Do not submit sensitive personal information, confidential movement histories, medical records, or active-investigation details.
+Use the repository’s [GitHub issue forms](https://github.com/cyb3rcricket/tennessee-digital-rights-tracker/issues/new/choose). Do not submit sensitive personal information, confidential movement histories, medical records, or active-investigation details.
