@@ -4,7 +4,7 @@ Clear, source-linked explanations of how Tennessee laws, government technologies
 
 The project is written first for everyday Tennesseans, while maintaining sourcing and research standards useful to journalists, advocates, researchers, and public officials.
 
-**Live site:** https://madebytommi.github.io/tennessee-digital-rights-tracker/
+**Live site:** https://cyb3rcricket.github.io/tennessee-digital-rights-tracker/
 
 ## Mission
 
