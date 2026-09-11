@@ -91,6 +91,12 @@
       "last_seen": "2026-09-06T16:14:09+00:00",
       "status": "fingerprint-alias"
     },
+    "fp:4614f11bbf04d2b22369": {
+      "candidate_id": "lookout:41afa803fb626bae2967",
+      "first_seen": "2026-09-11T17:00:59+00:00",
+      "last_seen": "2026-09-11T17:00:59+00:00",
+      "status": "fingerprint-alias"
+    },
     "fp:4dc20d77c9513092457f": {
       "candidate_id": "tn-ga:114:SB2618",
       "first_seen": "2026-09-07T18:14:54+00:00",
@@ -345,6 +351,19 @@
       "suggested_action": "WATCH",
       "title": "Abortion could return to Supreme Court, this time with a focus on women\u2019s health",
       "url": "https://tennesseelookout.com/2026/08/23/repub/abortion-could-return-to-supreme-court-this-time-with-a-focus-on-womens-health"
+    },
+    "lookout:41afa803fb626bae2967": {
+      "candidate_id": "lookout:41afa803fb626bae2967",
+      "composite": 0.385,
+      "content_fingerprint": "4614f11bbf04d2b22369",
+      "first_seen": "2026-09-11T17:00:59+00:00",
+      "issue_number": null,
+      "last_seen": "2026-09-11T17:00:59+00:00",
+      "source_id": "lookout",
+      "status": "below-threshold",
+      "suggested_action": "WATCH",
+      "title": "How 9/11 changed the way America surveils its citizens",
+      "url": "https://tennesseelookout.com/2026/09/11/repub/how-9-11-changed-the-way-america-surveils-its-citizens"
     },
     "lookout:6dabef06787ad0254d5c": {
       "candidate_id": "lookout:6dabef06787ad0254d5c",
@@ -958,6 +977,6 @@
       "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2618&ga=114"
     }
   },
-  "updated_at": "2026-09-10T16:59:09+00:00",
+  "updated_at": "2026-09-11T17:00:59+00:00",
   "version": 1
 }
