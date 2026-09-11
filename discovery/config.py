@@ -14,7 +14,7 @@ SPECIAL_CASE_DIR = ROOT / "_special_cases"
 
 USER_AGENT = (
     "TennesseeRightsScout/1.0 "
-    "(+https://github.com/madebytommi/tennessee-digital-rights-tracker; "
+    "(+https://github.com/cyb3rcricket/tennessee-digital-rights-tracker; "
     "human-reviewed discovery)"
 )
 
